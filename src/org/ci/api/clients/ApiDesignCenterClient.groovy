@@ -1,5 +1,7 @@
 package org.ci.api.clients
 
+import com.cloudbees.groovy.cps.NonCPS
+
 //@Grab('org.codehaus.groovy:groovy-json:2.0.1')
 
 import groovy.json.JsonSlurper;
@@ -9,9 +11,6 @@ import groovy.io.FileType
 class ApiDesignCenterClient {
 
     static void main(String[] args) {
-        println("he")
-    }
-    static void main1(String[] args) {
         def username = ""
         def password = ""
         def organizationId = ""
@@ -119,7 +118,7 @@ class ApiDesignCenterClient {
         }
     }
 
-
+    @NonCPS
     static def saveProjectFiles(props, token, projectId, branch, apiDirPath)
     {
         def boundary = "*****"
