@@ -118,7 +118,7 @@ class ApiDesignCenterClient {
         }
     }
 
-    @NonCPS
+
     static def saveProjectFiles(props, token, projectId, branch, apiDirPath)
     {
         def boundary = "*****"
