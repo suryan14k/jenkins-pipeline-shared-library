@@ -4,13 +4,15 @@ import com.cloudbees.groovy.cps.NonCPS
 
 //@Grab('org.codehaus.groovy:groovy-json:2.0.1')
 
-import groovy.json.JsonSlurper;
-import groovy.json.JsonOutput;
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
 import groovy.io.FileType
 
 class ApiDesignCenterClient {
 
-    static void main(String[] args) {
+
+
+static void main(String[] args) {
         def username = ""
         def password = ""
         def organizationId = ""
@@ -45,7 +47,7 @@ class ApiDesignCenterClient {
     static def getAnypointToken(props)
     {
         def requestTemplate = '{"username" : null,"password" : null }'
-        def request = new JsonSlurper().parseText(requestTemplate);
+        def request = new JsonSlurper().parseText(requestTemplate)
         request.username = props.username
         request.password = props.password
         def body = JsonOutput.toJson(request)
@@ -71,7 +73,7 @@ class ApiDesignCenterClient {
         if (connection.responseCode == 200) {
             def projectDetails = new JsonSlurper().parseText(connection.getInputStream().getText())
             def filteredProject = projectDetails.find { it -> it.name == projectName}
-            return filteredProject.id;
+            return filteredProject.id
 
         } else {
             throw new Exception("Failed to retrieve project details!")
@@ -127,6 +129,7 @@ class ApiDesignCenterClient {
         def apiClient = new ApiMultiPartDataClient()
         def connection = apiClient.getConnection(urlString, headers)
         File apiBaseDir = new File(apiDirPath)
+
         addFilesIntoMultiPartClient(apiBaseDir, apiBaseDir, apiClient)
 
         //Extra Custom Function to avoid NonCPS Issue.
@@ -150,7 +153,7 @@ class ApiDesignCenterClient {
     static void addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory()) {
-                addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy)
+                addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy, apiClient)
             } else {
                 def fileName = getModifiedFileName(apiBaseDirCopy, fileEntry)
                 apiClient.addFilePart(fileName, fileEntry)
@@ -160,9 +163,9 @@ class ApiDesignCenterClient {
 
     private static def getModifiedFileName(baseDir, filePath)
     {
-        def rootLength = baseDir.getAbsolutePath().length();
-        def absFileName = filePath.getAbsolutePath();
-        def relFileName = absFileName.substring(rootLength + 1);
+        def rootLength = baseDir.getAbsolutePath().length()
+        def absFileName = filePath.getAbsolutePath()
+        def relFileName = absFileName.substring(rootLength + 1)
         return relFileName.replace('\\',"/")
     }
 }
