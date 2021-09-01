@@ -127,10 +127,14 @@ class ApiDesignCenterClient {
         def apiClient = new ApiMultiPartDataClient()
         def connection = apiClient.getConnection(urlString, headers)
         File apiBaseDir = new File(apiDirPath)
-        apiBaseDir.eachFileRecurse(FileType.FILES)  {
+        addFilesIntoMultiPartClient(apiBaseDir, apiBaseDir, apiClient)
+
+        //Extra Custom Function to avoid NonCPS Issue.
+        /*apiBaseDir.eachFileRecurse(FileType.FILES)  {
             def fileName = getModifiedFileName(apiBaseDir, it)
             apiClient.addFilePart(fileName, it)
-        }
+        }*/
+
         apiClient.finish()
         def acquireLockStatus = acquireLockOnProject(props, token, projectId, branch)
         if (connection.responseCode == 200) {
@@ -140,6 +144,17 @@ class ApiDesignCenterClient {
         } else {
             releaseLockOnProject(props, token, projectId, branch)
             throw new Exception("unable to save files.")
+        }
+    }
+
+    static void addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
+        for (File fileEntry : apiBaseDir.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy)
+            } else {
+                def fileName = getModifiedFileName(apiBaseDirCopy, fileEntry)
+                apiClient.addFilePart(fileName, fileEntry)
+            }
         }
     }
 
