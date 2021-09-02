@@ -157,15 +157,10 @@ class ApiDesignCenterClient {
             def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER")) }
             step.println("clean up started: List of files ${fileList} , List of folders ${folderList} ")
             fileList.each {
-                it ->
-                    {
-                        deleteArtifact(token, projectId, branch, it.path)
-                    }
+                it -> deleteArtifact(token, projectId, branch, it.path)
             }
             folderList.each {
-                it -> {
-                         deleteArtifact(token, projectId, branch, it.path)
-                      }
+                it -> deleteArtifact(token, projectId, branch, it.path)
             }
             step.println("branch cleanup completed.")
         } else {
