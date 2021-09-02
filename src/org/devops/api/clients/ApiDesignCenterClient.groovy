@@ -3,6 +3,8 @@ package org.devops.api.clients
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
+import java.text.SimpleDateFormat
+
 class ApiDesignCenterClient {
 
     def step
@@ -193,9 +195,10 @@ class ApiDesignCenterClient {
 
     private static def getDateTime()
     {
-        Date date = new Date()
-        String datePart = date.format("dd/MM/yyyy")
-        String timePart = date.format("HH:mm:ss")
+        def formatter = new SimpleDateFormat("dd-MMM-yyyy")
+        def date = new Date();
+        String datePart = formatter.format(date)
+        String timePart = date.getTime()
         return datePart + "_" + timePart
     }
 }
