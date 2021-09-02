@@ -133,7 +133,7 @@ class ApiDesignCenterClient {
         request.commitId = commitId
         def body = JsonOutput.toJson(request)
         def connection = ApiClient.post(urlString, body, headers)
-        if (connection.responseCode == 200) {
+        if (connection.responseCode == 201) {
             def status = new JsonSlurper().parseText(connection.getInputStream().getText())
             step.println("success: back up branch created: ${status}")
             return status
