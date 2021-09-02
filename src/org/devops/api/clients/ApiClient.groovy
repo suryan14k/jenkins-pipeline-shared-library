@@ -1,8 +1,5 @@
 package org.devops.api.clients
 
-import groovy.util.logging.Slf4j
-
-@Slf4j
 class ApiClient {
 
     static def get(String urlString, LinkedHashMap headers) {
@@ -40,7 +37,6 @@ class ApiClient {
         return connection
     }
     private static def getUrlConnectionWithHeaders(urlString, headers, method){
-        log.info("calling URL: ${urlString}, headers: ${headers}, method: ${method}")
         def url = new URL(urlString)
         def connection = (HttpURLConnection)url.openConnection()
         headers.each {it -> connection.setRequestProperty(it.key, it.value) }

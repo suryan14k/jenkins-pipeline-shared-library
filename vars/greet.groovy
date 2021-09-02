@@ -1,3 +1,3 @@
-def call(message) {
-    echo "Hello, ${message}."
+def call() {
+    println "Hello, "
 }

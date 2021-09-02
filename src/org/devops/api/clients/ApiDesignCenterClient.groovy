@@ -2,14 +2,20 @@ package org.devops.api.clients
 
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-import groovy.util.logging.Slf4j
 
-@Slf4j
 class ApiDesignCenterClient {
 
-    static def getAnypointToken(props)
+    def step
+    def props
+
+    ApiDesignCenterClient(step, props)
     {
-        log.info("get anypoint token")
+        this.step = step
+        this.props = props
+    }
+    def getAnypointToken()
+    {
+        step.println("get anypoint token")
         def requestTemplate = '{"username" : null,"password" : null }'
         def request = new JsonSlurper().parseText(requestTemplate)
         request.username = props.username
@@ -21,85 +27,85 @@ class ApiDesignCenterClient {
         if (connection.responseCode == 200)
         {
             def token = new JsonSlurper().parseText(connection.getInputStream().getText()).access_token
-            log.info("login success")
+            step.println("login success")
             return token
         }else
         {
-            log.error("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("Failed to get the login token!")
         }
 
     }
 
-    static def getProjectID(props, token, projectName)
+    def getProjectID(token, projectName)
     {
-        log.info("get project id")
+        step.println("get project id")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "Authorization": "Bearer " + token]
         def connection = ApiClient.get(urlString, headers)
         if (connection.responseCode == 200) {
             def projectDetails = new JsonSlurper().parseText(connection.getInputStream().getText())
             def filteredProject = projectDetails.find { it -> (it.name == projectName) }
-            log.info("success: retrieved project id: ${filteredProject.id}")
+            step.println("success: retrieved project id: ${filteredProject.id}")
             return filteredProject.id
         } else {
-            log.error("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("Failed to retrieve project details!")
         }
     }
 
-    static def acquireLockOnProject(props, token, projectId, branch)
+    def acquireLockOnProject(token, projectId, branch)
     {
-        log.info("acquire project lock")
+        step.println("acquire project lock")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/acquireLock"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def connection = ApiClient.post(urlString, null, headers)
         if (connection.responseCode == 200) {
-            log.info("success: project lock acquired")
+            step.println("success: project lock acquired")
             def lockStatus = new JsonSlurper().parseText(connection.getInputStream().getText()).locked
             return lockStatus
         } else {
-            log.error("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("unable to obtain lock.")
         }
 
     }
 
-    static def releaseLockOnProject(props, token, projectId, branch)
+    def releaseLockOnProject(token, projectId, branch)
     {
-        log.info("release project lock")
+        step.println("release project lock")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/releaseLock"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def connection = ApiClient.post(urlString, null, headers)
         if (connection.responseCode == 200) {
-            log.info("success: project lock released")
+            step.println("success: project lock released")
             def lockStatus = new JsonSlurper().parseText(connection.getInputStream().getText()).locked
             return lockStatus
         } else {
-            log.error("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("unable to release lock.")
         }
     }
 
-    static def checkProjectStatus(props, token, projectId, branch)
+    def checkProjectStatus(token, projectId, branch)
     {
-        log.info("get project status")
+        step.println("get project status")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/status"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def connection = ApiClient.post(urlString, null, headers)
         if (connection.responseCode == 200) {
             def status = new JsonSlurper().parseText(connection.getInputStream().getText())
-            log.info("success: retrieved project status ${status}")
+            step.println("success: retrieved project status ${status}")
             return status
         } else {
-            log.error("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("unable to retrieve project status.")
         }
     }
 
-    static def saveProjectFiles(props, token, projectId, branch, apiDirPath)
+    def saveProjectFiles(token, projectId, branch, apiDirPath)
     {
-        log.info("save project files")
+        step.println("save project files")
         def boundary = "*****"
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/save/v2"
         def headers= ["x-organization-id": props.organizationId, "x-owner-id": props.ownerId, "Authorization": "Bearer " + token]
@@ -115,20 +121,20 @@ class ApiDesignCenterClient {
             apiMultiPartDataClient.addFilePart(fileName, it)
         }*/
 
-        acquireLockOnProject(props, token, projectId, branch)
+        acquireLockOnProject(token, projectId, branch)
         if (connection.responseCode == 200) {
             def savedFilesStatus = new JsonSlurper().parseText(connection.getInputStream().getText())
-            log.info("success: saved project files are ${savedFilesStatus}")
-            releaseLockOnProject(props, token, projectId, branch)
+            step.println("success: saved project files are ${savedFilesStatus}")
+            releaseLockOnProject(token, projectId, branch)
             return savedFilesStatus
         } else {
-            log.error("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
-            releaseLockOnProject(props, token, projectId, branch)
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            releaseLockOnProject(token, projectId, branch)
             throw new Exception("unable to save project files.")
         }
     }
 
-    static addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
+    private static addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory()) {
                 addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy, apiClient)
