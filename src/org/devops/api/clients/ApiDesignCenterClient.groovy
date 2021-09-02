@@ -155,14 +155,23 @@ class ApiDesignCenterClient {
             step.println("success: List of files ${projectArtifactList}")
             def fileList = projectArtifactList.findAll { it -> (!it.path.contains("/")  && !it.path.contains("gitignore")  && !it.path.contains("exchange.json")  && it.type.equals("FILE")) }
             def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER")) }
-            step.println("clean up started: List of files ${fileList} , List of folders ${folderList} ")
+            step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} ")
+            acquireLockOnProject(token, projectId, branch)
+            try{
             fileList.each {
                 it -> deleteArtifact(token, projectId, branch, it.path)
             }
             folderList.each {
                 it -> deleteArtifact(token, projectId, branch, it.path)
             }
+            }catch(Exception e)
+            {
+                step.println("delete artifact stage failed.")
+                releaseLockOnProject(token, projectId, branch)
+                throw new Exception("delete artifact stage failed.")
+            }
             step.println("branch cleanup completed.")
+
         } else {
             step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("unable to get project files list.")
