@@ -15,6 +15,7 @@ class ApiDesignCenterClient {
         this.step = step
         this.props = props
     }
+
     def getAnypointToken()
     {
         step.println("get anypoint token")
@@ -142,6 +143,50 @@ class ApiDesignCenterClient {
             throw new Exception("unable to create back up.")
         }
     }
+
+    def branchCleanUp(token, projectId, branch)
+    {
+        step.println("branch cleanup started.")
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/files"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def connection = ApiClient.get(urlString, headers)
+        if (connection.responseCode == 200) {
+            def projectArtifactList = new JsonSlurper().parseText(connection.getInputStream().getText())
+            step.println("success: List of files ${projectArtifactList}")
+            def fileList = projectArtifactList.findAll { it -> (!it.path.contains("/")  && !it.path.contains("gitignore")  && !it.path.contains("exchange.json")  && it.type.equals("FILE")) }
+            def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER")) }
+            step.println("clean up started: List of files ${fileList} , List of folders ${folderList} ")
+            fileList.each {
+                it ->
+                    {
+                        deleteArtifact(token, projectId, branch, it.path)
+                    }
+            }
+            folderList.each {
+                it -> {
+                         deleteArtifact(token, projectId, branch, it.path)
+                      }
+            }
+            step.println("branch cleanup completed.")
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("unable to get project files list.")
+        }
+    }
+
+    def deleteArtifact(token, projectId, branch, filePath)
+    {
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/files/" + filePath
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def connection = ApiClient.delete(urlString, headers)
+        if (connection.responseCode == 200) {
+            //nothing.
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("delete artifact stage failed.")
+        }
+    }
+
 
     def saveProjectFiles(token, projectId, branch, apiDirPath)
     {
