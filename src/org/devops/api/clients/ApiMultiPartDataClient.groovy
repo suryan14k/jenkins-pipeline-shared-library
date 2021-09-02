@@ -1,4 +1,4 @@
-package org.ci.api.clients
+package org.devops.api.clients
 
 class ApiMultiPartDataClient{
 

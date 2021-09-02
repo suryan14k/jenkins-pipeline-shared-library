@@ -1,45 +1,11 @@
-package org.ci.api.clients
+package org.devops.api.clients
 
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-import groovy.io.FileType
 import groovy.util.logging.Slf4j
 
 @Slf4j
 class ApiDesignCenterClient {
-
-    static void main(String[] args) {
-
-        def username = ""
-        def password = ""
-        def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
-        def ownerId = "2cc24e16-4c9c-4ce5-ab0a-346f1d3ed80c"
-        def projectName = "Jenkins"
-        def branch = "master"
-        def apiDirPath = "C:\\ci\\api"
-
-
-        def props = ['username': username,'password': password ]
-        def token = getAnypointToken(props)
-        //println("token is : " + token)
-
-        props = ['organizationId': organizationId]
-        def projectId = getProjectID(props, token, projectName)
-       // println("project id is: " + projectId)
-
-        props = ['organizationId': organizationId, 'ownerId': ownerId]
-        //def acquireLockStatus = acquireLockOnProject(props, token, projectId, branch)
-        //println("acquire lock status is: " + acquireLockStatus)
-
-        //def releaseLockStatus = releaseLockOnProject(props, token,projectId, branch)
-        //println("release lock status is: " + releaseLockStatus)
-
-        //def lockStatus = checkProjectLockStatus(props, token,projectId, branch)
-        //println("check lock status is: " + lockStatus)
-
-        def saveFilesStatus = saveProjectFiles(props, token,projectId, branch, apiDirPath)
-        //println("saved files " + saveFilesStatus)
-    }
 
     static def getAnypointToken(props)
     {
