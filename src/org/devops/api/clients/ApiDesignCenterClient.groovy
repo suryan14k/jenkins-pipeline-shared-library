@@ -103,6 +103,44 @@ class ApiDesignCenterClient {
         }
     }
 
+    def getBranchCommitId(token, projectId, branch)
+    {
+        step.println("get branch commit id")
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def connection = ApiClient.get(urlString, headers)
+        if (connection.responseCode == 200) {
+            def branches = new JsonSlurper().parseText(connection.getInputStream().getText())
+            def filteredBranch = branches.find { it -> (it.name == branch) }
+            step.println("success: retrieved branch commit id: ${filteredBranch.commitId}")
+            return filteredBranch.id
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("unable to retrieve branch commit id.")
+        }
+    }
+
+    def branchBackUp(token, projectId, branch, commitId)
+    {
+        step.println("create branch back up")
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def requestTemplate = '{"name" : null,"commitId" : null }'
+        def request = new JsonSlurper().parseText(requestTemplate)
+        request.name = branch
+        request.commitId = commitId
+        def body = JsonOutput.toJson(request)
+        def connection = ApiClient.post(urlString, body, headers)
+        if (connection.responseCode == 200) {
+            def status = new JsonSlurper().parseText(connection.getInputStream().getText())
+            step.println("success: back up branch created: ${status}")
+            return status
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("unable to create back up.")
+        }
+    }
+
     def saveProjectFiles(token, projectId, branch, apiDirPath)
     {
         step.println("save project files")
