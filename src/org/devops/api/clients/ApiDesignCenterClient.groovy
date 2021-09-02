@@ -127,7 +127,7 @@ class ApiDesignCenterClient {
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def requestTemplate = '{"name" : null,"commitId" : null }'
         def request = new JsonSlurper().parseText(requestTemplate)
-        request.name = branch
+        request.name = branch + "_bk_" + now()
         request.commitId = commitId
         def body = JsonOutput.toJson(request)
         def connection = ApiClient.post(urlString, body, headers)
