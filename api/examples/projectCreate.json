@@ -1,0 +1,6 @@
+{
+  "name": "ProjectName", 
+  "description": "Project Description", 
+  "classifier": "raml",
+  "type": "raml"
+}
