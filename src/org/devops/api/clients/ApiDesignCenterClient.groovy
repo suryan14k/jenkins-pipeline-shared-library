@@ -127,7 +127,7 @@ class ApiDesignCenterClient {
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def requestTemplate = '{"name" : null,"commitId" : null }'
         def request = new JsonSlurper().parseText(requestTemplate)
-        request.name = branch + "_bk_" + now()
+        request.name = branch + "_bk_" + getDateTime()
         request.commitId = commitId
         def body = JsonOutput.toJson(request)
         def connection = ApiClient.post(urlString, body, headers)
@@ -189,5 +189,13 @@ class ApiDesignCenterClient {
         def absFileName = filePath.getAbsolutePath()
         def relFileName = absFileName.substring(rootLength + 1)
         return relFileName.replace(File.separator,"/")
+    }
+
+    private static def getDateTime()
+    {
+        Date date = new Date()
+        String datePart = date.format("dd/MM/yyyy")
+        String timePart = date.format("HH:mm:ss")
+        return datePart + "_" + timePart
     }
 }
