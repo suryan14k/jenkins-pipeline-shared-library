@@ -297,6 +297,7 @@ class ApiDesignCenterClient {
             }
         }
     }*/
+
     private def addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory()) {
