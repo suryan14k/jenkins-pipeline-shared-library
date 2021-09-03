@@ -287,9 +287,19 @@ class ApiDesignCenterClient {
     }
 
 
-    private def addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
+   /* private def addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory() && !fileEntry.getName().equals("exchange_modules")) {
+                addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy, apiClient)
+            } else {
+                def fileName = getModifiedFileName(apiBaseDirCopy, fileEntry)
+                apiClient.addFilePart(fileName, fileEntry)
+            }
+        }
+    }*/
+    private def addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
+        for (File fileEntry : apiBaseDir.listFiles()) {
+            if (fileEntry.isDirectory()) {
                 addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy, apiClient)
             } else {
                 def fileName = getModifiedFileName(apiBaseDirCopy, fileEntry)
