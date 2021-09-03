@@ -314,7 +314,7 @@ class ApiDesignCenterClient {
         def filteredList = []
         getExchangeDependencyFileList(apiBaseDir,[])
                 .each {
-                    it -> {
+                    it -> L:{
                         def result = it.split("exchange_modules")
                         if(result.size() > 1)
                         {
