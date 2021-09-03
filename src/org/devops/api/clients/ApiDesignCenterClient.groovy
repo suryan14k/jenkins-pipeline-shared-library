@@ -161,14 +161,26 @@ class ApiDesignCenterClient {
             def service = Executors.newFixedThreadPool(10)
             def taskList = new ArrayList();
             try{
-                fileList.each {
-                    taskList.add(service.submit(deleteArtifact(token, projectId, branch, it.path)))
+                fileList.each { it ->
+                                    {
+                                        def path = it.path
+                                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
+                                        taskList.add(task)
+                                    }
+                    }
+                folderList.each { it ->
+                                        {
+                                            def path = it.path
+                                            def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
+                                            taskList.add(task)
+                                        }
                 }
-                folderList.each {
-                    taskList.add(service.submit(deleteArtifact(token, projectId, branch, it.path)))
-                }
-                exchangeDependenciesList.each {
-                    taskList.add(service.submit(deleteExchangeDependencyArtifact(token, projectId, branch, it.path)))
+                exchangeDependenciesList.each { it ->
+                                                    {
+                                                        def path = it.path
+                                                        def task = service.submit({ deleteExchangeDependencyArtifact(token, projectId, branch, path) })
+                                                        taskList.add(task)
+                                                    }
                 }
                 //wait for all tasks to complete.
                 for(def task : taskList) {
@@ -179,7 +191,7 @@ class ApiDesignCenterClient {
             {
                 step.println("delete artifact stage failed.")
                 releaseLockOnProject(token, projectId, branch)
-                throw new Exception("delete artifact stage failed.")
+                throw new Exception("delete artifact stage failed." + e.printStackTrace())
             }
             step.println("branch cleanup completed.")
 
