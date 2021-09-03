@@ -19,7 +19,7 @@ pipeline {
                         def password = "Letmein_01"
                         def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
                         def ownerId = "2cc24e16-4c9c-4ce5-ab0a-346f1d3ed80c"
-                        def projectName = "Jenkins"
+                        def projectName = "Hello"
                         def branch = "master"
                         def apiDirPath = "C:\\ci\\api"
                         
