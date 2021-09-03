@@ -162,21 +162,21 @@ class ApiDesignCenterClient {
             def taskList = new ArrayList();
             try{
                 fileList.each { it ->
-                                    {
+                                    L:{
                                         def path = it.path
                                         def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
                                         taskList.add(task)
                                     }
                     }
                 folderList.each { it ->
-                                        {
+                                    L:{
                                             def path = it.path
                                             def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
                                             taskList.add(task)
                                         }
                 }
                 exchangeDependenciesList.each { it ->
-                                                    {
+                                                   L:{
                                                         def path = it.path
                                                         def task = service.submit({ deleteExchangeDependencyArtifact(token, projectId, branch, path) })
                                                         taskList.add(task)
@@ -189,9 +189,9 @@ class ApiDesignCenterClient {
                 releaseLockOnProject(token, projectId, branch)
             }catch(Exception e)
             {
-                step.println("delete artifact stage failed.")
+                step.println("delete artifact stage failed."  + e.printStackTrace())
                 releaseLockOnProject(token, projectId, branch)
-                throw new Exception("delete artifact stage failed." + e.printStackTrace())
+                throw new Exception("delete artifact stage failed.")
             }
             step.println("branch cleanup completed.")
 
