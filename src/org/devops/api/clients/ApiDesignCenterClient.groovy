@@ -248,8 +248,9 @@ class ApiDesignCenterClient {
                 try {
                     def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
                     acquireLockOnProject(token, projectId, branch)
-                    def service = Executors.newFixedThreadPool(10)
+                    def service = Executors.newFixedThreadPool(5)
                     def taskList = new ArrayList();
+                    if(createList.size() > 0 ){
                     createList.each { it ->
                                           L:{
                                             def path = it
@@ -260,10 +261,11 @@ class ApiDesignCenterClient {
                     for(def task : taskList) {
                         task.get()
                     }
+                    }
                     releaseLockOnProject(token, projectId, branch)
                 }catch(Exception e)
                 {
-                    step.println("delete artifact stage failed."  + e.printStackTrace())
+                    step.println("adding exchange dependency stage failed."  + e.printStackTrace())
                     releaseLockOnProject(token, projectId, branch)
                     throw new Exception("adding exchange dependencies stage failed.")
                 }
