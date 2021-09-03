@@ -2,7 +2,6 @@ package org.devops.api.clients
 
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-
 import java.text.SimpleDateFormat
 
 class ApiDesignCenterClient {
@@ -152,11 +151,11 @@ class ApiDesignCenterClient {
         def connection = ApiClient.get(urlString, headers)
         if (connection.responseCode == 200) {
             def projectArtifactList = new JsonSlurper().parseText(connection.getInputStream().getText())
-            step.println("success: List of files ${projectArtifactList}")
+            //step.println("success: List of files ${projectArtifactList}")
             def fileList = projectArtifactList.findAll { it -> (!it.path.contains("/")  && !it.path.contains("gitignore")  && !it.path.contains("exchange.json")  && it.type.equals("FILE")) }
             def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER") && !it.path.contains("exchange_modules")) }
             def exchangeDependenciesList = projectArtifactList.findAll { it.path.contains("exchange_modules/") && it.type.equals("FOLDER") && (it.path.count("/") == 3)}
-            step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
+            //step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
             acquireLockOnProject(token, projectId, branch)
             try{
                 fileList.each {
@@ -215,8 +214,8 @@ class ApiDesignCenterClient {
         }
     }
 
-    def uploadExchangeDependencyArtifacts(token, projectId, branch, apiDirPath){
-        File apiBaseDir = new File(apiDirPath)
+    def uploadExchangeDependencyArtifacts(token, projectId, branch, apiBaseDir){
+        //File apiBaseDir = new File(apiDirPath)
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
                 print fileEntry.getName()
@@ -252,14 +251,14 @@ class ApiDesignCenterClient {
         }
     }
 
-    def uploadArtifacts(token, projectId, branch, apiDirPath)
+    def uploadArtifacts(token, projectId, branch, apiBaseDir)
     {
         step.println("loading project artifacts")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/save/v2"
         def headers= ["x-organization-id": props.organizationId, "x-owner-id": props.ownerId, "Authorization": "Bearer " + token]
         def apiMultiPartDataClient = new ApiMultiPartDataClient()
         def connection = apiMultiPartDataClient.getConnection(urlString, headers)
-        File apiBaseDir = new File(apiDirPath)
+        //File apiBaseDir = new File(apiDirPath)
         addFilesIntoMultiPartClient(apiBaseDir, apiBaseDir, apiMultiPartDataClient)
         apiMultiPartDataClient.finish()
 
