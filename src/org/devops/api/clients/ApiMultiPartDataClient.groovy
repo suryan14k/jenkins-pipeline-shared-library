@@ -7,7 +7,7 @@ class ApiMultiPartDataClient{
     private final String crlf = "\r\n"
     private final String twoHyphens = "--"
 
-    def getConnection( urlString, LinkedHashMap headers)
+    def getConnection( urlString, headers)
     {
         headers.put("Content-Type", "multipart/form-data;boundary=" + boundary)
         def connection = ApiClient.getUrlConnectionWithHeaders(urlString, headers, "POST")

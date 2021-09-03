@@ -26,7 +26,8 @@ class ApiClient {
         connection.connect()
         return connection
     }
-    private static def getUrlConnectionWithHeaders(urlString, headers, method){
+
+    static def getUrlConnectionWithHeaders(urlString, headers, method){
         def url = new URL(urlString)
         def connection = (HttpURLConnection)url.openConnection()
         headers.each {it -> connection.setRequestProperty(it.key, it.value) }
@@ -34,7 +35,7 @@ class ApiClient {
         return connection
     }
 
-    private static def writeData(connection, body){
+    static def writeData(connection, body){
         connection.doOutput = true
         if(body != null) {
             def writer = new OutputStreamWriter(connection.getOutputStream())

@@ -216,12 +216,12 @@ class ApiDesignCenterClient {
     }
 
     def uploadArtifacts(token, projectId, branch, apiDirPath){
-
-        for (File fileEntry : apiDirPath.listFiles()) {
+        File apiBaseDir = new File(apiDirPath)
+        for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
                 print fileEntry.getName()
                 step.println("adding exchange dependencies")
-                def createList = getExchangeDependencyFileListFilteredPath(apiDirPath)
+                def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
                 createList.each {it -> addExchangeDependency(token, projectId, branch, it)}
             }
         }
