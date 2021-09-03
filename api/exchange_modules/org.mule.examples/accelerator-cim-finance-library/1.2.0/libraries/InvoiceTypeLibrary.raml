@@ -1,0 +1,85 @@
+#%RAML 1.0 Library
+usage: Types representing invoices for orders or services
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+  PaymentTypes: PaymentTypeLibrary.raml
+
+types:
+  # Accelerators: new type introduced
+  Invoice:
+    properties:
+      id:
+        type: string | nil
+      nativeId?:
+        type: string
+      number?:
+        type: string
+      companyCode?: 
+        type: string
+      fiscalYear?: 
+        type: string
+      status?: 
+        type: string
+      shipping?:
+        type: number | nil
+      taxRate?: 
+        type: number | nil
+      taxCode?: 
+        type: string
+      taxJurisdiction?: 
+        type: string
+      totalTax?: 
+        type: number | nil
+      totalAmount?: 
+        type: number | nil
+      paid?: 
+        type: boolean | nil
+      paymentDate?: 
+        type: datetime | nil
+      exported?: 
+        type: boolean | nil
+      exportedDate?: 
+        type: datetime | nil
+      canceled?: 
+        type: boolean | nil
+      invoiceDate?: 
+        type: datetime | nil
+      postingDate?: 
+        type: datetime | nil
+      currency?: 
+        type: string
+      paymentTerm?: 
+        type: string
+      discountTerm?: 
+        type: string
+      discountAmount?: 
+        type: number | nil
+      payments?:
+        items: string | PaymentTypes.Payment
+      invoiceItems?:
+        items: string | InvoiceItem
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  # Accelerators: new type introduced
+  InvoiceItem:
+    properties:
+      id:
+        type: string | nil
+      description?:
+        type: string
+      purchaseOrderId?:
+        type: string
+      purchaseOrderItemId?:
+        type: string
+      quantity?: 
+        type: number | nil
+      unit?: 
+        type: string
+      total?: 
+        type: number | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

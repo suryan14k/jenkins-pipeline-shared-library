@@ -1,0 +1,92 @@
+{
+  "paymentStatus": "laborum",
+  "paymentEffectiveDate": "1965-01-03",
+  "id": "ipsum veniam est",
+  "paymentType": "aliquip laborum fugiat",
+  "authorizationProcessingMode": "cillum ex Excepteur enim",
+  "paymentNumber": "cillum enim velit voluptate amet",
+  "paymentAmount": -6362755,
+  "macAddress": "dolore qui magna quis",
+  "paymentGateway": [
+    {
+      "id": null,
+      "name": "fugiat dolore sit",
+      "paymentGatewayStatus": "ex",
+      "paymentGatewayCommentText": "tempor nostrud eiusmod irure in",
+      "auditInfo": {
+        "isDeleted": false,
+        "createdBy": "id",
+        "updatedBy": "ad Lorem incididunt",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "systemCredential": "quis in Lorem",
+      "paymentGatewayProvider": [
+        "adipisicing officia et"
+      ]
+    }
+  ],
+  "latestGatewayInternalResult": "consectetur cillum incididunt laboris",
+  "netAppliedAmount": 64921198,
+  "externalIds": [
+    {
+      "externalIdType": [
+        {
+          "id": "consequat sit incididunt ipsum tempor",
+          "name": "consequat magna laborum"
+        }
+      ],
+      "externalId": "dolor eiusmod ex",
+      "id": null,
+      "statusLastChangedDate": "1950-06-14T22:28:28.759Z",
+      "status": "INVALID"
+    }
+  ],
+  "balanceAmount": null,
+  "paymentTreatment": [
+    "velit in"
+  ],
+  "paymentMethod": [
+    "Excepteur deserunt qui do"
+  ],
+  "commentText": "mollit",
+  "latestGatewayResultCode": [
+    {
+      "id": null,
+      "name": "exercitation nisi dolore in commodo",
+      "description": "labore esse culpa cillum",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "eu exercitation culpa sit amet",
+        "updatedBy": "est deserunt",
+        "updatedDate": "2001-05-21T01:38:58.718Z",
+        "createdDate": "1986-06-08T14:36:21.947Z"
+      }
+    }
+  ],
+  "iPAddress": "Duis ut Lorem qui",
+  "paymentGroup": [
+    "magna nisi incididunt ad"
+  ],
+  "internalBusinessUnit": [
+    "dolor enim magna"
+  ],
+  "latestGatewayInternalReferenceNumber": "dolor amet reprehenderit",
+  "latestGatewayDate": "2016-12-02",
+  "name": "sint",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "mollit consequat cupidatat culpa nostrud",
+    "updatedBy": "ad ut tempor ipsum",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "salesOrderPaymentSummary": [
+    "Lorem ad ea"
+  ],
+  "latestGatewayReferenceNumber": "ut in",
+  "externalCreatedDate": null,
+  "totalAppliedAmount": -10785230,
+  "customerPhoneNumber": "reprehenderit dolore",
+  "paymentCancellationDate": "1977-07-30"
+}

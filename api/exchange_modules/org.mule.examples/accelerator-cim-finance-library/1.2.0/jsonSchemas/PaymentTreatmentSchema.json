@@ -1,0 +1,360 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentTreatment",
+  "definitions": {
+    "PaymentTreatment": {
+      "type": "object",
+      "example": {
+        "id": "irure",
+        "paymentTreatmentStatus": "cupidatat officia irure adipisicing consequat",
+        "paymentApplicationLevel": "incididunt reprehenderit ullamco",
+        "paymentTreatmentName": "sit Lorem pariatur",
+        "paymentTreatmentMethod": [
+          {
+            "id": null,
+            "paymentTreatmentMethodName": "in Ut labore velit",
+            "paymentTreatmentMethodCode": "Duis fugiat",
+            "paymentTreatmentMethodDescription": "enim ipsum",
+            "auditInfo": {
+              "isDeleted": null,
+              "createdBy": "eu",
+              "updatedBy": "consequat magna veniam ipsum",
+              "updatedDate": null,
+              "createdDate": null
+            }
+          }
+        ],
+        "auditInfo": {
+          "isDeleted": true,
+          "createdBy": "commodo ex voluptate sint adipisicing",
+          "updatedBy": "esse ea sint dolor",
+          "updatedDate": "2012-10-05T17:12:01.207Z",
+          "createdDate": null
+        },
+        "paymentPolicy": [
+          "culpa in elit aliqua",
+          {
+            "id": null,
+            "name": "aute laborum id Excepteur",
+            "description": "enim ex culpa",
+            "paymentPolicyStatus": "ad sunt ea exercitation"
+          }
+        ],
+        "shouldAutoInvoice": null
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentTreatmentStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTreatmentMethod": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "paymentTreatmentMethodName",
+                  "paymentTreatmentMethodCode",
+                  "paymentTreatmentMethodDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentTreatmentMethodName": {
+                    "type": "string"
+                  },
+                  "paymentTreatmentMethodCode": {
+                    "type": "string"
+                  },
+                  "paymentTreatmentMethodDescription": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "paymentApplicationLevel": {
+          "type": "string"
+        },
+        "shouldAutoInvoice": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTreatmentStatus": {
+          "type": "string"
+        },
+        "paymentPolicy": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "paymentPolicyStatus"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "paymentPolicyTreatmentSelection": {
+                    "type": "string"
+                  },
+                  "paymentPolicyStatus": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "paymentTreatmentName": {
+          "type": "string"
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "paymentStatus": "aliquip",
+  "paymentEffectiveDate": "1956-06-23",
+  "id": "dolore consequat tempor ad irure",
+  "paymentType": "non tempor aliquip Ut dolore",
+  "authorizationProcessingMode": "proident",
+  "paymentNumber": "non dolor ad",
+  "paymentAmount": 9853556,
+  "totalUnappliedAmount": 49580389,
+  "balanceAmount": -58708242,
+  "totalAppliedAmount": null,
+  "paymentCancellationDate": "2006-05-23",
+  "latestPaymentGatewayMessageText": "irure minim",
+  "latestGatewayDate": "1971-02-22",
+  "salesOrderPaymentSummary": [
+    "magna sit laborum consequat eu"
+  ],
+  "iPAddress": "in ut deserunt eu",
+  "latestGatewayInternalReferenceNumber": "ut reprehenderit aute",
+  "customerPhoneNumber": "est sunt",
+  "customerEmailAddress": "cupidatat qui quis occaecat",
+  "netAppliedAmount": 96658531,
+  "paymentTreatment": [
+    {
+      "id": "labore ex",
+      "paymentTreatmentStatus": "occaecat ut aute ullamco",
+      "paymentTreatmentMethod": [
+        {
+          "id": "dolore",
+          "paymentTreatmentMethodName": "dolor aliqua sunt",
+          "paymentTreatmentMethodCode": "aute sunt eu enim",
+          "paymentTreatmentMethodDescription": "dolore et",
+          "auditInfo": {
+            "isDeleted": false,
+            "createdBy": "laborum sed proident cupidatat",
+            "updatedBy": "Excepteur proident esse officia enim",
+            "updatedDate": "1954-04-21T10:17:13.859Z",
+            "createdDate": "2002-02-22T05:55:13.001Z"
+          }
+        }
+      ],
+      "shouldAutoInvoice": true,
+      "auditInfo": {
+        "isDeleted": false,
+        "createdBy": "Duis in enim in",
+        "updatedBy": "quis aliqua ut",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "paymentApplicationLevel": "tempor",
+      "paymentPolicy": [
+        "in"
+      ],
+      "paymentTreatmentName": "amet ipsum ea pariatur"
+    }
+  ]
+}

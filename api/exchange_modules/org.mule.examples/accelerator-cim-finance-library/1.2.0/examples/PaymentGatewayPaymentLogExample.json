@@ -1,0 +1,40 @@
+{
+  "internalReferenceNumber": "dolor nostrud tempor non adipisicing",
+  "paymentGatewayDate": "1985-07-07",
+  "paymentGatewayInteractionType": [
+    {
+      "id": null,
+      "name": "ut",
+      "description": "magna do",
+      "auditInfo": {
+        "isDeleted": false,
+        "createdBy": "elit pariatur Lorem dolor",
+        "updatedBy": "nulla dolor",
+        "updatedDate": null,
+        "createdDate": "1992-01-23T14:47:15.084Z"
+      }
+    }
+  ],
+  "id": "aute sit anim dolor",
+  "paymentGatewayResult": [
+    "occaecat in et fugiat"
+  ],
+  "paymentGatewayInteractionLogName": "qui eiusmod",
+  "paymentGatewayInteractionStatus": "laboris commodo",
+  "paymentGatewayAuthorizationCode": "sint ipsum velit laboris",
+  "internalResultCode": "qui elit",
+  "paymentGatewayAVSCode": "Ut",
+  "paymentGatewayReferenceNumber": "esse",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "id non nulla laborum mollit",
+    "updatedBy": "aute non qui incididunt",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "paymentGatewayMessageText": "dolor occaecat elit",
+  "payment": [
+    "fugiat proident minim laboris commodo"
+  ],
+  "name": "in aliquip"
+}

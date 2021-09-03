@@ -1,0 +1,1251 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentGatewayAuthorizationLog",
+  "definitions": {
+    "PaymentGatewayAuthorizationLog": {
+      "type": "object",
+      "example": {
+        "internalReferenceNumber": "ut reprehenderit est",
+        "paymentGatewayDate": "1951-02-06",
+        "paymentGatewayInteractionType": [
+          {
+            "id": "minim",
+            "name": "laborum",
+            "description": "sit",
+            "auditInfo": {
+              "isDeleted": true,
+              "createdBy": "labore",
+              "updatedBy": "dolor officia enim labore Excepteur",
+              "updatedDate": null,
+              "createdDate": null
+            }
+          }
+        ],
+        "id": null,
+        "paymentGatewayResult": [
+          {
+            "id": "consectetur Lorem deserunt",
+            "name": "in laborum esse do anim",
+            "description": "proident laboris do id qui",
+            "auditInfo": {
+              "isDeleted": false,
+              "createdBy": "eu dolore in ad reprehenderit",
+              "updatedBy": "Excepteur eu in reprehenderit aliqua",
+              "updatedDate": null,
+              "createdDate": null
+            }
+          },
+          {
+            "id": null,
+            "name": "veniam",
+            "description": "cupidatat adipisicing in Lorem",
+            "auditInfo": {
+              "isDeleted": false,
+              "createdBy": "sed reprehenderit dolor do",
+              "updatedBy": "Ut sint proident",
+              "updatedDate": "1982-08-03T20:11:28.215Z",
+              "createdDate": "2001-08-01T19:59:50.842Z"
+            }
+          }
+        ],
+        "paymentGatewayInteractionLogName": "enim do nisi in",
+        "paymentGatewayInteractionStatus": "anim officia",
+        "paymentGatewayAuthorizationCode": "in velit adipisicing aliquip",
+        "paymentGatewayAVSCode": "consectetur",
+        "internalResultCode": "enim Duis ut eu laborum",
+        "auditInfo": {
+          "isDeleted": null,
+          "createdBy": "in",
+          "updatedBy": "sed tempor",
+          "updatedDate": "2013-01-14T07:09:35.221Z",
+          "createdDate": "1964-03-02T15:32:49.105Z"
+        },
+        "paymentGatewayReferenceNumber": "mollit dolor ex voluptate",
+        "name": "nulla ullamco in",
+        "paymentGatewayMessageText": "eu reprehenderit dolor cillum consequat",
+        "paymentAuthorization": [
+          "Duis culpa sunt cupidatat"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "internalReferenceNumber",
+        "paymentGatewayDate",
+        "paymentGatewayInteractionType",
+        "id",
+        "paymentGatewayResult",
+        "paymentGatewayInteractionLogName",
+        "paymentGatewayInteractionStatus"
+      ],
+      "properties": {
+        "paymentAuthorization": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "paymentGatewayReferenceNumber",
+                  "totalPaymentCaptureAmount",
+                  "paymentAuthorizationProcessingMode",
+                  "authorizationAmount",
+                  "expirationDate",
+                  "paymentGatewayResult",
+                  "paymentAuthorizationNumber",
+                  "requestDate",
+                  "gatewayAuthorizationCode",
+                  "paymentGatewayDate",
+                  "paymentAuthorizationStatus"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentGatewayReferenceNumber": {
+                    "type": "string"
+                  },
+                  "salesOrderPaymentSummary": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "iPAddress": {
+                    "type": "string"
+                  },
+                  "totalPaymentCaptureAmount": {
+                    "type": "integer"
+                  },
+                  "paymentAuthorizationProcessingMode": {
+                    "type": "string"
+                  },
+                  "authorizationAmount": {
+                    "type": "integer"
+                  },
+                  "expirationDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "paymentGroup": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "totalReversalAmount",
+                            "totalAuthorizationAmount",
+                            "totalPaymentAmount",
+                            "paymentGroupNumber"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "totalReversalAmount": {
+                              "type": "integer"
+                            },
+                            "totalAuthorizationAmount": {
+                              "type": "integer"
+                            },
+                            "totalPaymentAmount": {
+                              "type": "integer"
+                            },
+                            "paymentGroupNumber": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "paymentGatewayInternalReferenceNumber": {
+                    "type": "string"
+                  },
+                  "gatewayReferenceDetailsText": {
+                    "type": "string"
+                  },
+                  "totalAuthorizationReversalAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentGateway": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name",
+                            "paymentGatewayStatus"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "paymentGatewayStatus": {
+                              "type": "string"
+                            },
+                            "paymentGatewayCommentText": {
+                              "type": "string"
+                            },
+                            "paymentGatewayProvider": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "required": [
+                                      "id",
+                                      "paymentGatewayProviderName"
+                                    ],
+                                    "properties": {
+                                      "id": {
+                                        "anyOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "apexAdapterClassName": {
+                                        "type": "string"
+                                      },
+                                      "paymentGatewayProviderCommentText": {
+                                        "type": "string"
+                                      },
+                                      "paymentGatewayProviderName": {
+                                        "type": "string"
+                                      },
+                                      "developerName": {
+                                        "type": "string"
+                                      },
+                                      "namespacePrefixText": {
+                                        "type": "string"
+                                      },
+                                      "auditInfo": {
+                                        "description": "Defines standard system audit fields available for most types",
+                                        "type": "object",
+                                        "example": {
+                                          "isDeleted": true,
+                                          "createdBy": "commodo minim dolore est",
+                                          "updatedBy": "dolor quis nulla",
+                                          "updatedDate": "1950-01-23T19:52:29.659Z",
+                                          "createdDate": "1950-01-23T19:52:29.659Z"
+                                        },
+                                        "additionalProperties": true,
+                                        "required": [
+                                          "isDeleted",
+                                          "createdBy",
+                                          "updatedBy",
+                                          "updatedDate",
+                                          "createdDate"
+                                        ],
+                                        "properties": {
+                                          "createdDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was created"
+                                          },
+                                          "createdBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which created the entity"
+                                          },
+                                          "updatedDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was last updated"
+                                          },
+                                          "updatedBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which last updated the entity"
+                                          },
+                                          "isDeleted": {
+                                            "anyOf": [
+                                              {
+                                                "type": "boolean"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Indicates whether or not the entity has been soft-deleted"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "systemCredential": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "paymentGatewayResult": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name",
+                            "description"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "description": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "paymentAuthorizationCommentText": {
+                    "type": "string"
+                  },
+                  "externalCreatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentAuthorizationNumber": {
+                    "type": "string"
+                  },
+                  "requestDate": {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  "availableBalanceAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentMethodID": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "paymentMethodStatus"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "paymentMethodType": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "required": [
+                                      "id"
+                                    ],
+                                    "properties": {
+                                      "id": {
+                                        "anyOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "name": {
+                                        "type": "string"
+                                      },
+                                      "typeDescription": {
+                                        "type": "string"
+                                      },
+                                      "mediaType": {
+                                        "type": "string"
+                                      },
+                                      "maxPerPeriodAmount": {
+                                        "anyOf": [
+                                          {
+                                            "type": "integer"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "typeRequiredIdentification": {
+                                        "type": "string"
+                                      },
+                                      "useMinimumAgeYear": {
+                                        "anyOf": [
+                                          {
+                                            "type": "integer"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "maxTransactionAmount": {
+                                        "anyOf": [
+                                          {
+                                            "type": "integer"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "maxPerPeriodTransactionCount": {
+                                        "anyOf": [
+                                          {
+                                            "type": "integer"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "auditInfo": {
+                                        "description": "Defines standard system audit fields available for most types",
+                                        "type": "object",
+                                        "example": {
+                                          "isDeleted": true,
+                                          "createdBy": "commodo minim dolore est",
+                                          "updatedBy": "dolor quis nulla",
+                                          "updatedDate": "1950-01-23T19:52:29.659Z",
+                                          "createdDate": "1950-01-23T19:52:29.659Z"
+                                        },
+                                        "additionalProperties": true,
+                                        "required": [
+                                          "isDeleted",
+                                          "createdBy",
+                                          "updatedBy",
+                                          "updatedDate",
+                                          "createdDate"
+                                        ],
+                                        "properties": {
+                                          "createdDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was created"
+                                          },
+                                          "createdBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which created the entity"
+                                          },
+                                          "updatedDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was last updated"
+                                          },
+                                          "updatedBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which last updated the entity"
+                                          },
+                                          "isDeleted": {
+                                            "anyOf": [
+                                              {
+                                                "type": "boolean"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Indicates whether or not the entity has been soft-deleted"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "paymentMethodStatus": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "gatewayResultCodeDescription": {
+                    "type": "string"
+                  },
+                  "macAddress": {
+                    "type": "string"
+                  },
+                  "gatewayAuthorizationCode": {
+                    "type": "string"
+                  },
+                  "paymentGatewayDate": {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  "paymentAuthorizationStatus": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "paymentGatewayInteractionType": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "description"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "paymentGatewayReferenceNumber": {
+          "type": "string"
+        },
+        "paymentGatewayMessageText": {
+          "type": "string"
+        },
+        "paymentGatewayAuthorizationCode": {
+          "type": "string"
+        },
+        "internalResultCode": {
+          "type": "string"
+        },
+        "paymentGatewayAVSCode": {
+          "type": "string"
+        },
+        "internalReferenceNumber": {
+          "type": "string"
+        },
+        "paymentGatewayResult": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "description"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "paymentGatewayInteractionLogName": {
+          "type": "string"
+        },
+        "paymentGatewayInteractionStatus": {
+          "type": "string"
+        },
+        "paymentGatewayDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

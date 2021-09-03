@@ -1,0 +1,113 @@
+#%RAML 1.0 Library
+usage: Provides CIM types defined in the Finance subject area
+
+uses:
+  InvoiceTypes: libraries/InvoiceTypeLibrary.raml
+  PaymentTypes: libraries/PaymentTypeLibrary.raml
+  PaymentMethodTypes: libraries/PaymentMethodTypeLibrary.raml
+
+types:
+  # Exported Invoice Types
+  Invoice:
+    type: InvoiceTypes.Invoice
+    example: !include ./examples/InvoiceExample.json
+  InvoiceItem:
+    type: InvoiceTypes.InvoiceItem
+    example: !include ./examples/InvoiceItemExample.json
+
+  # Exported PaymentTypes
+  CapturePayment:
+    type: PaymentTypes.CapturePayment
+    example: !include ./examples/CapturePaymentExample.json
+  Payment:
+    type: PaymentTypes.Payment
+    example: !include ./examples/PaymentExample.json
+  PaymentAllocation:
+    type: PaymentTypes.PaymentAllocation
+    example: !include ./examples/PaymentAllocationExample.json
+  PaymentApplication:
+    type: PaymentTypes.PaymentApplication
+    example: !include ./examples/PaymentApplicationExample.json
+  PaymentAuthorization:
+    type: PaymentTypes.PaymentAuthorization
+    example: !include ./examples/PaymentAuthorizationExample.json
+  PaymentAuthorizationReversal:
+    type: PaymentTypes.PaymentAuthorizationReversal
+    example: !include ./examples/PaymentAuthorizationReversalExample.json
+  PaymentCreditMemoAllocation:
+    type: PaymentTypes.PaymentCreditMemoAllocation
+    example: !include ./examples/PaymentCreditMemoAllocationExample.json
+  PaymentCreditMemoApplication:
+    type: PaymentTypes.PaymentCreditMemoApplication
+    example: !include ./examples/PaymentCreditMemoApplicationExample.json
+  PaymentGateway:
+    type: PaymentTypes.PaymentGateway
+    example: !include ./examples/PaymentGatewayExample.json
+  PaymentGatewayAuthorizationLog:
+    type: PaymentTypes.PaymentGatewayAuthorizationLog
+    example: !include ./examples/PaymentGatewayAuthorizationLogExample.json
+  PaymentGatewayAuthReversalLog:
+    type: PaymentTypes.PaymentGatewayAuthReversalLog
+    example: !include ./examples/PaymentGatewayAuthReversalLogExample.json
+  PaymentGatewayInteractionLog:
+    type: PaymentTypes.PaymentGatewayInteractionLog
+    example: !include ./examples/PaymentGatewayInteractionLogExample.json
+  PaymentGatewayInteractionType:
+    type: PaymentTypes.PaymentGatewayInteractionType
+    example: !include ./examples/PaymentGatewayInteractionTypeExample.json
+  PaymentGatewayPaymentLog:
+    type: PaymentTypes.PaymentGatewayPaymentLog
+    example: !include ./examples/PaymentGatewayPaymentLogExample.json
+  PaymentGatewayProvider:
+    type: PaymentTypes.PaymentGatewayProvider
+    example: !include ./examples/PaymentGatewayProviderExample.json
+  PaymentGatewayResultCode:
+    type: PaymentTypes.PaymentGatewayResultCode
+    example: !include ./examples/PaymentGatewayResultCodeExample.json
+  PaymentGroup:
+    type: PaymentTypes.PaymentGroup
+    example: !include ./examples/PaymentGroupExample.json
+  PaymentInvoiceAllocation:
+    type: PaymentTypes.PaymentInvoiceAllocation
+    example: !include ./examples/PaymentInvoiceAllocationExample.json
+  PaymentInvoiceApplication:
+    type: PaymentTypes.PaymentInvoiceApplication
+    example: !include ./examples/PaymentInvoiceApplicationExample.json
+  PaymentPolicy:
+    type: PaymentTypes.PaymentPolicy
+    example: !include ./examples/PaymentPolicyExample.json
+  PaymentTreatment:
+    type: PaymentTypes.PaymentTreatment
+    example: !include ./examples/PaymentTreatmentExample.json
+  PaymentTreatmentMethod:
+    type: PaymentTypes.PaymentTreatmentMethod
+    example: !include ./examples/PaymentTreatmentMethodExample.json
+  RefundAllocation:
+    type: PaymentTypes.RefundAllocation
+    example: !include ./examples/RefundAllocationExample.json
+  RefundCreditMemoAllocation:
+    type: PaymentTypes.RefundCreditMemoAllocation
+    example: !include ./examples/RefundCreditMemoAllocationExample.json
+  RefundPayment:
+    type: PaymentTypes.RefundPayment
+    example: !include ./examples/RefundPaymentExample.json
+  RefundPaymentAllocation:
+    type: PaymentTypes.RefundPaymentAllocation
+    example: !include ./examples/RefundPaymentAllocationExample.json
+
+  # Exported PaymentMethodTypes
+  Coupon:
+    type: PaymentMethodTypes.Coupon
+    example: !include ./examples/CouponExample.json
+  CreditTender:
+    type: PaymentMethodTypes.CreditTender
+    example: !include ./examples/CreditTenderExample.json
+  PaymentCard:
+    type: PaymentMethodTypes.PaymentCard
+    example: !include ./examples/PaymentCardExample.json
+  PaymentMethod:
+    type: PaymentMethodTypes.PaymentMethod
+    example: !include ./examples/PaymentMethodExample.json
+  PaymentMethodType:
+    type: PaymentMethodTypes.PaymentMethodType
+    example: !include ./examples/PaymentMethodTypeExample.json

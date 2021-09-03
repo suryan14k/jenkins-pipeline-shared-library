@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentCreditMemoAllocation",
+  "definitions": {
+    "PaymentCreditMemoAllocation": {
+      "type": "object",
+      "example": {
+        "id": null,
+        "appliedAmount": 65588308,
+        "externalCreatedDate": "1995-08-22",
+        "relatedPaymentAllocation": [
+          "sint in aliquip",
+          "ullamco"
+        ],
+        "auditInfo": {
+          "isDeleted": true,
+          "createdBy": "laborum sint",
+          "updatedBy": "mollit aliqua ipsum",
+          "updatedDate": "2004-10-13T16:40:47.846Z",
+          "createdDate": null
+        },
+        "paymentAllocationName": "magna sunt in ea",
+        "name": "cillum"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "appliedAmount",
+        "externalCreatedDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "externalCreatedDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "relatedPaymentAllocation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentAllocationName": {
+          "type": "string"
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "appliedAmount": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

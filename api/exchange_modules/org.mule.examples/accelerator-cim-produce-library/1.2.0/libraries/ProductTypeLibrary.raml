@@ -1,0 +1,557 @@
+#%RAML 1.0 Library
+usage: Types representing products and translations
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  AttributeSetTranslation:
+    properties:
+      id:
+        type: string | nil
+      translatedName:
+        type: string
+      attributeSet:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  AttributeTranslation:
+    properties:
+      id:
+        type: string | nil
+      translatedName:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  AttributeValue:
+    properties:
+      id:
+        type: string | nil
+      attributeValue:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  AttributeValueTranslation:
+    properties:
+      id:
+        type: string | nil
+      translatedAttributeValue:
+        type: string
+      # Accelerators: added string union for AttributeValue.id reference
+      attributeValue:
+        items: string | AttributeValue
+      translatedAttributeValueDescription?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  Brand:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: made property optional
+      brandGrade?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  BundleProduct:
+    type: Product
+    properties:
+      expectedWasteCount?:
+        type: integer | nil
+      quantityCount?:
+        type: integer | nil
+      tareWeight?:
+        type: integer | nil
+      # Accelerators: made property optional
+      bundledProductsSubstitutional?:
+        type: boolean | nil
+      bundledProductsDecidedAtUse?:
+        type: boolean | nil
+      bundledProductsDecidesAvailability?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      bundledProductsSoldTogether?:
+        type: boolean | nil
+      weightUOM?:
+        type: string
+      quantityUnitOfMeasure?:
+        type: string
+  GoodsProduct:
+    type: Product
+    properties:
+      productSecurityRequirement?:
+        type: string
+      season?:
+        type: string
+      color?:
+        type: string
+      style?:
+        type: string
+      # Accelerators: made property optional
+      isMadeToOrder?:
+        type: boolean | nil
+      height?:
+        type: integer | nil
+      fabric?:
+        type: string
+      requiredTemperatureUOM?:
+        type: string
+      shelfFacingUnitCount?:
+        type: integer | nil
+      requiredHumidityPercentage?:
+        type: integer | nil
+      grossWeight?:
+        type: integer | nil
+      tareWeight?:
+        type: integer | nil
+      depth?:
+        type: integer | nil
+      requiredTemperatureLowestNumber?:
+        type: integer | nil
+      gender?:
+        type: string
+      maxHoldingDayCount?:
+        type: integer | nil
+      diameter?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isPerishable?:
+        type: boolean | nil
+      requiredCleanupProcess?:
+        type: string
+      pattern?:
+        type: string
+      requiredTemperatureHighestNumber?:
+        type: integer | nil
+      netWeight?:
+        type: integer | nil
+      environmentRequirement?:
+        type: string
+      drainedWeight?:
+        type: integer | nil
+      age?:
+        type: string
+      width?:
+        type: integer | nil
+      # Accelerators: made property optional
+      requiresUnitPriceLabel?:
+        type: boolean | nil
+      weightUOM?:
+        type: string
+      # Accelerators: made property optional
+      productMayExpand?:
+        type: boolean | nil
+      sizeUOM?:
+        type: string
+  Product:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      quantityScheduleType?:
+        type: string
+      disposalType?:
+        type: string
+      longDescription:
+        type: string
+      # Accelerators: added string union for ProductCategory.id reference
+      primaryProductCategory?:
+        items: string | ProductCategory
+      minimumAdvertisementAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isBackOrdered?:
+        type: boolean | nil
+      validForPeriodCount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isWorkerDiscountAllowed?:
+        type: boolean | nil
+      allowPartialRefund?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isWeightEntryRequired?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isQuantityEntryRequired?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isSerialized?:
+        type: boolean | nil
+      rewardProgramPointsCount?:
+        type: integer | nil
+      description:
+        type: string
+      revenueInstallmentPeriod?:
+        type: string
+      # Accelerators: made property optional
+      isAutoProvisionable?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isCouponRedemptionAllowed?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isSellableIndependently?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      canUseRevenueSchedule?:
+        type: boolean | nil
+      manufacturerName?:
+        type: string
+      isIntellectualPropertyProtected?:
+        type: boolean | nil
+      modelYear?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isCustomerDiscountAllowed?:
+        type: boolean | nil
+      productStatus:
+        type: string
+      brandGrade?:
+        type: string
+      quantityInstallmentCount?:
+        type: integer | nil
+      requiredDepositAmount?:
+        type: integer | nil
+      revenueScheduleType?:
+        type: string
+      # Accelerators: made property optional
+      isPreOrderable?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      requiresInvididualUnitPricing?:
+        type: boolean | nil
+      standardWarrantyLengthMonth?:
+        type: integer | nil
+      # Accelerators: made property optional
+      canUseQuantitySchedule?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isInstallable?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isRainCheckAllowed?:
+        type: boolean | nil
+      minimumAdvertisementAmountStartDate?:
+        type: integer | nil
+      maximumOrderQuantityCount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isMultipleCouponsAllowed?:
+        type: boolean | nil
+      allowCustomerReturn?:
+        type: boolean | nil
+      modelNumber?:
+        type: string
+      mSRPAmount?:
+        type: integer | nil
+      externalSourceRecord?:
+        type: string
+      # Accelerators: changed to string for Product.id reference
+      masterProduct?:
+        items: string
+      isSellable?:
+        type: boolean | nil
+      validToDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      priceChargeType?:
+        type: string
+      # Accelerators: changed to string for SalesChannel.id reference
+      primarySalesChannel?:
+        items: string
+      # Accelerators: made property optional
+      isPartnerDiscountAllowed?:
+        type: boolean | nil
+      revenueInstallmentCount?:
+        type: integer | nil
+      productSKU:
+        type: string
+      quantityInstallmentPeriod?:
+        type: string | nil
+      # Accelerators: made property optional
+      isManualPriceEntryRequired?:
+        type: boolean | nil
+      type?:
+        type: string
+      # Accelerators: made property optional
+      isSellableWithoutPrice?:
+        type: boolean | nil
+      glAccountCode?:
+        type: string
+      # Accelerators: made property optional
+      isReturnable?:
+        type: boolean | nil
+      displayUrl?:
+        type: string
+      # Accelerators: added string union for UnitOfMeasure.id reference
+      validForPeriodUOM?:
+        items: string | GlobalTypes.UnitOfMeasure
+      versionNumber?:
+        type: string
+      # Accelerators: added string union for Brand.id reference
+      brand?:
+        items: string | Brand
+      lotIdentifier?:
+        type: string
+      validFromDate?:
+        type: date-only | nil
+      stockLedgerValuationAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isDynamicBundle?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      isQualityVerificationRequired?:
+        type: boolean | nil
+      requiredDepositPercentage?:
+        type: integer | nil
+      # Accelerators: made property optional
+      isFoodstampPaymentAllowed?:
+        type: boolean | nil
+      minimumOrderQuantityCount?:
+        type: integer | nil
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductAttributeSet:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      attributeSet:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductAttributeValue:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      # Accelerators: added string union for AttributeValue.id reference
+      attributeValue?:
+        items: string | AttributeValue
+      customAttributeValue?:
+        type: string
+      # Accelerators: made property optional
+      attributeSet?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCatalog:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      activeToDate?:
+        type: date-only | nil
+      activeFromDate:
+        type: date-only
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCatalogTranslation:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for ProductCatalog.id reference
+      # Accelerators: made property optional
+      productCatalog?:
+        items: string | ProductCatalog
+      translatedName:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCategory:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added string union for ProductCatalog.id reference
+      # Accelerators: made property optional
+      productCatalog?:
+        items: string | ProductCatalog
+      activeFromDate:
+        type: date-only
+      activeToDate?:
+        type: date-only
+      # Accelerators: changed to string for ProductCategory.id reference
+      parentCategory?:
+        items: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCategoryAttributeSet:
+    properties:
+      id:
+        type: string | nil
+      attributeSet:
+        type: string
+      # Accelerators: changed to string for ProductCategory.id reference
+      # Accelerators: made property optional
+      productCategory?:
+        items: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCategoryProduct:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string | Product
+      activeFromDateTime:
+        type: time-only
+      activeToDateTime?:
+        type: time-only | nil
+      # Accelerators: added string union for ProductCategory.id reference
+      # Accelerators: made property optional
+      productCategory?:
+        items: string | ProductCategory
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCategoryTranslation:
+    properties:
+      id:
+        type: string | nil
+      translatedName:
+        type: string
+      # Accelerators: added string union for ProductCategory.id reference
+      # Accelerators: made property optional
+      productCategory?:
+        items: string | ProductCategory
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductCollateral:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string | Product
+      uRL:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductImage:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string | Product
+      # Accelerators: made property optional
+      isDefaultImage?:
+        type: boolean | nil
+      imageViewType?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductImageTranslation:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for ProductImage.id reference
+      # Accelerators: made property optional
+      productImage?:
+        items: string | ProductImage
+      translatedName:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductRelatedProduct:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: changed to string for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      salesOrderProduct1?:
+        items: string
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      parentProduct?:
+        items: string | Product
+      # Accelerators: made property optional
+      isDefaultOption?:
+        type: boolean | nil
+      fromDate:
+        type: date-only
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      childProduct?:
+        items: string | Product
+      # Accelerators: added string union for ProductRelationshipType.id reference
+      productRelationshipType:
+        items: string | ProductRelationshipType
+      toDate?:
+        type: date-only
+      # Accelerators: changed to string for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      salesOrderProduct2?:
+        items: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductRelationshipType:
+    properties:
+      id:
+        type: string | nil
+      parentProductRole:
+        type: string
+      childProductRole:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ProductTranslation:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      longDescription?:
+        type: string
+      # Accelerators: added string union for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string | Product
+      description?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ServiceProduct:
+    type: Product
+    properties:
+      rentalTermViolationPenaltyAmount?:
+        type: integer | nil
+      evergreenContractEstimatedMonthCount?:
+        type: integer | nil
+      evergreenContractEstimatedChargeAmount?:
+        type: integer | nil
+      servicePeriodUOM?:
+        type: string
+      servicePeriodCount?:
+        type: integer | nil
+      # Accelerators: changed to string for Account.id reference
+      serviceProviderAccount?:
+        items: string
+      rentalCleanupFeeAmount?:
+        type: integer | nil
+      serviceType:
+        type: string

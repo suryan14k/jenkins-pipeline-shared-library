@@ -1,0 +1,98 @@
+#%RAML 1.0 Library
+usage: Provides CIM types defined in the Sell subject area
+
+uses:
+  ContractTypes: libraries/ContractTypeLibrary.raml
+  PriceBookTypes: libraries/PriceBookTypeLibrary.raml
+  SalesOrderTypes: libraries/SalesOrderTypeLibrary.raml
+
+types:
+  # Exported ContractTypes
+  SalesContract:
+    type: ContractTypes.SalesContract
+    example: !include ./examples/SalesContractExample.json
+  SalesContractItem:
+    type: ContractTypes.SalesContractItem
+    example: !include ./examples/SalesContractItemExample.json
+  
+  # Exported PriceBookTypes
+  PriceBookEntry:
+    type: PriceBookTypes.PriceBookEntry
+    example: !include ./examples/PriceBookEntryExample.json
+  
+  # Exported SalesOrderTypes
+  OrderDeliveryMethod:
+    type: SalesOrderTypes.OrderDeliveryMethod
+    example: !include ./examples/OrderDeliveryMethodExample.json
+  PriceAdjustmentGroup:
+    type: SalesOrderTypes.PriceAdjustmentGroup
+    example: !include ./examples/PriceAdjustmentGroupExample.json
+  RenewalTerm:
+    type: SalesOrderTypes.RenewalTerm
+    example: !include ./examples/RenewalTermExample.json
+  SalesChannel:
+    type: SalesOrderTypes.SalesChannel
+    example: !include ./examples/SalesChannelExample.json
+  SalesChannelType:
+    type: SalesOrderTypes.SalesChannelType
+    example: !include ./examples/SalesChannelTypeExample.json
+  SalesOrder:
+    type: SalesOrderTypes.SalesOrder
+    example: !include ./examples/SalesOrderExample.json
+  SalesOrderChangeLog:
+    type: SalesOrderTypes.SalesOrderChangeLog
+    example: !include ./examples/SalesOrderChangeLogExample.json
+  SalesOrderChangeType:
+    type: SalesOrderTypes.SalesOrderChangeType
+    example: !include ./examples/SalesOrderChangeTypeExample.json
+  SalesOrderConfirmationStatus:
+    type: SalesOrderTypes.SalesOrderConfirmationStatus
+    example: !include ./examples/SalesOrderConfirmationStatusExample.json
+  SalesOrderDeliveryGroup:
+    type: SalesOrderTypes.SalesOrderDeliveryGroup
+    example: !include ./examples/SalesOrderDeliveryGroupExample.json
+  SalesOrderDeliveryStatus:
+    type: SalesOrderTypes.SalesOrderDeliveryStatus
+    example: !include ./examples/SalesOrderDeliveryStatusExample.json
+  SalesOrderPaymentSummary:
+    type: SalesOrderTypes.SalesOrderPaymentSummary
+    example: !include ./examples/SalesOrderPaymentSummaryExample.json
+  SalesOrderPriceAdjustment:
+    type: SalesOrderTypes.SalesOrderPriceAdjustment
+    example: !include ./examples/SalesOrderPriceAdjustmentExample.json
+  SalesOrderPriceAdjustmentType:
+    type: SalesOrderTypes.SalesOrderPriceAdjustmentType
+    example: !include ./examples/SalesOrderPriceAdjustmentTypeExample.json
+  SalesOrderProduct:
+    type: SalesOrderTypes.SalesOrderProduct
+    example: !include ./examples/SalesOrderProductExample.json
+  SalesOrderProductGroup:
+    type: SalesOrderTypes.SalesOrderProductGroup
+    example: !include ./examples/SalesOrderProductGroupExample.json
+  SalesOrderProductGroupType:
+    type: SalesOrderTypes.SalesOrderProductGroupType
+    example: !include ./examples/SalesOrderProductGroupTypeExample.json
+  SalesOrderProductNote:
+    type: SalesOrderTypes.SalesOrderProductNote
+    example: !include ./examples/SalesOrderProductNoteExample.json
+  SalesOrderProductReason:
+    type: SalesOrderTypes.SalesOrderProductReason
+    example: !include ./examples/SalesOrderProductReasonExample.json
+  SalesOrderProductReasonCategory:
+    type: SalesOrderTypes.SalesOrderProductReasonCategory
+    example: !include ./examples/SalesOrderProductReasonCategoryExample.json
+  SalesOrderProductStatus:
+    type: SalesOrderTypes.SalesOrderProductStatus
+    example: !include ./examples/SalesOrderProductStatusExample.json
+  SalesOrderProductTax:
+    type: SalesOrderTypes.SalesOrderProductTax
+    example: !include ./examples/SalesOrderProductTaxExample.json
+  SalesOrderStatus:
+    type: SalesOrderTypes.SalesOrderStatus
+    example: !include ./examples/SalesOrderStatusExample.json
+  SalesOrderTax:
+    type: SalesOrderTypes.SalesOrderTax
+    example: !include ./examples/SalesOrderTaxExample.json
+  SalesOrderType:
+    type: SalesOrderTypes.SalesOrderType
+    example: !include ./examples/SalesOrderTypeExample.json

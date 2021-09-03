@@ -1,0 +1,115 @@
+{
+  "id": null,
+  "activeFromDateTime": "00:00:01",
+  "product": [
+    {
+      "id": "amet pariatur",
+      "name": "sit aliquip Duis officia do",
+      "longDescription": "sed occaecat esse dolor",
+      "description": "velit dolor ut et officia",
+      "productStatus": "do dolor",
+      "productSKU": "reprehenderit labore",
+      "isDynamicBundle": false,
+      "modelNumber": "Duis exercitation deserunt quis anim",
+      "minimumAdvertisementAmountStartDate": null,
+      "isIntellectualPropertyProtected": null,
+      "brand": [
+        "dolore in nisi est veniam"
+      ],
+      "mSRPAmount": 82763676,
+      "quantityScheduleType": "veniam",
+      "primaryProductCategory": [
+        {
+          "id": null,
+          "name": "cillum sint labore eu enim",
+          "activeFromDate": "1950-11-26",
+          "activeToDate": "1958-12-24",
+          "auditInfo": {
+            "isDeleted": false,
+            "createdBy": "elit",
+            "updatedBy": "laboris occaecat dolore",
+            "updatedDate": null,
+            "createdDate": "1990-09-25T05:12:00.692Z"
+          },
+          "productCatalog": [
+            {
+              "id": "Excepteur eu dolore sint",
+              "name": "laboris anim labore esse",
+              "activeFromDate": "1947-12-21",
+              "auditInfo": {
+                "isDeleted": true,
+                "createdBy": "ad nulla culpa ex esse",
+                "updatedBy": "consequat eiusmod aliquip laboris",
+                "updatedDate": "1992-09-01T10:22:28.932Z",
+                "createdDate": "2010-11-18T11:53:42.977Z"
+              },
+              "activeToDate": "1957-06-18"
+            }
+          ],
+          "parentCategory": [
+            "magna"
+          ]
+        }
+      ],
+      "isSellableWithoutPrice": null,
+      "isCustomerDiscountAllowed": false,
+      "requiredDepositAmount": -59896572,
+      "externalSourceRecord": "exercitation",
+      "modelYear": null,
+      "priceChargeType": "do anim commodo eiusmod",
+      "validForPeriodCount": null,
+      "isSellable": null,
+      "revenueInstallmentPeriod": "sit veniam qui sint do",
+      "allowPartialRefund": false,
+      "isCouponRedemptionAllowed": false,
+      "validFromDate": null,
+      "validToDate": "2006-06-20",
+      "isAutoProvisionable": true,
+      "isPreOrderable": null,
+      "quantityInstallmentPeriod": null,
+      "isFoodstampPaymentAllowed": false,
+      "isReturnable": null,
+      "maximumOrderQuantityCount": null,
+      "primarySalesChannel": [
+        "minim dolore aute"
+      ],
+      "isRainCheckAllowed": false,
+      "revenueInstallmentCount": -45666813,
+      "revenueScheduleType": "ex officia",
+      "isWorkerDiscountAllowed": null,
+      "manufacturerName": "ullamco et incididunt culpa laboris",
+      "allowCustomerReturn": null,
+      "lotIdentifier": "Ut nostrud tempor enim ipsum",
+      "isMultipleCouponsAllowed": true
+    }
+  ],
+  "activeToDateTime": "00:00:01",
+  "auditInfo": {
+    "isDeleted": true,
+    "createdBy": "nostrud sint incididunt",
+    "updatedBy": "Lorem sit fugiat in labore",
+    "updatedDate": "1980-12-21T12:57:37.546Z",
+    "createdDate": "2006-06-27T07:23:21.583Z"
+  },
+  "productCategory": [
+    {
+      "id": "Lorem non laboris",
+      "name": "ea enim",
+      "activeFromDate": "1976-05-06",
+      "productCatalog": [
+        "in"
+      ],
+      "activeToDate": "1963-07-21",
+      "parentCategory": [
+        "dolor culpa dolore laborum"
+      ],
+      "auditInfo": {
+        "isDeleted": false,
+        "createdBy": "magna",
+        "updatedBy": "tempor dolore ea officia enim",
+        "updatedDate": "1957-11-15T20:36:11.273Z",
+        "createdDate": "2020-10-30T18:26:24.95Z"
+      }
+    }
+  ]
+}

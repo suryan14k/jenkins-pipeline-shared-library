@@ -1,0 +1,137 @@
+{
+  "id": "dolore tempor",
+  "salesDocApprovalStatus": "dolore",
+  "salesContractDate": null,
+  "totalNetAmount": 57496789.59348509,
+  "customer": "proident ut aute eu",
+  "transactionCurrency": "enim do esse in",
+  "salesContractItems": [
+    {
+      "id": null,
+      "auditInfo": {
+        "isDeleted": true,
+        "createdBy": "est commodo mollit",
+        "updatedBy": "enim",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "pricingDate": null,
+      "productGroup": "sed Lorem nisi amet",
+      "itemGrossWeight": null,
+      "product": "aliqua dolor occaecat",
+      "itemWeightUnit": "enim",
+      "itemNetWeight": null,
+      "customerPaymentTerms": "reprehenderit minim officia",
+      "requestedQuantity": 89743218,
+      "salesContractSignedDate": null,
+      "productPricingGroup": "dolore consequat in ad laborum"
+    }
+  ],
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "eiusmod sint nostrud",
+    "updatedBy": "quis aliquip",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "externalIds": [
+    {
+      "externalIdType": [
+        {
+          "id": null,
+          "name": "laborum in aliquip eu"
+        }
+      ],
+      "externalId": "quis sint ut",
+      "id": null,
+      "statusLastChangedDate": null,
+      "status": "VALID"
+    }
+  ],
+  "salesContractValidityStartDate": "2020-05-01",
+  "salesOrder": {
+    "id": null,
+    "name": "eu ut irure veniam esse",
+    "description": "amet",
+    "requestedStartDate": "2020-10-13",
+    "orderNumber": "ut eu",
+    "salesOrderConfirmationStatus": [
+      "anim id dolor velit nisi"
+    ],
+    "promiseFulfillmentDate": null,
+    "shipToAddress": [
+      "adipisicing incididunt ad"
+    ],
+    "customerAuthorizedDate": null,
+    "totalProductTaxAmount": -86460863,
+    "isReductionOrder": false,
+    "adjustedProductTaxAmount": null,
+    "adjustedTotalProductAmount": -10061776,
+    "renewalUpliftRate": 36945510,
+    "internalBusinessUnit": [
+      "Ut ut consectetur ullamco consequat"
+    ],
+    "isTaxExempt": null,
+    "promiseDate": null,
+    "cancelDate": "2013-03-23",
+    "totalAdjustmentTaxAmount": null,
+    "isGiftOrder": null,
+    "isAnonymous": false,
+    "totalPendingBillingAmount": null,
+    "soldToCustomer": [
+      "nulla in non sit"
+    ],
+    "fulfilledDate": "1978-05-25",
+    "totalTaxAmount": -49915945,
+    "billToContact": [
+      "ex culpa aute"
+    ],
+    "filedDate": null,
+    "totalDeliveryTaxAmount": 82750975,
+    "auditInfo": {
+      "isDeleted": null,
+      "createdBy": "velit",
+      "updatedBy": "do",
+      "updatedDate": null,
+      "createdDate": null
+    },
+    "developerStatusCode": "labore",
+    "grandTotalAmount": 1137272,
+    "orderEndDate": "1985-08-29",
+    "billToPhoneNumber": [
+      "pariatur nisi sit dolor in"
+    ],
+    "isSuspended": false,
+    "orderStartDate": "1974-08-30",
+    "packedDate": "1941-05-21",
+    "isContracted": null,
+    "totalDeliveryAmount": null,
+    "billToAccount": [
+      "quis reprehenderit ex ullamco"
+    ],
+    "salesOrderStatus": [
+      "culpa nisi cillum ad pariatur"
+    ],
+    "activatedDate": null,
+    "salesOrderSystemStatus": "dolore dolor",
+    "billToAddress": [
+      "ut aute eiusmod"
+    ],
+    "billToEmail": [
+      "officia tempor pariatur sunt"
+    ],
+    "paymentMethod": [
+      "aliquip"
+    ],
+    "purchaseOrderNumber": "nostrud qui id do dolore",
+    "userDeviceSession": [
+      {
+        "name": "labore ut sunt",
+        "id": null
+      }
+    ]
+  },
+  "salesOrganization": "occaecat mollit dolor",
+  "salesContractType": "id aliqua in dolor",
+  "salesContractValidityEndDate": null
+}

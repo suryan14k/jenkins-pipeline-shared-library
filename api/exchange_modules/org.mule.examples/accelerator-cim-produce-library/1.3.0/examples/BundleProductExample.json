@@ -1,0 +1,107 @@
+{
+  "name": "esse ea veniam ad",
+  "longDescription": "dolore voluptate est sed sint",
+  "id": "adipisicing sint pariatur quis enim",
+  "productStatus": "aute",
+  "description": "veniam dolor incididunt adipisicing id",
+  "productSKU": "et laborum ipsum dolor",
+  "validToDate": null,
+  "isBackOrdered": true,
+  "modelNumber": "nostrud eiusmod",
+  "isReturnable": true,
+  "isQuantityEntryRequired": null,
+  "standardWarrantyLengthMonth": 73355321,
+  "isManualPriceEntryRequired": true,
+  "displayUrl": "id ut occaecat qui",
+  "isWorkerDiscountAllowed": false,
+  "bundledProductsDecidedAtUse": false,
+  "quantityCount": null,
+  "bundledProductsSoldTogether": true,
+  "isIntellectualPropertyProtected": false,
+  "type": "laboris anim consequat aute",
+  "weightUOM": "anim officia occaecat reprehenderit incididunt",
+  "priceChargeType": "in ad in ut",
+  "maximumOrderQuantityCount": 9742885,
+  "isQualityVerificationRequired": true,
+  "requiresInvididualUnitPricing": null,
+  "allowPartialRefund": false,
+  "externalSourceRecord": "anim sit sunt velit",
+  "isPreOrderable": null,
+  "quantityUnitOfMeasure": "sit sed tempor officia non",
+  "tareWeight": -62590583,
+  "isSellableIndependently": null,
+  "validFromDate": null,
+  "isCouponRedemptionAllowed": null,
+  "bundledProductsSubstitutional": null,
+  "canUseQuantitySchedule": true,
+  "revenueInstallmentPeriod": "amet",
+  "requiredDepositAmount": -12107746,
+  "primaryProductCategory": [
+    "exercitation ipsum consectetur sit sed"
+  ],
+  "primarySalesChannel": [
+    "Lorem"
+  ],
+  "isInstallable": false,
+  "isFoodstampPaymentAllowed": false,
+  "disposalType": "est Duis commodo elit",
+  "versionNumber": "ipsum",
+  "isRainCheckAllowed": null,
+  "auditInfo": {
+    "isDeleted": true,
+    "createdBy": "consectetur cupidatat officia",
+    "updatedBy": "Excepteur nisi reprehenderit",
+    "updatedDate": "2013-01-25T14:12:39.555Z",
+    "createdDate": "1999-03-17T23:14:15.528Z"
+  },
+  "stockLedgerValuationAmount": 32986320,
+  "isWeightEntryRequired": null,
+  "quantityInstallmentPeriod": null,
+  "isDynamicBundle": null,
+  "revenueInstallmentCount": null,
+  "isSellableWithoutPrice": true,
+  "lotIdentifier": "nostrud",
+  "allowCustomerReturn": null,
+  "modelYear": null,
+  "glAccountCode": "in officia deserunt",
+  "revenueScheduleType": "magna consequat anim aliquip culpa",
+  "masterProduct": [
+    "cillum voluptate deserunt sint"
+  ],
+  "quantityInstallmentCount": null,
+  "brandGrade": "Ut mollit fugiat quis",
+  "rewardProgramPointsCount": 8538100,
+  "validForPeriodCount": null,
+  "minimumOrderQuantityCount": null,
+  "isCustomerDiscountAllowed": false,
+  "canUseRevenueSchedule": false,
+  "isAutoProvisionable": null,
+  "brand": [
+    {
+      "id": null,
+      "name": "velit deserunt occaecat reprehenderit",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "veniam ullamco dolor",
+        "updatedBy": "ad officia sit elit",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "brandGrade": "exercitation ex"
+    }
+  ],
+  "minimumAdvertisementAmount": 79130092,
+  "mSRPAmount": 5359017,
+  "isPartnerDiscountAllowed": false,
+  "validForPeriodUOM": [
+    "ad dolore aliqua eiusmod"
+  ],
+  "bundledProductsDecidesAvailability": true,
+  "manufacturerName": "Excepteur in officia proident",
+  "minimumAdvertisementAmountStartDate": -56405637,
+  "requiredDepositPercentage": null,
+  "isMultipleCouponsAllowed": true,
+  "externalIds": [
+    "esse"
+  ]
+}

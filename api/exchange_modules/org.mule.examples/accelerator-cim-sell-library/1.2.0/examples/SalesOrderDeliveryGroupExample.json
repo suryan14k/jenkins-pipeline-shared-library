@@ -1,0 +1,56 @@
+{
+  "name": "irure in tempor do sed",
+  "id": "eu nostrud ipsum consequat",
+  "totalUnitPriceAmount": null,
+  "totalPriceAmount": -60215572,
+  "salesOrderDeliveryGroupNumber": "eu ut elit",
+  "description": "consequat",
+  "salesOrderDeliveryStatus": [
+    {
+      "id": "sit in sed ex dolore",
+      "name": "Lorem ullamco",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "proident dolore consequat Lorem",
+        "updatedBy": "pariatur voluptate fugiat adipisicing in",
+        "updatedDate": null,
+        "createdDate": null
+      }
+    }
+  ],
+  "deliveryInstructionsText": "non aute anim Excepteur",
+  "salesOrder": [
+    "Duis"
+  ],
+  "totalTaxAmount": null,
+  "orderDeliveryMethod": [
+    "veniam nulla mollit pariatur exercitation"
+  ],
+  "totalDeliveryAdjustmentAmount": null,
+  "promisedDate": "1985-03-16",
+  "totalProductTaxAmount": null,
+  "totalDeliveryTaxAmount": 63935123,
+  "isGift": null,
+  "giftMessageText": "laboris aute",
+  "contactPointAddress": [
+    "sunt"
+  ],
+  "totalDeliveryAdjustmentTaxAmount": null,
+  "originalDeliveryGroup": [
+    "eu"
+  ],
+  "accountContact": [
+    "elit"
+  ],
+  "totalDeliveryChargeAmount": null,
+  "totalDeliveryChargeTaxAmount": 96395408,
+  "grandTotalDeliveryAmount": -50140200,
+  "desiredDeliveryDate": null,
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "aute adipisicing id",
+    "updatedBy": "mollit voluptate nulla anim laborum",
+    "updatedDate": null,
+    "createdDate": "2008-07-26T00:11:16.038Z"
+  }
+}

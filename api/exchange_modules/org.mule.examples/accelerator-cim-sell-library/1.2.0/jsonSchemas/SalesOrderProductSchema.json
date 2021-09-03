@@ -1,0 +1,3359 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderProduct",
+  "definitions": {
+    "SalesOrderProduct": {
+      "type": "object",
+      "example": {
+        "quantityOrderedUOM": "laboris",
+        "orderProductNumber": "est",
+        "id": null,
+        "totalPriceAmount": -9088663,
+        "orderedQuantity": -65625614,
+        "description": "et consectetur deserunt Ut",
+        "allocationGroupName": "sed ex",
+        "auditInfo": {
+          "isDeleted": true,
+          "createdBy": "aliquip in ex sint",
+          "updatedBy": "exercitation aliqua cupidatat tempor mollit",
+          "updatedDate": "2019-12-20T16:14:03.175Z",
+          "createdDate": null
+        },
+        "segmentIndex": null,
+        "segmentIndexNumber": null,
+        "unitPriceAmount": -71248464,
+        "shippingCostAmount": null,
+        "fulfilledQuantity": -38625713,
+        "totalDistributedAdjustmentTaxAmount": null,
+        "commentText": "laborum proident esse anim Duis",
+        "isBundleRoot": null,
+        "listPriceTermUOM": [
+          {
+            "pluralName": "minim et officia non",
+            "name": "fugiat ut eu esse",
+            "id": null
+          },
+          {
+            "pluralName": "Excepteur elit aute Lorem",
+            "name": "exercitation in do ea id",
+            "id": "ad"
+          }
+        ],
+        "totalProductTaxAmount": -29160571,
+        "subscriptionTermQuantity": null,
+        "requestedEndDate": null,
+        "totalTaxAmount": 32057917,
+        "sellerAccount": [
+          "minim in consectetur"
+        ],
+        "adjustedDeliveryTaxAmount": null,
+        "totalLineAdjustmentAmount": 91184695,
+        "totalRecurringPriceAmount": 49166070,
+        "isGift": true,
+        "salesOrderProductStatus": [
+          {
+            "id": null,
+            "name": "irure"
+          },
+          "in in sint aliqua aute"
+        ],
+        "subscriptionTermUnit": [
+          "qui laborum commodo",
+          {
+            "pluralName": "eiusmod laboris",
+            "name": "commodo occaecat velit",
+            "id": "nulla tempor aliquip veniam"
+          }
+        ],
+        "salesOrderDeliveryGroup": [
+          "sunt Excepteur nisi dolore ad"
+        ],
+        "salesOrder": [
+          "amet",
+          {
+            "id": "do",
+            "name": "reprehenderit Ut",
+            "confirmationRecipientEmailText": "laborum esse incididunt in",
+            "description": "pariatur minim elit culpa",
+            "requestedStartDate": "1980-04-08",
+            "orderNumber": "Excepteur",
+            "developerStatusCode": "deserunt non reprehenderit aliqua",
+            "totalCancelledBillingAmount": -67451357,
+            "priceCalculationStatusMessageText": "Excepteur cupidatat",
+            "billToAddress": [
+              "Excepteur esse commodo velit"
+            ],
+            "isContracted": false,
+            "taxRate": -34104464,
+            "checkoutDate": "1954-02-27",
+            "adjustedProductTaxAmount": null,
+            "originalOrder": [
+              "Ut irure do dolore ad"
+            ],
+            "totalProductTaxAmount": -70685248,
+            "promiseDate": null,
+            "totalDeliveryAmount": 94740853,
+            "packedDate": null,
+            "grandTotalAmount": -6284342,
+            "billToPhoneNumber": [
+              "irure proident elit officia sint"
+            ],
+            "renewalTerm": [
+              "non dolor sed",
+              "culpa do laborum"
+            ],
+            "totalBookingAmount": null,
+            "billToAccount": [
+              "aliquip sunt Ut",
+              "ullamco in consectetur ea"
+            ],
+            "totalProductAmount": 69007516,
+            "shipToAddress": [
+              "tempor minim laboris dolor sed",
+              "aliquip"
+            ],
+            "isAnonymous": null,
+            "salesOrderConfirmationStatus": [
+              "est consequat proident",
+              {
+                "id": "pariatur",
+                "name": "amet labore commodo ad est",
+                "auditInfo": {
+                  "isDeleted": null,
+                  "createdBy": "minim ipsum in velit",
+                  "updatedBy": "deserunt culpa enim Duis",
+                  "updatedDate": null,
+                  "createdDate": "2017-11-12T17:34:57.587Z"
+                }
+              }
+            ],
+            "shipToContact": [
+              "adipisicing ut est",
+              "in do in commodo"
+            ],
+            "totalDeliveryFeeAmount": null,
+            "salesOrderStatus": [
+              {
+                "id": null,
+                "name": "sunt adipisicing sed"
+              }
+            ],
+            "totalAdjustmentAmount": 1966547,
+            "seller": [
+              "et cillum officia mollit"
+            ],
+            "shipToEmail": [
+              "amet do proident ut aute",
+              "laboris velit Ut"
+            ],
+            "isSuspended": null,
+            "soldToCustomer": [
+              "aute amet ut cupidatat deserunt"
+            ],
+            "totalAdjustmentTaxAmount": 84710204,
+            "orderStartDate": "1992-02-21",
+            "paymentMethod": [
+              "esse ut"
+            ],
+            "salesOrderType": [
+              "quis Lorem",
+              {
+                "id": "ipsum fugiat in",
+                "name": "consectetur ea dolore",
+                "auditInfo": {
+                  "isDeleted": null,
+                  "createdBy": "incididunt est id",
+                  "updatedBy": "velit",
+                  "updatedDate": null,
+                  "createdDate": "1949-12-25T22:33:11.147Z"
+                }
+              }
+            ],
+            "cancelDateType": "aliquip aute fugiat Lorem",
+            "userDeviceSession": [
+              {
+                "name": "proident anim minim",
+                "id": null
+              },
+              "laboris"
+            ],
+            "paidDate": "1945-10-21",
+            "billingDayOfTheMonth": null,
+            "customerAuthorizedDate": null,
+            "promiseFulfillmentDate": "1990-07-07",
+            "totalDeliveryTaxAmount": 27052591,
+            "totalPendingBillingAmount": null,
+            "isTaxExempt": null,
+            "orderInsuranceAmount": -79880581,
+            "activatedDate": "1956-10-11",
+            "auditInfo": {
+              "isDeleted": null,
+              "createdBy": "fugiat",
+              "updatedBy": "Lorem sit veniam aute",
+              "updatedDate": null,
+              "createdDate": null
+            },
+            "billToEmail": [
+              "enim",
+              "eiusmod Ut"
+            ],
+            "adjustedTotalProductAmount": null,
+            "purchaseOrderDate": null,
+            "isAlerted": true,
+            "orderEndDate": null,
+            "canBillNow": null,
+            "totalTaxAmount": -41411817,
+            "totalAdjustedDeliveryTaxAmount": 61073226,
+            "isReductionOrder": false,
+            "orderDiscount": null,
+            "isClosed": null,
+            "companyAuthorizedDate": null,
+            "isHistoricalOnly": null,
+            "externalIds": [
+              "laboris in nostrud",
+              "ea in mollit elit quis"
+            ],
+            "billToContact": [
+              "dolore quis nostrud veniam Ut"
+            ],
+            "renewalUpliftRate": 91614159,
+            "cancelDate": null,
+            "fulfilledDate": "2008-12-29",
+            "isGiftOrder": true,
+            "filedDate": null,
+            "purchaseOrderNumber": "culpa incididunt ad cupidatat",
+            "salesChannel": [
+              "voluptate mollit aliquip aliqua"
+            ],
+            "salesOrderSystemStatus": "labore est",
+            "iSOCulture": "enim Duis voluptate",
+            "internalBusinessUnit": [
+              "Ut sint magna Excepteur non"
+            ]
+          }
+        ],
+        "discountPercent": null,
+        "giftRecipientTelephoneNumber": "incididunt deserunt",
+        "requestedStartDate": "2011-08-27",
+        "listPriceQuantityUOM": "ullamco aliquip voluptate cillum culpa",
+        "totalAdjustmentAmount": -25066933,
+        "isAutomaticallyRenewed": null,
+        "product": [
+          "ut laboris",
+          "ut Ut"
+        ],
+        "endDate": null,
+        "cancelledQuantity": -93437558,
+        "orderManualAdjustmentSubTotalAmount": null,
+        "priceBookEntry": [
+          {
+            "id": null,
+            "minRequiredOrderValue": 68780884,
+            "auditInfo": {
+              "isDeleted": false,
+              "createdBy": "labore sunt ex",
+              "updatedBy": "ut anim non laborum pariatur",
+              "updatedDate": null,
+              "createdDate": null
+            },
+            "product": [
+              "aliquip aliqua"
+            ],
+            "unitListPrice": 82000714
+          }
+        ],
+        "provisioningDate": null,
+        "promisedDate": "1962-12-08",
+        "shippingAddress": [
+          "nulla consectetur in minim officia"
+        ],
+        "totalAdjustmentTaxAmount": null,
+        "totalDistributedTaxAmount": null,
+        "totalLineAmount": null,
+        "recurringPriceAmount": -41970687,
+        "salesOrderProductAdjustedTaxAmount": 76924321,
+        "salesOrderProductReason": [
+          {
+            "id": null,
+            "name": "dolore sit",
+            "auditInfo": {
+              "isDeleted": null,
+              "createdBy": "reprehenderit in sit",
+              "updatedBy": "ad in",
+              "updatedDate": null,
+              "createdDate": null
+            },
+            "salesOrderProductReasonCategory": [
+              "aliqua nulla"
+            ]
+          },
+          {
+            "id": null,
+            "name": "incididunt sunt",
+            "salesOrderProductReasonCategory": [
+              "veniam exercitation pariatur deserunt",
+              {
+                "id": "consectetur qui quis",
+                "name": "nostrud minim dolore pariatur",
+                "auditInfo": {
+                  "isDeleted": null,
+                  "createdBy": "id",
+                  "updatedBy": "laboris aliqua cupidatat",
+                  "updatedDate": "1958-03-28T11:21:27.265Z",
+                  "createdDate": "1995-02-19T16:41:24.769Z"
+                }
+              }
+            ]
+          }
+        ],
+        "availableQuantity": -23408433,
+        "allocationPartitionName": "dolor",
+        "giftOrderMessageText": "minim laborum eu sint",
+        "deliveryTaxAmount": 63356258,
+        "allocatedQuantity": -66908843
+      },
+      "additionalProperties": true,
+      "required": [
+        "quantityOrderedUOM",
+        "orderProductNumber",
+        "id",
+        "totalPriceAmount",
+        "orderedQuantity",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalRecurringPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalLineAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provisioningDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fulfilledQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalLineAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "promisedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recurringPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "endDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "giftOrderMessageText": {
+          "type": "string"
+        },
+        "quantityOrderedUOM": {
+          "type": "string"
+        },
+        "totalProductTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderProductReason": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "salesOrderProductReasonCategory": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "lineAdjustmentSubTotalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "commentText": {
+          "type": "string"
+        },
+        "orderProductNumber": {
+          "type": "string"
+        },
+        "product": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderedQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderProductStatus": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "unitPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requestedStartDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subscriptionRenewalMonthQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderManualAdjustmentSubTotalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allocatedQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allocationPartitionName": {
+          "type": "string"
+        },
+        "salesOrder": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "requestedStartDate",
+                  "orderNumber"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "totalPendingBillingAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "checkoutDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "priceCalculationStatusMessageText": {
+                    "type": "string"
+                  },
+                  "confirmationRecipientEmailText": {
+                    "type": "string"
+                  },
+                  "orderEndDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isTaxExempt": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalProductTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isAlerted": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isAnonymous": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "activatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "billToEmail": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "requestedStartDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "companyAuthorizedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "orderInsuranceAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isClosed": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "shipToEmail": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "totalDeliveryAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "salesOrderConfirmationStatus": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "salesOrderType": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "customerAuthorizedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalCancelledBillingAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalAdjustedDeliveryTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "paymentMethod": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "totalAdjustmentAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "salesOrderStatus": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "renewalUpliftRate": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalProductAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "renewalTerm": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "originalOrder": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "billToAccount": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "totalAdjustmentTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isGiftOrder": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "promiseFulfillmentDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "filedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "iSOCulture": {
+                    "type": "string"
+                  },
+                  "userDeviceSession": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "example": {
+                            "name": "cupidatat fugiat",
+                            "id": "id1"
+                          },
+                          "additionalProperties": true,
+                          "required": [
+                            "name",
+                            "id"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "purchaseOrderNumber": {
+                    "type": "string"
+                  },
+                  "totalDeliveryFeeAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalDeliveryTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "orderNumber": {
+                    "type": "string"
+                  },
+                  "seller": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "billToAddress": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "shipToAddress": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "fulfilledDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "billToContact": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "paidDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalBookingAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "adjustedProductTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "promiseDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "packedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isHistoricalOnly": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "grandTotalAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isContracted": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "canBillNow": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "adjustedTotalProductAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "orderDiscount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "internalBusinessUnit": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "salesChannel": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name",
+                            "description",
+                            "salesChannelNumber"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "externalRecord": {
+                              "type": "string"
+                            },
+                            "salesChannelType": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "required": [
+                                      "id",
+                                      "name"
+                                    ],
+                                    "properties": {
+                                      "id": {
+                                        "anyOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "name": {
+                                        "type": "string"
+                                      },
+                                      "auditInfo": {
+                                        "description": "Defines standard system audit fields available for most types",
+                                        "type": "object",
+                                        "example": {
+                                          "isDeleted": true,
+                                          "createdBy": "commodo minim dolore est",
+                                          "updatedBy": "dolor quis nulla",
+                                          "updatedDate": "1950-01-23T19:52:29.659Z",
+                                          "createdDate": "1950-01-23T19:52:29.659Z"
+                                        },
+                                        "additionalProperties": true,
+                                        "required": [
+                                          "isDeleted",
+                                          "createdBy",
+                                          "updatedBy",
+                                          "updatedDate",
+                                          "createdDate"
+                                        ],
+                                        "properties": {
+                                          "createdDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was created"
+                                          },
+                                          "createdBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which created the entity"
+                                          },
+                                          "updatedDate": {
+                                            "anyOf": [
+                                              {
+                                                "type": "string",
+                                                "format": "date-time"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Timestamp of when the entity was last updated"
+                                          },
+                                          "updatedBy": {
+                                            "type": "string",
+                                            "description": "Identifies the system or user which last updated the entity"
+                                          },
+                                          "isDeleted": {
+                                            "anyOf": [
+                                              {
+                                                "type": "boolean"
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ],
+                                            "description": "Indicates whether or not the entity has been soft-deleted"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "description": {
+                              "type": "string"
+                            },
+                            "salesChannelNumber": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "orderStartDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "cancelDateType": {
+                    "type": "string"
+                  },
+                  "isReductionOrder": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "salesOrderSystemStatus": {
+                    "type": "string"
+                  },
+                  "isSuspended": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "billToPhoneNumber": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "purchaseOrderDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "soldToCustomer": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "billingDayOfTheMonth": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "cancelDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "shipToContact": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "taxRate": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "developerStatusCode": {
+                    "type": "string"
+                  },
+                  "externalIds": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "example": {
+                            "externalIdType": [
+                              {
+                                "id": "id1",
+                                "name": "adipisicing labore Duis in anim"
+                              }
+                            ],
+                            "externalId": "Ut",
+                            "id": "irure proident cillum deserunt dolor",
+                            "status": "INVALID",
+                            "statusLastChangedDate": "1999-11-26T02:28:11.661Z"
+                          },
+                          "description": "Defines a structure for referencing an entity in external systems",
+                          "additionalProperties": true,
+                          "required": [
+                            "externalIdType",
+                            "externalId",
+                            "id"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "externalId": {
+                              "type": "string",
+                              "description": "A unique identifier assigned to an entity in another system"
+                            },
+                            "externalIdType": {
+                              "description": "Identifies the system that owns or otherwise recognizes this unique identifier",
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "description": "Identifies the external system that owns or otherwise recognizes a particular identifier",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "required": [
+                                      "id",
+                                      "name"
+                                    ],
+                                    "properties": {
+                                      "id": {
+                                        "anyOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "name": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "status": {
+                              "enum": [
+                                "VALID",
+                                "INVALID"
+                              ],
+                              "description": "Indicates whether this identifier is currently valid or not",
+                              "type": "string"
+                            },
+                            "statusLastChangedDate": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "format": "date-time"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ],
+                              "description": "Date and time of the last change in status"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "isGift": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unitTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deliveryTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isBonusProduct": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderProductAdjustedTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalListPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalAdjustmentTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderAdjustmentSubTotalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subscriptionTermQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDistributedAdjustmentTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDistributedTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "adjustedDeliveryTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "listPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "priceBookEntry": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "minRequiredQuantity": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unitListPrice": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "product": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "minRequiredOrderValue": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isActive": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "maxRequiredOrderValue": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "useStandardPrice": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "servicePeriodCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "segmentIndex": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingCostAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isBundleRoot": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "discountAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cancelledQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "subscriptionTermUnit": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "example": {
+                  "pluralName": "irure dolor",
+                  "name": "laboris est ipsum",
+                  "id": "id1"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "pluralName",
+                  "name",
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "pluralName": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "listPriceTermUOM": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "example": {
+                  "pluralName": "irure dolor",
+                  "name": "laboris est ipsum",
+                  "id": "id1"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "pluralName",
+                  "name",
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "pluralName": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "salesOrderDeliveryGroup": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "totalPriceAmount",
+                  "description",
+                  "salesOrderDeliveryGroupNumber",
+                  "totalUnitPriceAmount"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "totalPriceAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalDeliveryAdjustmentTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "promisedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "giftMessageText": {
+                    "type": "string"
+                  },
+                  "deliveryInstructionsText": {
+                    "type": "string"
+                  },
+                  "totalProductTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalDeliveryChargeAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "grandTotalDeliveryAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "contactPointAddress": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "salesOrder": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "isGift": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "salesOrderDeliveryStatus": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "totalDeliveryAdjustmentAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalDeliveryTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalDeliveryChargeTaxAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "originalDeliveryGroup": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "salesOrderDeliveryGroupNumber": {
+                    "type": "string"
+                  },
+                  "desiredDeliveryDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totalUnitPriceAmount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "orderDeliveryMethod": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "product": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "externalRecord": {
+                              "type": "string"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "accountContact": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "listPriceQuantityUOM": {
+          "type": "string"
+        },
+        "totalDistributedAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "segmentIndexNumber": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalUnitPriceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "originalOrderProduct": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "availableQuantity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requestedEndDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allocationGroupName": {
+          "type": "string"
+        },
+        "sellerAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "giftRecipientTelephoneNumber": {
+          "type": "string"
+        },
+        "isAutomaticallyRenewed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "discountPercent": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalManualAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "handlingCostAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

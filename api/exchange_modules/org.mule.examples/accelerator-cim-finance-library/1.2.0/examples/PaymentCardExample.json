@@ -1,0 +1,47 @@
+{
+  "paymentCardType": "aliquip deserunt Ut sunt",
+  "name": "magna officia",
+  "id": "Excepteur quis",
+  "cardHolderName": "labore Excepteur",
+  "paymentMethodStatus": "esse consequat anim Ut exercitation",
+  "expirationYear": "nulla",
+  "expirationMonth": "sed",
+  "numberLastDigits": "deserunt",
+  "maskedNumber": "proident dolore est nisi",
+  "issueNumber": "ullamco eu",
+  "cardToken": "culpa nulla dolore",
+  "billToStreet2": "exercitation commodo Duis dolor",
+  "billToLastName": "velit quis adipisicing tempor",
+  "paymentMethodType": [
+    {
+      "id": "adipisicing sint sunt",
+      "maxPerPeriodAmount": null,
+      "name": "ipsum",
+      "mediaType": "culpa",
+      "maxPerPeriodTransactionCount": 20341621,
+      "maxTransactionAmount": 56400001,
+      "auditInfo": {
+        "isDeleted": true,
+        "createdBy": "ullamco nisi id",
+        "updatedBy": "deserunt",
+        "updatedDate": "1950-08-03T04:56:48.456Z",
+        "createdDate": null
+      },
+      "typeDescription": "ea in sint eu",
+      "typeRequiredIdentification": "aliquip est"
+    }
+  ],
+  "billToFirstName": "ut est velit",
+  "companyName": "tempor nisi in in",
+  "creditCardExpired": null,
+  "billToCity": "dolore consectetur Ut nulla",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "cupidatat",
+    "updatedBy": "dolore minim ut aliqua exercitation",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "billToStreet": "et",
+  "derivedCardTypeCode": "ipsum occaecat"
+}

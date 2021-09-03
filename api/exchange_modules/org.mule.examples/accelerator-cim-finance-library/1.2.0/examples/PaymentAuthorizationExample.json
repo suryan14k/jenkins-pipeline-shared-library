@@ -1,0 +1,29 @@
+{
+  "expirationDate": "1991-03-11",
+  "totalPaymentCaptureAmount": -84628118,
+  "paymentGatewayDate": "00:00:01",
+  "paymentGatewayReferenceNumber": "sint",
+  "id": null,
+  "authorizationAmount": 26170151,
+  "paymentAuthorizationProcessingMode": "nostrud in",
+  "paymentAuthorizationNumber": "consectetur non",
+  "paymentGatewayResult": [
+    {
+      "id": null,
+      "name": "quis nostrud ipsum",
+      "description": "occaecat",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "dolor minim",
+        "updatedBy": "Duis ipsum officia",
+        "updatedDate": null,
+        "createdDate": null
+      }
+    }
+  ],
+  "gatewayAuthorizationCode": "dolore",
+  "requestDate": "00:00:01",
+  "paymentAuthorizationStatus": "fugiat",
+  "gatewayReferenceDetailsText": "reprehenderit Ut in incididunt nisi",
+  "totalAuthorizationReversalAmount": null
+}

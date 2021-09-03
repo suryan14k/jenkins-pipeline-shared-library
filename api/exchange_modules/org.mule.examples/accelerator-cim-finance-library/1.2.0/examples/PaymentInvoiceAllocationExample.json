@@ -1,0 +1,44 @@
+{
+  "id": null,
+  "invoiceBalanceAmount": 34215288,
+  "appliedAmount": 784437,
+  "externalCreatedDate": "1976-07-29",
+  "paymentAllocationName": "qui ut aliquip aute",
+  "paymentInvoiceApplication": [
+    {
+      "id": null,
+      "invoiceBalanceAmount": -52378438,
+      "paymentApplicationType": "sed Excepteur in voluptate nostrud",
+      "appliedDate": "1982-10-04",
+      "effectiveDate": "2017-03-24",
+      "appliedAmount": 98207797,
+      "payment": [
+        "esse"
+      ],
+      "commentText": "culpa veniam nulla deserunt esse",
+      "paymentBalanceAmount": 79371400,
+      "name": "dolore",
+      "paymentInvoiceApplicationName": "sunt exercitation non",
+      "auditInfo": {
+        "isDeleted": true,
+        "createdBy": "labore",
+        "updatedBy": "mollit nostrud pariatur",
+        "updatedDate": "1985-03-27T10:45:36.87Z",
+        "createdDate": null
+      },
+      "externalCreatedDate": "1955-03-03",
+      "paymentInvoiceApplicationType": "non Excepteur",
+      "hasBeenUnapplied": false
+    }
+  ],
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "dolor deserunt",
+    "updatedBy": "dolor in qui anim",
+    "updatedDate": null,
+    "createdDate": "1971-05-21T02:29:56.526Z"
+  },
+  "relatedPaymentAllocation": [
+    "deserunt"
+  ]
+}

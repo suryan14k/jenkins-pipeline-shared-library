@@ -1,0 +1,12 @@
+#%RAML 1.0 Library
+usage: This library defines basic traits, error message and example messages that can be used across APIs
+traits:
+  trackable: !include trackable-trait.raml
+
+  contentType:
+    headers:     
+      content-type:
+        type: string
+        example: application/json
+  
+  standard-error-responses: !include standard-error-responses.raml

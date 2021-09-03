@@ -1,0 +1,26 @@
+{
+  "name": "labore",
+  "id": "fugiat",
+  "taxAmount": null,
+  "taxRatePercent": null,
+  "description": "pariatur incididunt",
+  "taxErrorMessageText": "deserunt",
+  "taxAddressStreet1Text": "dolore Ut adipisicing ea magna",
+  "taxAddressCityName": "nulla ex cillum",
+  "originalSalesOrderProductTax": [
+    "qui"
+  ],
+  "taxEffectiveDate": null,
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "Lorem magna do",
+    "updatedBy": "amet non",
+    "updatedDate": "1989-07-06T22:42:25.293Z",
+    "createdDate": "1999-10-22T08:11:43.409Z"
+  },
+  "taxAddressStreet2Text": "laborum anim ut sed",
+  "salesOrderProduct": [
+    "ullamco nisi"
+  ],
+  "salesOrderTaxAmount": null
+}

@@ -1,0 +1,101 @@
+#%RAML 1.0 Library
+usage: Provides CIM types defined in the Produce subject area
+
+uses:
+  InventoryProductTypes: libraries/InventoryProductTypeLibrary.raml
+  ProductTypes: libraries/ProductTypeLibrary.raml
+  PurchaseOrderTypes: libraries/PurchaseOrderTypeLibrary.raml
+  InventoryReceivedTypes: libraries/InventoryReceivedTypeLibrary.raml
+
+types:
+  # Exported InventoryProductTypes
+  ProductAvailability:
+    type: InventoryProductTypes.ProductAvailability
+    example: !include ./examples/ProductAvailabilityExample.json
+  
+  # Exported InventoryReceivedTypes
+  GoodsReceipt:
+    type: InventoryReceivedTypes.GoodsReceipt
+    example: !include ./examples/GoodsReceiptExample.json
+  GoodsReceiptItem:
+    type: InventoryReceivedTypes.GoodsReceiptItem
+    example: !include ./examples/GoodsReceiptItemExample.json
+
+  # Exported ProductTypes
+  AttributeSetTranslation:
+    type: ProductTypes.AttributeSetTranslation
+    example: !include ./examples/AttributeSetTranslationExample.json
+  AttributeTranslation:
+    type: ProductTypes.AttributeTranslation
+    example: !include ./examples/AttributeTranslationExample.json
+  AttributeValue:
+    type: ProductTypes.AttributeValue
+    example: !include ./examples/AttributeValueExample.json
+  AttributeValueTranslation:
+    type: ProductTypes.AttributeValueTranslation
+    example: !include ./examples/AttributeValueTranslationExample.json
+  Brand:
+    type: ProductTypes.Brand
+    example: !include ./examples/BrandExample.json
+  BundleProduct:
+    type: ProductTypes.BundleProduct
+    example: !include ./examples/BundleProductExample.json
+  GoodsProduct:
+    type: ProductTypes.GoodsProduct
+    example: !include ./examples/GoodsProductExample.json
+  Product:
+    type: ProductTypes.Product
+    example: !include ./examples/ProductExample.json
+  ProductAttributeSet:
+    type: ProductTypes.ProductAttributeSet
+    example: !include ./examples/ProductAttributeSetExample.json
+  ProductAttributeValue:
+    type: ProductTypes.ProductAttributeValue
+    example: !include ./examples/ProductAttributeValueExample.json
+  ProductCatalog:
+    type: ProductTypes.ProductCatalog
+    example: !include ./examples/ProductCatalogExample.json
+  ProductCatalogTranslation:
+    type: ProductTypes.ProductCatalogTranslation
+    example: !include ./examples/ProductCatalogTranslationExample.json
+  ProductCategory:
+    type: ProductTypes.ProductCategory
+    example: !include ./examples/ProductCategoryExample.json
+  ProductCategoryAttributeSet:
+    type: ProductTypes.ProductCategoryAttributeSet
+    example: !include ./examples/ProductCategoryAttributeSetExample.json
+  ProductCategoryProduct:
+    type: ProductTypes.ProductCategoryProduct
+    example: !include ./examples/ProductCategoryProductExample.json
+  ProductCategoryTranslation:
+    type: ProductTypes.ProductCategoryTranslation
+    example: !include ./examples/ProductCategoryTranslationExample.json
+  ProductCollateral:
+    type: ProductTypes.ProductCollateral
+    example: !include ./examples/ProductCollateralExample.json
+  ProductImage:
+    type: ProductTypes.ProductImage
+    example: !include ./examples/ProductImageExample.json
+  ProductImageTranslation:
+    type: ProductTypes.ProductImageTranslation
+    example: !include ./examples/ProductImageTranslationExample.json
+  ProductRelatedProduct:
+    type: ProductTypes.ProductRelatedProduct
+    example: !include ./examples/ProductRelatedProductExample.json
+  ProductRelationshipType:
+    type: ProductTypes.ProductRelationshipType
+    example: !include ./examples/ProductRelationshipTypeExample.json
+  ProductTranslation:
+    type: ProductTypes.ProductTranslation
+    example: !include ./examples/ProductTranslationExample.json
+  ServiceProduct:
+    type: ProductTypes.ServiceProduct
+    example: !include ./examples/ServiceProductExample.json
+
+  # Exported PurchaseOrderTypes
+  PurchaseOrder:
+    type: PurchaseOrderTypes.PurchaseOrder
+    example: !include ./examples/PurchaseOrderExample.json
+  PurchaseOrderItem:
+    type: PurchaseOrderTypes.PurchaseOrderItem
+    example: !include ./examples/PurchaseOrderItemExample.json

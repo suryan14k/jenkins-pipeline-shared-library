@@ -1,0 +1,38 @@
+{
+  "internalReferenceNumber": "occaecat dolor dolore",
+  "paymentGatewayDate": "1971-01-02",
+  "paymentGatewayInteractionType": [
+    {
+      "id": "elit officia",
+      "name": "do Excepteur",
+      "description": "reprehenderit ea",
+      "auditInfo": {
+        "isDeleted": true,
+        "createdBy": "fugiat velit",
+        "updatedBy": "labore",
+        "updatedDate": "2003-01-24T00:58:29.335Z",
+        "createdDate": null
+      }
+    }
+  ],
+  "id": "elit",
+  "paymentGatewayResult": [
+    {
+      "id": null,
+      "name": "officia pariatur ullamco Excepteur voluptate",
+      "description": "minim pariatur laboris veniam sed",
+      "auditInfo": {
+        "isDeleted": false,
+        "createdBy": "deserunt aliqua",
+        "updatedBy": "cillum pariatur dolore adipisicing",
+        "updatedDate": null,
+        "createdDate": "1959-12-16T03:49:00.443Z"
+      }
+    }
+  ],
+  "paymentGatewayInteractionLogName": "qui nisi est",
+  "paymentGatewayInteractionStatus": "adipisicing nisi",
+  "paymentGatewayMessageText": "eiusmod",
+  "paymentGatewayAVSCode": "id ea dolor occaecat",
+  "name": "proident aute"
+}

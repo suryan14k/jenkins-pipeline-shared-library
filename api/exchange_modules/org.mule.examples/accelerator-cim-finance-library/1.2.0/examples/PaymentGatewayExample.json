@@ -1,0 +1,17 @@
+{
+  "paymentGatewayStatus": "aliqua",
+  "name": "mollit",
+  "id": null,
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "nostrud ad",
+    "updatedBy": "minim amet Duis et anim",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "systemCredential": "ad enim ea proident",
+  "paymentGatewayProvider": [
+    "sed"
+  ],
+  "paymentGatewayCommentText": "velit exercitation incididunt"
+}

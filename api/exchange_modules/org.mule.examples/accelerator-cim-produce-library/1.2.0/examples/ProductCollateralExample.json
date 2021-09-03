@@ -1,0 +1,88 @@
+{
+  "id": "aliquip Duis sit veniam",
+  "uRL": "minim ad adipisicing cillum",
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "nostrud sunt minim est pariatur",
+    "updatedBy": "laborum dolore",
+    "updatedDate": null,
+    "createdDate": "1959-10-01T08:02:53.276Z"
+  },
+  "product": [
+    {
+      "id": null,
+      "name": "incididunt dolore esse est",
+      "longDescription": "ex voluptate commodo ullamco",
+      "description": "deserunt anim dolore veniam",
+      "productStatus": "magna cupidatat adipisicing Ut",
+      "productSKU": "anim qui elit pariatur Duis",
+      "isFoodstampPaymentAllowed": true,
+      "isSellable": null,
+      "disposalType": "eu",
+      "validToDate": "1958-11-11",
+      "brandGrade": "ea magna sit",
+      "revenueInstallmentCount": null,
+      "revenueScheduleType": "consequat deserunt",
+      "validFromDate": "1949-11-13",
+      "quantityInstallmentCount": 98655703,
+      "brand": [
+        {
+          "id": null,
+          "name": "dolore eu consectetur irure",
+          "brandGrade": "officia aute in ex do",
+          "auditInfo": {
+            "isDeleted": null,
+            "createdBy": "ullamco incididunt minim",
+            "updatedBy": "consequat",
+            "updatedDate": null,
+            "createdDate": null
+          }
+        }
+      ],
+      "mSRPAmount": -4599388,
+      "quantityInstallmentPeriod": "ut cupidatat culpa sunt irure",
+      "isManualPriceEntryRequired": true,
+      "isSerialized": null,
+      "glAccountCode": "cillum dolore",
+      "isBackOrdered": true,
+      "isPartnerDiscountAllowed": false,
+      "minimumAdvertisementAmount": null,
+      "primarySalesChannel": [
+        "cupidatat ut pariatur ullamco"
+      ],
+      "isPreOrderable": null,
+      "modelYear": null,
+      "isWeightEntryRequired": null,
+      "isIntellectualPropertyProtected": null,
+      "validForPeriodCount": null,
+      "isCustomerDiscountAllowed": false,
+      "revenueInstallmentPeriod": "nulla proident",
+      "canUseQuantitySchedule": true,
+      "primaryProductCategory": [
+        "eu"
+      ],
+      "allowCustomerReturn": null,
+      "externalIds": [
+        "non esse ut labore ullamco"
+      ],
+      "isSellableIndependently": null,
+      "standardWarrantyLengthMonth": null,
+      "stockLedgerValuationAmount": null,
+      "quantityScheduleType": "commodo",
+      "isSellableWithoutPrice": null,
+      "masterProduct": [
+        "minim eiusmod dolor ut qui"
+      ],
+      "priceChargeType": "ex elit sit id Duis",
+      "validForPeriodUOM": [
+        {
+          "pluralName": "Ut in enim adipisicing laborum",
+          "name": "ea et",
+          "id": null
+        }
+      ],
+      "type": "Excepteur",
+      "minimumAdvertisementAmountStartDate": -32432263
+    }
+  ]
+}

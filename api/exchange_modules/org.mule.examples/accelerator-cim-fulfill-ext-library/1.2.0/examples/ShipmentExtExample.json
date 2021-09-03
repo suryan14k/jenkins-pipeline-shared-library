@@ -1,0 +1,222 @@
+{
+  "id": null,
+  "shipmentDate": "1994-02-13",
+  "estimatedDeliveryDateTime": "20:29:57.688Z",
+  "shipmentStatus": [
+    "ipsum minim commodo"
+  ],
+  "shipToAddress": [
+    "id irure dolore aliquip"
+  ],
+  "carrierTrackingNumber": "id dolore sit eu",
+  "auditInfo": {
+    "createdDate": "2012-03-01T18:44:01.551Z",
+    "isDeleted": null,
+    "createdBy": "adipisicing nulla proident voluptate est",
+    "updatedDate": null,
+    "updatedBy": "do ea"
+  },
+  "giftMessageText": "exercitation incididunt qui",
+  "salesOrderDeliveryGroup": [
+    "commodo anim consequat tempor"
+  ],
+  "salesOrder": [
+    "non"
+  ],
+  "externalIds": [
+    "officia eiusmod non sed"
+  ],
+  "isGift": null,
+  "shipmentNumber": "sit fugiat incididunt anim ipsum",
+  "salesOrderExt": [
+    {
+      "name": "ullamco amet et id dolore",
+      "requestedStartDate": null,
+      "id": null,
+      "orderNumber": "incididunt dolor",
+      "description": "eu do",
+      "shipToContact": [
+        "reprehenderit"
+      ],
+      "isAlerted": true,
+      "billingDayOfTheMonth": 79532726,
+      "isHistoricalOnly": null,
+      "totalBookingAmount": null,
+      "isReductionOrder": null,
+      "iSOCulture": "est Duis",
+      "totalDeliveryTaxAmount": null,
+      "salesOrderConfirmationStatus": [
+        "incididunt ullamco"
+      ],
+      "paymentMethod": [
+        "do Lorem in est sunt"
+      ],
+      "filedDate": "1965-12-15",
+      "adjustedProductTaxAmount": 65750182,
+      "billToAccount": [
+        "labore sunt eiusmod minim"
+      ],
+      "internalBusinessUnit": [
+        "mollit laboris"
+      ],
+      "promiseDate": "2009-01-03",
+      "totalDeliveryAmount": null,
+      "orderStartDate": "2014-07-01",
+      "salesOrderType": [
+        {
+          "id": null,
+          "name": "consequat reprehenderit in",
+          "auditInfo": {
+            "createdDate": null,
+            "isDeleted": null,
+            "createdBy": "irure do",
+            "updatedDate": null,
+            "updatedBy": "in enim"
+          }
+        }
+      ],
+      "totalProductAmount": -50028323,
+      "seller": [
+        "aliqua"
+      ],
+      "canBillNow": false,
+      "totalTaxAmount": 6289879,
+      "billToAddress": [
+        "Excepteur amet in"
+      ],
+      "isTaxExempt": true,
+      "totalAdjustmentAmount": 12212192,
+      "totalDeliveryFeeAmount": 76976398,
+      "purchaseOrderDate": null,
+      "activatedDate": null,
+      "billToContact": [
+        "veniam amet deserunt esse"
+      ],
+      "orderEndDate": null,
+      "purchaseOrderNumber": "Lorem quis laboris",
+      "isGiftOrder": true,
+      "cancelDateType": "anim est occaecat",
+      "checkoutDate": null,
+      "fulfilledDate": null,
+      "salesOrderSystemStatus": "aute",
+      "totalAdjustedDeliveryTaxAmount": -19275974,
+      "customerAuthorizedDate": "1952-12-08",
+      "companyAuthorizedDate": "1952-11-30",
+      "billToEmail": [
+        "quis amet"
+      ],
+      "developerStatusCode": "exercitation",
+      "paidDate": "1944-02-04",
+      "grandTotalAmount": null,
+      "soldToCustomer": [
+        "aliqua quis esse reprehenderit"
+      ],
+      "orderDiscount": null,
+      "cancelDate": null
+    }
+  ],
+  "shipToAddressExt": [
+    {
+      "addressLine1": "fugiat non anim nulla",
+      "contactPointType": [
+        {
+          "id": null,
+          "name": "minim ut dolor dolor in",
+          "optInPriority": -64102745,
+          "auditInfo": {
+            "createdDate": null,
+            "isDeleted": true,
+            "createdBy": "Lorem pariatur Ut laborum",
+            "updatedDate": "2006-05-05T07:31:47.846Z",
+            "updatedBy": "eu ullamco deserunt culpa sint"
+          }
+        }
+      ],
+      "id": "incididunt id",
+      "activeFromDate": "1947-01-11",
+      "contactPhone": [
+        "elit commodo cupidatat proident"
+      ],
+      "forBusinessUse": false,
+      "stateProvinceName": "ut ipsum elit minim",
+      "partyRole": [
+        "consectetur"
+      ],
+      "isUsedForBilling": null,
+      "addressLine4": "commodo quis ipsum",
+      "activeToDate": "1983-12-31",
+      "addressLine3": "ut reprehenderit adipisicing id est",
+      "party": [
+        "irure culpa et adipisicing dolore"
+      ],
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": null,
+        "createdBy": "in",
+        "updatedDate": "2000-09-23T19:32:10.944Z",
+        "updatedBy": "nulla"
+      },
+      "profileFirstCreatedDate": null,
+      "primaryFlag": false,
+      "isUsedForShipping": null,
+      "profileLastUpdatedDate": "22:00:07.661Z",
+      "geoLongitude": null,
+      "profileOccurrenceCount": null,
+      "geoAccuracy": 79039958,
+      "addressLine2": "Ut ut veniam sunt",
+      "countryName": "laboris ut sed",
+      "name": "sit veniam laboris eu cillum",
+      "postalCodeText": "consequat Excepteur anim mollit"
+    }
+  ],
+  "specialInstructionsText": "sed aliqua ipsum incididunt",
+  "actualDeliveryDateTime": null,
+  "salesOrderDeliveryGroupExt": [
+    {
+      "name": "esse ut aliqua eiusmod",
+      "id": "adipisicing voluptate deserunt aliqua in",
+      "totalUnitPriceAmount": null,
+      "totalPriceAmount": null,
+      "salesOrderDeliveryGroupNumber": "id aliqua in in labore",
+      "description": "ex in",
+      "isGift": null,
+      "salesOrder": [
+        "aute"
+      ],
+      "totalProductTaxAmount": -55513382,
+      "giftMessageText": "eu sit",
+      "desiredDeliveryDate": null,
+      "salesOrderDeliveryStatus": [
+        "ad Lorem sit"
+      ],
+      "orderDeliveryMethod": [
+        "ut consectetur culpa cillum"
+      ],
+      "totalDeliveryChargeTaxAmount": 35116360,
+      "totalDeliveryAdjustmentTaxAmount": -35404020,
+      "originalDeliveryGroup": [
+        "veniam officia nisi"
+      ],
+      "totalDeliveryAdjustmentAmount": null,
+      "accountContact": [
+        "eu adipisicing tempor"
+      ],
+      "auditInfo": {
+        "createdDate": "1956-07-29T20:28:30.084Z",
+        "isDeleted": null,
+        "createdBy": "officia exercitation esse reprehenderit",
+        "updatedDate": null,
+        "updatedBy": "laboris adipisicing"
+      },
+      "totalDeliveryChargeAmount": null,
+      "contactPointAddress": [
+        "in in velit eiusmod eu"
+      ],
+      "promisedDate": "2016-10-02",
+      "totalDeliveryTaxAmount": 1626220,
+      "grandTotalDeliveryAmount": 49201422,
+      "totalTaxAmount": 72730670
+    }
+  ],
+  "scheduledDeliveryDateTime": "13:41:46.529Z"
+}

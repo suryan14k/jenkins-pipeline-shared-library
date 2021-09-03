@@ -1,0 +1,74 @@
+#%RAML 1.0 Library
+usage: Types representing sales contract items
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+  SalesOrderTypes: SalesOrderTypeLibrary.raml
+
+types:
+  # Accelerators: new type introduced
+  SalesContract:
+    properties:
+      id:
+        type: string | nil
+      salesContractType?:
+        type: string
+      # Account.id reference
+      customer?:
+        type: string
+      salesOrder?:
+        type: string | SalesOrderTypes.SalesOrder
+        description: Associated sales order id
+      totalNetAmount?:
+        type: number | nil
+      transactionCurrency?:
+        type: string
+      salesContractValidityStartDate?:
+        type: date-only | nil
+      salesContractValidityEndDate?:
+        type: date-only | nil
+      salesContractDate?:
+        type: date-only | nil
+      salesOrganization?:
+        type: string
+      salesDocApprovalStatus?:
+        type: string
+      salesContractItems?:
+        items: string | SalesContractItem
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  # Accelerators: new type introduced
+  SalesContractItem:
+    properties:
+      id:
+        type: string | nil
+      salesContractId?:
+        type: string
+      salesContractItemText?:
+        type: string
+      salesContractSignedDate?:
+        type: date-only | nil
+      itemGrossWeight?:
+        type: number | nil
+      itemNetWeight?:
+        type: number | nil
+      itemWeightUnit?:
+        type: string
+      pricingDate?:
+        type: date-only | nil
+      product?:
+        type: string
+      productGroup?:
+        type: string
+      productPricingGroup?:
+        type: string
+      requestedQuantity?:
+        type: integer
+        minimum: 0
+      customerPaymentTerms?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

@@ -1,0 +1,95 @@
+{
+  "expirationDate": "1958-11-11",
+  "totalPaymentCaptureAmount": -35917703,
+  "paymentGatewayDate": "02:10:51.953Z",
+  "paymentGatewayReferenceNumber": "voluptate commodo",
+  "id": "nulla aliqua est in",
+  "authorizationAmount": 5509606,
+  "paymentAuthorizationProcessingMode": "commodo",
+  "paymentAuthorizationNumber": "dolor ipsum exercitation dolor",
+  "paymentGatewayResult": [
+    {
+      "id": "ex dolore dolor in",
+      "name": "ipsum magna dolore",
+      "description": "fugiat cupidatat exercitation",
+      "auditInfo": {
+        "createdDate": "2015-04-30T22:18:51.046Z",
+        "isDeleted": null,
+        "createdBy": "cillum irure",
+        "updatedDate": "1967-01-22T18:24:54.753Z",
+        "updatedBy": "dolor Lorem"
+      }
+    }
+  ],
+  "gatewayAuthorizationCode": "proident laboris irure qui",
+  "requestDate": "18:15:11.687Z",
+  "paymentAuthorizationStatus": "ipsum laboris enim exercitation aliquip",
+  "paymentGatewayInternalReferenceNumber": "id ut dolor",
+  "gatewayResultCodeDescription": "minim nisi dolore aliquip magna",
+  "iPAddress": "anim",
+  "paymentMethodID": [
+    {
+      "id": null,
+      "paymentMethodStatus": "ut proident aliquip sed",
+      "auditInfo": {
+        "createdDate": "1972-09-11T06:27:13.779Z",
+        "isDeleted": true,
+        "createdBy": "fugiat dolor ad in magna",
+        "updatedDate": null,
+        "updatedBy": "enim"
+      },
+      "paymentMethodType": [
+        {
+          "id": "dolore amet aliquip voluptate cupidatat",
+          "typeDescription": "laboris",
+          "mediaType": "in est",
+          "typeRequiredIdentification": "in",
+          "maxTransactionAmount": -14736977
+        }
+      ]
+    }
+  ],
+  "auditInfo": {
+    "createdDate": "1974-12-08T14:06:51.316Z",
+    "isDeleted": true,
+    "createdBy": "elit ullamco fugiat",
+    "updatedDate": null,
+    "updatedBy": "anim aliqua sint"
+  },
+  "macAddress": "enim irure",
+  "paymentAuthorizationCommentText": "velit quis",
+  "totalAuthorizationReversalAmount": -88114197,
+  "paymentGroup": [
+    {
+      "id": "est aliqua",
+      "totalReversalAmount": 92350418,
+      "totalAuthorizationAmount": -72278276,
+      "totalPaymentAmount": 99557881,
+      "paymentGroupNumber": "consequat",
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": true,
+        "createdBy": "ullamco aliqua",
+        "updatedDate": null,
+        "updatedBy": "esse"
+      }
+    }
+  ],
+  "salesOrderPaymentSummary": [
+    "Duis laborum commodo sint"
+  ],
+  "availableBalanceAmount": null,
+  "externalCreatedDate": "1961-10-11",
+  "paymentGateway": [
+    "aliqua mollit ullamco dolore sed"
+  ],
+  "salesOrderPaymentSummaryExt": [
+    {
+      "name": "ea",
+      "id": "et",
+      "appliedAmount": null,
+      "availableToApplyBalanceAmount": null
+    }
+  ],
+  "gatewayReferenceDetailsText": "deserunt voluptate mollit adipisicing"
+}

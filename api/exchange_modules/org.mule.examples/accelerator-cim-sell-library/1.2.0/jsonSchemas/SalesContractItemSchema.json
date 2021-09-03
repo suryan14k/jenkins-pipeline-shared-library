@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesContractItem",
+  "definitions": {
+    "SalesContractItem": {
+      "type": "object",
+      "example": {
+        "id": "eiusmod dolore commodo dolor",
+        "salesContractSignedDate": null,
+        "salesContractItemText": "cillum sint",
+        "productGroup": "mollit elit aliquip",
+        "itemGrossWeight": null,
+        "itemNetWeight": -36281399.87786474,
+        "customerPaymentTerms": "in",
+        "pricingDate": null,
+        "auditInfo": {
+          "isDeleted": false,
+          "createdBy": "ut in cillum",
+          "updatedBy": "proident sit exercitation labore",
+          "updatedDate": null,
+          "createdDate": "1951-08-30T03:46:34.873Z"
+        },
+        "requestedQuantity": 550458,
+        "salesContractId": "dolore cupidatat nisi incididunt",
+        "product": "sed tempor magna occaecat Duis",
+        "itemWeightUnit": "et"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesContractId": {
+          "type": "string"
+        },
+        "salesContractItemText": {
+          "type": "string"
+        },
+        "salesContractSignedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "itemGrossWeight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "itemNetWeight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "itemWeightUnit": {
+          "type": "string"
+        },
+        "pricingDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product": {
+          "type": "string"
+        },
+        "productGroup": {
+          "type": "string"
+        },
+        "productPricingGroup": {
+          "type": "string"
+        },
+        "requestedQuantity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "customerPaymentTerms": {
+          "type": "string"
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

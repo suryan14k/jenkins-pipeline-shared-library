@@ -1,0 +1,1451 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/GoodsProduct",
+  "definitions": {
+    "GoodsProduct": {
+      "type": "object",
+      "example": {
+        "name": "enim irure cupidatat proident",
+        "longDescription": "sed anim in dolore",
+        "id": null,
+        "productStatus": "sit",
+        "description": "et mollit exercitation",
+        "productSKU": "sed sint Lorem enim",
+        "glAccountCode": "culpa commodo",
+        "maximumOrderQuantityCount": null,
+        "isMultipleCouponsAllowed": true,
+        "color": "Lorem elit sint commodo",
+        "height": null,
+        "displayUrl": "sunt occaecat veniam nisi est",
+        "isBackOrdered": false,
+        "requiredTemperatureUOM": "Ut ullamco aliquip",
+        "quantityInstallmentCount": null,
+        "canUseRevenueSchedule": true,
+        "externalSourceRecord": "culpa",
+        "diameter": 75977771,
+        "tareWeight": null,
+        "primaryProductCategory": [
+          {
+            "id": "Ut sit cillum",
+            "name": "veniam Lorem proident ut exercitation",
+            "activeFromDate": "1955-04-25",
+            "parentCategory": [
+              "Lorem",
+              "eu in voluptate aliqua officia"
+            ],
+            "activeToDate": "1977-01-23",
+            "auditInfo": {
+              "isDeleted": null,
+              "createdBy": "Duis quis Ut ad",
+              "updatedBy": "in nisi",
+              "updatedDate": null,
+              "createdDate": "1972-04-22T12:34:07.245Z"
+            },
+            "productCatalog": [
+              {
+                "id": "ex ea",
+                "name": "dolore Excepteur in eu do",
+                "activeFromDate": "2015-10-02",
+                "auditInfo": {
+                  "isDeleted": null,
+                  "createdBy": "commodo",
+                  "updatedBy": "est sint officia cillum",
+                  "updatedDate": "1992-12-06T15:18:28.318Z",
+                  "createdDate": "1950-07-02T12:16:15.331Z"
+                },
+                "activeToDate": "2019-04-29"
+              },
+              "sit sed laborum sint"
+            ]
+          }
+        ],
+        "minimumAdvertisementAmount": null,
+        "requiredCleanupProcess": "aliquip in cillum velit laboris",
+        "versionNumber": "cillum anim dolor aliqua",
+        "isCustomerDiscountAllowed": false,
+        "allowCustomerReturn": true,
+        "stockLedgerValuationAmount": null,
+        "requiresInvididualUnitPricing": null,
+        "season": "labore amet nulla ad cupidatat",
+        "manufacturerName": "non",
+        "drainedWeight": 92838304,
+        "brandGrade": "Ut labore",
+        "weightUOM": "do qui non ad",
+        "validFromDate": "1959-06-01",
+        "disposalType": "in",
+        "validForPeriodCount": null,
+        "shelfFacingUnitCount": null,
+        "sizeUOM": "ipsum aute minim consectetur in",
+        "fabric": "sed ex reprehenderit nisi occaecat",
+        "age": "pariatur esse Ut",
+        "revenueInstallmentCount": -22495478,
+        "isInstallable": null,
+        "allowPartialRefund": false,
+        "isSerialized": true,
+        "modelNumber": "deserunt dolore irure elit cillum",
+        "mSRPAmount": -48237985,
+        "depth": 28606741,
+        "isIntellectualPropertyProtected": null,
+        "isDynamicBundle": null,
+        "isQualityVerificationRequired": true,
+        "environmentRequirement": "quis",
+        "productMayExpand": false,
+        "rewardProgramPointsCount": null,
+        "requiresUnitPriceLabel": null,
+        "isFoodstampPaymentAllowed": null,
+        "externalIds": [
+          {
+            "externalIdType": [
+              {
+                "id": "adipisicing pariatur",
+                "name": "do consectetur ad tempor nulla"
+              }
+            ],
+            "externalId": "eu ut do",
+            "id": "aute voluptate nisi non sit",
+            "statusLastChangedDate": "1983-11-19T07:41:08.172Z",
+            "status": "INVALID"
+          }
+        ],
+        "requiredDepositPercentage": null,
+        "auditInfo": {
+          "isDeleted": false,
+          "createdBy": "est irure commodo ut incididunt",
+          "updatedBy": "dolor reprehenderit commodo in",
+          "updatedDate": "1967-04-27T00:57:19.137Z",
+          "createdDate": "1973-05-25T01:58:15.821Z"
+        },
+        "validToDate": "1972-09-09",
+        "primarySalesChannel": [
+          "aliqua non voluptate"
+        ],
+        "style": "incididunt laboris fugiat velit et",
+        "isWeightEntryRequired": false,
+        "isPreOrderable": true,
+        "requiredTemperatureLowestNumber": -8201276,
+        "isMadeToOrder": false,
+        "isWorkerDiscountAllowed": null,
+        "isSellable": true,
+        "quantityScheduleType": "Ut in esse",
+        "brand": [
+          {
+            "id": null,
+            "name": "voluptate proident Excepteur laboris non",
+            "brandGrade": "proident irure",
+            "auditInfo": {
+              "isDeleted": null,
+              "createdBy": "laboris dolore laborum",
+              "updatedBy": "Duis deserunt",
+              "updatedDate": "1986-08-26T13:52:08.116Z",
+              "createdDate": "1998-07-11T01:14:02.97Z"
+            }
+          }
+        ],
+        "netWeight": null,
+        "standardWarrantyLengthMonth": null,
+        "requiredHumidityPercentage": 48262507,
+        "isReturnable": false,
+        "gender": "irure ut qui nisi",
+        "width": null,
+        "grossWeight": null,
+        "productSecurityRequirement": "nulla",
+        "pattern": "adipisicing nulla nisi eiusmod aliquip",
+        "minimumOrderQuantityCount": -7129117,
+        "validForPeriodUOM": [
+          {
+            "pluralName": "cupidatat ex",
+            "name": "consectetur ipsum nisi ad",
+            "id": "est sunt adipisicing cillum aute"
+          }
+        ],
+        "requiredDepositAmount": null,
+        "revenueInstallmentPeriod": "ex occaecat",
+        "isPerishable": false,
+        "modelYear": null,
+        "maxHoldingDayCount": null,
+        "masterProduct": [
+          "commodo",
+          "in occaecat elit dolor ut"
+        ],
+        "lotIdentifier": "esse",
+        "isQuantityEntryRequired": null,
+        "canUseQuantitySchedule": false
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "longDescription",
+        "id",
+        "productStatus",
+        "description",
+        "productSKU"
+      ],
+      "properties": {
+        "productSecurityRequirement": {
+          "type": "string"
+        },
+        "season": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string"
+        },
+        "isMadeToOrder": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fabric": {
+          "type": "string"
+        },
+        "requiredTemperatureUOM": {
+          "type": "string"
+        },
+        "shelfFacingUnitCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiredHumidityPercentage": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "grossWeight": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tareWeight": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "depth": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiredTemperatureLowestNumber": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gender": {
+          "type": "string"
+        },
+        "maxHoldingDayCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "diameter": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isPerishable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiredCleanupProcess": {
+          "type": "string"
+        },
+        "pattern": {
+          "type": "string"
+        },
+        "requiredTemperatureHighestNumber": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "netWeight": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "environmentRequirement": {
+          "type": "string"
+        },
+        "drainedWeight": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "age": {
+          "type": "string"
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiresUnitPriceLabel": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "weightUOM": {
+          "type": "string"
+        },
+        "productMayExpand": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sizeUOM": {
+          "type": "string"
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "quantityScheduleType": {
+          "type": "string"
+        },
+        "disposalType": {
+          "type": "string"
+        },
+        "longDescription": {
+          "type": "string"
+        },
+        "primaryProductCategory": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name",
+                  "activeFromDate"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "productCatalog": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name",
+                            "activeFromDate"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "activeToDate": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "format": "date"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "activeFromDate": {
+                              "type": "string",
+                              "format": "date"
+                            },
+                            "auditInfo": {
+                              "description": "Defines standard system audit fields available for most types",
+                              "type": "object",
+                              "example": {
+                                "isDeleted": true,
+                                "createdBy": "commodo minim dolore est",
+                                "updatedBy": "dolor quis nulla",
+                                "updatedDate": "1950-01-23T19:52:29.659Z",
+                                "createdDate": "1950-01-23T19:52:29.659Z"
+                              },
+                              "additionalProperties": true,
+                              "required": [
+                                "isDeleted",
+                                "createdBy",
+                                "updatedBy",
+                                "updatedDate",
+                                "createdDate"
+                              ],
+                              "properties": {
+                                "createdDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was created"
+                                },
+                                "createdBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which created the entity"
+                                },
+                                "updatedDate": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Timestamp of when the entity was last updated"
+                                },
+                                "updatedBy": {
+                                  "type": "string",
+                                  "description": "Identifies the system or user which last updated the entity"
+                                },
+                                "isDeleted": {
+                                  "anyOf": [
+                                    {
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ],
+                                  "description": "Indicates whether or not the entity has been soft-deleted"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "activeFromDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "activeToDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "parentCategory": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "minimumAdvertisementAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isBackOrdered": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validForPeriodCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isWorkerDiscountAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allowPartialRefund": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isWeightEntryRequired": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isQuantityEntryRequired": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isSerialized": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rewardProgramPointsCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "revenueInstallmentPeriod": {
+          "type": "string"
+        },
+        "isAutoProvisionable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isCouponRedemptionAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isSellableIndependently": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canUseRevenueSchedule": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "manufacturerName": {
+          "type": "string"
+        },
+        "isIntellectualPropertyProtected": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modelYear": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isCustomerDiscountAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "productStatus": {
+          "type": "string"
+        },
+        "brandGrade": {
+          "type": "string"
+        },
+        "quantityInstallmentCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiredDepositAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revenueScheduleType": {
+          "type": "string"
+        },
+        "isPreOrderable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiresInvididualUnitPricing": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "standardWarrantyLengthMonth": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canUseQuantitySchedule": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isInstallable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isRainCheckAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "minimumAdvertisementAmountStartDate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maximumOrderQuantityCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isMultipleCouponsAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allowCustomerReturn": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modelNumber": {
+          "type": "string"
+        },
+        "mSRPAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "externalSourceRecord": {
+          "type": "string"
+        },
+        "masterProduct": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isSellable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "priceChargeType": {
+          "type": "string"
+        },
+        "primarySalesChannel": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isPartnerDiscountAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revenueInstallmentCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "productSKU": {
+          "type": "string"
+        },
+        "quantityInstallmentPeriod": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isManualPriceEntryRequired": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "type": {
+          "type": "string"
+        },
+        "isSellableWithoutPrice": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "glAccountCode": {
+          "type": "string"
+        },
+        "isReturnable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "displayUrl": {
+          "type": "string"
+        },
+        "validForPeriodUOM": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "example": {
+                  "pluralName": "irure dolor",
+                  "name": "laboris est ipsum",
+                  "id": "id1"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "pluralName",
+                  "name",
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "pluralName": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "versionNumber": {
+          "type": "string"
+        },
+        "brand": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "brandGrade": {
+                    "type": "string"
+                  },
+                  "auditInfo": {
+                    "description": "Defines standard system audit fields available for most types",
+                    "type": "object",
+                    "example": {
+                      "isDeleted": true,
+                      "createdBy": "commodo minim dolore est",
+                      "updatedBy": "dolor quis nulla",
+                      "updatedDate": "1950-01-23T19:52:29.659Z",
+                      "createdDate": "1950-01-23T19:52:29.659Z"
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                      "isDeleted",
+                      "createdBy",
+                      "updatedBy",
+                      "updatedDate",
+                      "createdDate"
+                    ],
+                    "properties": {
+                      "createdDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was created"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which created the entity"
+                      },
+                      "updatedDate": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Timestamp of when the entity was last updated"
+                      },
+                      "updatedBy": {
+                        "type": "string",
+                        "description": "Identifies the system or user which last updated the entity"
+                      },
+                      "isDeleted": {
+                        "anyOf": [
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "description": "Indicates whether or not the entity has been soft-deleted"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "lotIdentifier": {
+          "type": "string"
+        },
+        "validFromDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stockLedgerValuationAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isDynamicBundle": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isQualityVerificationRequired": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requiredDepositPercentage": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isFoodstampPaymentAllowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "minimumOrderQuantityCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "externalIds": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "example": {
+                  "externalIdType": [
+                    {
+                      "id": "id1",
+                      "name": "adipisicing labore Duis in anim"
+                    }
+                  ],
+                  "externalId": "Ut",
+                  "id": "irure proident cillum deserunt dolor",
+                  "status": "INVALID",
+                  "statusLastChangedDate": "1999-11-26T02:28:11.661Z"
+                },
+                "description": "Defines a structure for referencing an entity in external systems",
+                "additionalProperties": true,
+                "required": [
+                  "externalIdType",
+                  "externalId",
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "externalId": {
+                    "type": "string",
+                    "description": "A unique identifier assigned to an entity in another system"
+                  },
+                  "externalIdType": {
+                    "description": "Identifies the system that owns or otherwise recognizes this unique identifier",
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "description": "Identifies the external system that owns or otherwise recognizes a particular identifier",
+                          "type": "object",
+                          "additionalProperties": true,
+                          "required": [
+                            "id",
+                            "name"
+                          ],
+                          "properties": {
+                            "id": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "status": {
+                    "enum": [
+                      "VALID",
+                      "INVALID"
+                    ],
+                    "description": "Indicates whether this identifier is currently valid or not",
+                    "type": "string"
+                  },
+                  "statusLastChangedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "Date and time of the last change in status"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": null,
+  "paymentMethodStatus": "velit nisi ipsum",
+  "account": [
+    "adipisicing sint id"
+  ],
+  "auditInfo": {
+    "isDeleted": true,
+    "createdBy": "sit adipisicing Excepteur nostrud",
+    "updatedBy": "velit",
+    "updatedDate": null,
+    "createdDate": "2002-01-17T22:17:31.57Z"
+  },
+  "paymentMethodType": [
+    {
+      "id": null,
+      "maxPerPeriodTransactionCount": null,
+      "name": "amet do nulla",
+      "mediaType": "cillum do nisi reprehenderit sunt",
+      "maxTransactionAmount": -52406107
+    }
+  ]
+}

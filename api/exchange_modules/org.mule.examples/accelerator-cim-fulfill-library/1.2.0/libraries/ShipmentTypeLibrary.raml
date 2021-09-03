@@ -1,0 +1,152 @@
+#%RAML 1.0 Library
+usage: Types representing packages actually shipped for an order
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  Shipment:
+    properties:
+      id:
+        type: string | nil
+      giftMessageText?:
+        type: string
+      shipmentNumber?:
+        type: string
+      # Accelerators: added string union for ShipmentStatus.id reference
+      shipmentStatus?:
+        items: string | ShipmentStatus
+      # Accelerators: changed to string for SalesOrder.id reference
+      salesOrder?:
+        items: string
+      isGift?:
+        type: boolean | nil
+      actualDeliveryDateTime?:
+        type: time-only | nil
+      specialInstructionsText?:
+        type: string
+      carrierTrackingNumber?:
+        type: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      shipToAddress?:
+        items: string
+      estimatedDeliveryDateTime?:
+        type: time-only | nil
+      # Accelerators: changed to string for SalesOrderDeliveryGroup.id reference
+      salesOrderDeliveryGroup?:
+        items: string
+      scheduledDeliveryDateTime?:
+        type: time-only | nil
+      shipmentDate:
+        type: date-only
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentDocument:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for Shipment.id reference
+      shipment:
+        items: string | Shipment
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentPackage:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added string union for Shipment.id reference
+      # Accelerators: made property optional
+      shipment?:
+        items: string | Shipment
+      # Accelerators: made property optional
+      shipmentProductCount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      shipmentProductDescription?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentProduct:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      # Accelerators: added string union for Shipment.id reference
+      # Accelerators: made property optional
+      shipment?:
+        items: string | Shipment
+      # Accelerators: added string union for ShipmentPackage.id reference
+      # Accelerators: made property optional
+      shipmentPackage?:
+        items: string | ShipmentPackage
+      # Accelerators: changed to string for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      salesOrderProduct?:
+        items: string
+      # Accelerators: made property optional
+      shipmentProductCount?:
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentProductPriceAdjustment:
+    properties:
+      id:
+        type: string | nil
+      adjustmentAmount:
+        type: integer
+      shipmentProductPriceAdjustmentAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      description?:
+        type: string
+      # Accelerators: added string union for ShipmentProduct.id reference
+      # Accelerators: made property optional
+      shipmentProduct?:
+        items: string | ShipmentProduct
+      adjustmentTaxAmount?:
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentProductPriceAdjustmentTax:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added string union for ShipmentProductPriceAdjustment.id reference
+      # Accelerators: made property optional
+      shipmentProductPriceAdjustment?:
+        items: string | ShipmentProductPriceAdjustment
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShipmentStatus:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      description:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  ShippingMethod:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      # Accelerators: made property optional
+      description?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

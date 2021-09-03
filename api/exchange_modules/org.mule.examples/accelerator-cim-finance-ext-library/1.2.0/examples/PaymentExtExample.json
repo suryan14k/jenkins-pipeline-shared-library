@@ -1,0 +1,287 @@
+{
+  "paymentStatus": "Duis ad do",
+  "paymentEffectiveDate": "2009-10-30",
+  "id": "eu officia",
+  "paymentType": "id mollit irure",
+  "authorizationProcessingMode": "aliquip ad Ut in eiusmod",
+  "paymentNumber": "non",
+  "paymentAmount": 25739880,
+  "salesOrderPaymentSummary": [
+    "dolore labore dolor esse"
+  ],
+  "name": "aute",
+  "latestGatewayResultCode": [
+    "Excepteur magna culpa ad"
+  ],
+  "iPAddress": "aliqua",
+  "paymentTreatment": [
+    {
+      "id": "et pariatur amet mollit",
+      "paymentTreatmentStatus": "minim ex adipisicing in pariatur",
+      "shouldAutoInvoice": false,
+      "paymentPolicy": [
+        {
+          "id": "Duis cupidatat",
+          "name": "sit dolor",
+          "description": "eiusmod",
+          "paymentPolicyStatus": "tempor sit irure mollit"
+        }
+      ],
+      "paymentTreatmentName": "elit incididunt dolor",
+      "paymentApplicationLevel": "exercitation",
+      "paymentTreatmentMethod": [
+        {
+          "id": "qui ut voluptate consectetur",
+          "paymentTreatmentMethodName": "exercitation",
+          "paymentTreatmentMethodCode": "laboris sunt",
+          "paymentTreatmentMethodDescription": "tempor aliquip magna"
+        }
+      ],
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": true,
+        "createdBy": "consectetur",
+        "updatedDate": "2021-01-17T07:28:04.653Z",
+        "updatedBy": "cillum veniam deserunt esse"
+      }
+    }
+  ],
+  "paymentCancellationDate": "2005-04-28",
+  "latestPaymentGatewayMessageText": "sed Lorem labore in laborum",
+  "auditInfo": {
+    "createdDate": "1943-08-26T16:25:32.358Z",
+    "isDeleted": false,
+    "createdBy": "enim non consectetur tempor ex",
+    "updatedDate": "1966-12-20T17:12:35.848Z",
+    "updatedBy": "cupidatat cillum laborum anim"
+  },
+  "customerPhoneNumber": "esse fugiat commodo aute in",
+  "paymentMethod": [
+    {
+      "id": "ut in",
+      "paymentMethodStatus": "labore",
+      "paymentMethodType": [
+        "eiusmod mollit dolor magna"
+      ],
+      "auditInfo": {
+        "createdDate": "2008-08-19T08:39:17.985Z",
+        "isDeleted": null,
+        "createdBy": "deserunt dolor sint Excepteur",
+        "updatedDate": null,
+        "updatedBy": "dolore"
+      }
+    }
+  ],
+  "latestGatewayInternalResult": "cupidatat velit",
+  "latestGatewayReferenceNumber": "magna est laboris fugiat",
+  "externalIds": [
+    "aliqua in dolore sit"
+  ],
+  "macAddress": "nisi in",
+  "balanceAmount": null,
+  "accountExt": [
+    {
+      "name": "ea",
+      "id": "culpa dolor",
+      "number": "ea",
+      "sixtyDayBalanceAmount": null,
+      "partyRole": [
+        "ullamco ea Duis dolore labore"
+      ],
+      "useAsShippingAccount": true,
+      "description": "irure ea ullamco",
+      "thirtyDayBalanceAmount": -52927494,
+      "billContactAddress": [
+        "ex"
+      ],
+      "party": [
+        {
+          "id": null,
+          "partyType": "sit sint Ut dolore",
+          "globalParty": "elit voluptate",
+          "externalIds": [
+            "ex Excepteur minim anim in"
+          ],
+          "contactPoints": [
+            "deserunt in fugiat"
+          ],
+          "auditInfo": {
+            "createdDate": null,
+            "isDeleted": null,
+            "createdBy": "commodo amet tempor irure non",
+            "updatedDate": "1986-05-02T20:21:01.509Z",
+            "updatedBy": "incididunt Ut laborum in"
+          },
+          "noMergeReason": "deserunt veniam magna ad Ut",
+          "primaryAccount": [
+            "quis"
+          ]
+        }
+      ],
+      "balanceAmount": 90785805,
+      "paymentTerm": "deserunt sed",
+      "lastActivityDate": "1972-01-30",
+      "faxPhone": [
+        {
+          "contactPointType": [
+            "consectetur minim dolor"
+          ],
+          "id": null,
+          "telephoneNumber": "do",
+          "activeFromDate": "2009-07-15",
+          "primaryFlag": null,
+          "party": [
+            "id"
+          ],
+          "shortCode": null,
+          "formattedNationalPhoneNumber": "adipisicing laboris",
+          "formattedE164PhoneNumber": "qui",
+          "forBusinessUse": true,
+          "name": "tempor anim",
+          "forPersonalUse": false,
+          "profileOccurrenceCount": null,
+          "bestTimeToContactEndTime": null,
+          "isSMSCapable": false,
+          "formattedInternationalPhoneNumber": "in deserunt anim ea cillum",
+          "phoneCountryCode": "culpa dolore in",
+          "activeToDate": "1987-06-25",
+          "profileFirstCreatedDate": null,
+          "primaryPhoneType": "sed mollit",
+          "bestTimeToContactStartTime": "01:28:28.374Z",
+          "isFaxCapable": true,
+          "extensionNumber": "sed",
+          "countryName": "laborum aliqua",
+          "areaCode": "irure",
+          "auditInfo": {
+            "createdDate": "1999-03-22T03:27:25.037Z",
+            "isDeleted": false,
+            "createdBy": "labore incididunt in et",
+            "updatedDate": null,
+            "updatedBy": "quis sit do Ut cupidatat"
+          },
+          "profileLastUpdatedDate": null,
+          "partyRole": [
+            "dolor cillum Lorem sed adipisicing"
+          ]
+        }
+      ],
+      "billDeliveryMethod": "consectetur sit enim",
+      "holdStatusReason": "irure fugiat Ut ad",
+      "shippingEmail": [
+        "occaecat cillum"
+      ],
+      "sLAType": "elit",
+      "defaultFreightTerms": "non enim",
+      "shippingContact": [
+        "in"
+      ],
+      "useAsServiceAccount": null,
+      "sLAExpirationDate": null,
+      "shippingAddress": [
+        {
+          "addressLine1": "in labore",
+          "contactPointType": [
+            {
+              "id": null,
+              "name": "ut est in pariatur",
+              "auditInfo": {
+                "createdDate": null,
+                "isDeleted": true,
+                "createdBy": "ut voluptate do Lorem consequat",
+                "updatedDate": "1954-04-14T17:02:38.494Z",
+                "updatedBy": "ad"
+              }
+            }
+          ],
+          "id": null,
+          "activeFromDate": "1958-12-17",
+          "activeToDate": "1999-09-24",
+          "profileFirstCreatedDate": "09:07:11.295Z",
+          "geoLongitude": 12657841,
+          "addressLine2": "aliqua fugiat",
+          "addressLine3": "ut officia dolor ad consequat",
+          "forPersonalUse": null,
+          "partyRole": [
+            "Duis irure in ullamco"
+          ],
+          "name": "voluptate velit consequat",
+          "party": [
+            "irure sit in magna est"
+          ],
+          "countryName": "ullamco culpa eu ad",
+          "cityName": "dolore Lorem laborum in",
+          "bestTimeToContactStartTime": null,
+          "bestTimeToContactEndTime": "17:34:23.121Z",
+          "geoAccuracy": null,
+          "isUsedForBilling": true,
+          "contactPhone": [
+            "dolore"
+          ],
+          "primaryFlag": null,
+          "addressLine4": "Lorem sit",
+          "forBusinessUse": null
+        }
+      ],
+      "billFrequency": [
+        "quis"
+      ],
+      "ninetyDayBalanceAmount": 28548817,
+      "balanceAmountLimit": -87677296,
+      "assignTerritoryFlag": null,
+      "accountType": "reprehenderit",
+      "orderDeliveryMethod": [
+        "labore ad"
+      ],
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": false,
+        "createdBy": "pariatur enim proident",
+        "updatedDate": null,
+        "updatedBy": "ex cillum in aliquip ullamco"
+      },
+      "primarySalesContactPoint": [
+        "Duis nisi"
+      ],
+      "generalLedgerAccount": "tempor",
+      "autoPaymentAmount": 82412002,
+      "useAsSalesAccount": null,
+      "parentAccount": [
+        "dolore"
+      ],
+      "autoPayEnabledFlag": null,
+      "shippingPhoneid": [
+        {
+          "contactPointType": [
+            "proident enim exercitation sit"
+          ],
+          "id": null,
+          "telephoneNumber": "dolore",
+          "activeFromDate": "1972-11-30",
+          "forPersonalUse": false,
+          "primaryFlag": null,
+          "formattedNationalPhoneNumber": "mollit",
+          "forBusinessUse": null,
+          "shortCode": null,
+          "name": "cillum",
+          "areaCode": "dolor officia minim sed",
+          "primaryPhoneType": "officia ipsum reprehenderit ex nisi",
+          "party": [
+            "officia Lorem"
+          ],
+          "formattedInternationalPhoneNumber": "irure deserunt"
+        }
+      ],
+      "useAsBillingAccount": true
+    }
+  ],
+  "internalBusinessUnit": [
+    "laborum veniam sunt dolor do"
+  ],
+  "paymentGateway": [
+    {
+      "id": null,
+      "name": "exercitation id non tempor laborum",
+      "paymentGatewayStatus": "reprehenderit"
+    }
+  ]
+}

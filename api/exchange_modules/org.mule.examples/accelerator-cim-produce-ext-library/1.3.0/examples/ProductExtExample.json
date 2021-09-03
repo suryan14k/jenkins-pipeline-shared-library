@@ -1,0 +1,115 @@
+{
+  "name": "ipsum labore",
+  "longDescription": "ex ad incididunt sit",
+  "id": "proident incididunt",
+  "productStatus": "dolor do occaecat exercitation",
+  "description": "minim non fugiat do sed",
+  "productSKU": "velit esse et id exercitation",
+  "revenueInstallmentCount": -1639507,
+  "isCustomerDiscountAllowed": null,
+  "isPartnerDiscountAllowed": null,
+  "revenueScheduleType": "magna deserunt",
+  "canUseQuantitySchedule": false,
+  "isFoodstampPaymentAllowed": null,
+  "validForPeriodUOM": [
+    "ex consequat adipisicing commodo sed"
+  ],
+  "minimumAdvertisementAmountStartDate": null,
+  "externalSourceRecord": "non cillum occaecat sunt qui",
+  "isSellable": true,
+  "type": "exercitation cupidatat nulla anim laborum",
+  "isSerialized": true,
+  "isInstallable": null,
+  "primarySalesChannelExt": [
+    {
+      "name": "elit ut minim esse",
+      "salesChannelNumber": "sunt est",
+      "id": "ullamco amet labore",
+      "description": "voluptate ea Ut Excepteur anim",
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": true,
+        "createdBy": "commodo Duis fugiat est non",
+        "updatedDate": "1985-03-03T20:14:01.524Z",
+        "updatedBy": "do in in"
+      },
+      "externalRecord": "sint qui amet commodo",
+      "salesChannelType": [
+        {
+          "id": null,
+          "name": "ex magna nostrud in",
+          "auditInfo": {
+            "createdDate": "1987-04-28T17:33:44.87Z",
+            "isDeleted": false,
+            "createdBy": "elit tempor fugiat ut",
+            "updatedDate": "1985-05-31T09:33:54.207Z",
+            "updatedBy": "anim nulla"
+          }
+        }
+      ]
+    }
+  ],
+  "validToDate": null,
+  "rewardProgramPointsCount": -79857242,
+  "minimumOrderQuantityCount": null,
+  "masterProduct": [
+    "labore dolore sunt sit"
+  ],
+  "primaryProductCategory": [
+    {
+      "id": null,
+      "name": "pariatur aliquip do",
+      "activeFromDate": "1975-07-19",
+      "productCatalog": [
+        "magna dolore in"
+      ],
+      "activeToDate": "2006-06-29",
+      "parentCategory": [
+        "Excepteur nostrud elit velit"
+      ],
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": null,
+        "createdBy": "aliqua fugiat quis ex",
+        "updatedDate": "2003-05-04T20:57:04.204Z",
+        "updatedBy": "aliqua dolore occaecat qui"
+      }
+    }
+  ],
+  "brand": [
+    "cupidatat incididunt"
+  ],
+  "revenueInstallmentPeriod": "proident laborum mollit sit",
+  "isReturnable": null,
+  "modelNumber": "quis esse aliquip fugiat incididunt",
+  "isSellableIndependently": null,
+  "isRainCheckAllowed": true,
+  "brandGrade": "aliqua",
+  "isIntellectualPropertyProtected": true,
+  "priceChargeType": "dolore irure sit",
+  "isQuantityEntryRequired": true,
+  "isCouponRedemptionAllowed": null,
+  "quantityInstallmentPeriod": "enim officia ipsum dolore sint",
+  "externalIds": [
+    {
+      "externalIdType": [
+        {
+          "id": null,
+          "name": "dolor eu ut anim eiusmod"
+        }
+      ],
+      "externalId": "dolore dolor aute laboris qui",
+      "id": null
+    }
+  ],
+  "standardWarrantyLengthMonth": -88987434,
+  "glAccountCode": "et labore dolore",
+  "isWeightEntryRequired": null,
+  "isQualityVerificationRequired": null,
+  "isAutoProvisionable": true,
+  "manufacturerName": "et deserunt minim tempor ad",
+  "displayUrl": "quis aliquip eiusmod non Excepteur",
+  "mSRPAmount": -77539003,
+  "requiresInvididualUnitPricing": false,
+  "requiredDepositPercentage": null
+}

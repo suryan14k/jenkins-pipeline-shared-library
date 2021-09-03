@@ -1,0 +1,32 @@
+#%RAML 1.0 Library
+usage: Types representing product inventory and availability
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  # Accelerators: new type introduced
+  ProductAvailability:
+    description: Represents the availability of product for location
+    properties:
+      id:
+        type: string | nil
+      productId: 
+        type: string
+      productName?:
+        type: string
+      externalId?:
+        type: string
+      variantId?: 
+        type: string
+      locationId?: 
+        type: string
+      locationName?: 
+        type: string
+      locationType?: 
+        type: string
+        enum: [STORE, WAREHOUSE, PARTNER]
+      quantityInStock?: 
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

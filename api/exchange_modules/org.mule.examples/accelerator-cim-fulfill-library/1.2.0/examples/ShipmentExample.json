@@ -1,0 +1,45 @@
+{
+  "id": "cillum laboris incididunt consequat",
+  "shipmentDate": "1954-12-05",
+  "externalIds": [
+    "voluptate"
+  ],
+  "shipmentStatus": [
+    {
+      "id": null,
+      "name": "aute consequat ut",
+      "description": "ipsum qui irure Lorem",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "officia occaecat",
+        "updatedBy": "ut mollit do ut in",
+        "updatedDate": null,
+        "createdDate": "2013-06-07T14:07:28.804Z"
+      }
+    }
+  ],
+  "estimatedDeliveryDateTime": null,
+  "giftMessageText": "non",
+  "actualDeliveryDateTime": "00:00:01",
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "ut aute",
+    "updatedBy": "non qui",
+    "updatedDate": "1958-12-13T09:31:59.885Z",
+    "createdDate": null
+  },
+  "scheduledDeliveryDateTime": null,
+  "isGift": null,
+  "shipToAddress": [
+    "irure dolore elit deserunt cupidatat"
+  ],
+  "carrierTrackingNumber": "labore Lorem consequat dolor",
+  "shipmentNumber": "reprehenderit",
+  "salesOrderDeliveryGroup": [
+    "do proident reprehenderit ipsum"
+  ],
+  "specialInstructionsText": "minim Excepteur",
+  "salesOrder": [
+    "non"
+  ]
+}

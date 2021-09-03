@@ -1,0 +1,685 @@
+#%RAML 1.0 Library
+usage: Types representing sales and orders
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+  PriceBookTypes: PriceBookTypeLibrary.raml
+
+types:
+  OrderDeliveryMethod:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      # Accelerators: made property optional
+      externalRecord?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  PriceAdjustmentGroup:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  RenewalTerm:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesChannel:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: made property optional
+      externalRecord?:
+        type: string
+      # Accelerators: added string union for SalesChannelType.id reference
+      # Accelerators: made property optional
+      salesChannelType?:
+        items: string | SalesChannelType
+      description:
+        type: string
+      salesChannelNumber:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesChannelType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrder:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      totalPendingBillingAmount?:
+        type: integer | nil
+      checkoutDate?:
+        type: date-only | nil
+      priceCalculationStatusMessageText?:
+        type: string
+      # Accelerators: made property optional
+      confirmationRecipientEmailText?:
+        type: string
+      orderEndDate?:
+        type: date-only | nil
+      isTaxExempt?:
+        type: boolean | nil
+      totalProductTaxAmount?:
+        type: integer | nil
+      isAlerted?:
+        type: boolean | nil
+      isAnonymous?:
+        type: boolean | nil
+      description:
+        type: string
+      activatedDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      billToEmail?:
+        items: string
+      requestedStartDate:
+        type: date-only | nil
+      companyAuthorizedDate?:
+        type: date-only | nil
+      orderInsuranceAmount?:
+        type: integer | nil
+      isClosed?:
+        type: boolean | nil
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      shipToEmail?:
+        items: string
+      totalDeliveryAmount?:
+        type: integer | nil
+      # Accelerators: added string union for SalesOrderConfirmationStatus.id reference
+      # Accelerators: made property optional
+      salesOrderConfirmationStatus?:
+        items: string | SalesOrderConfirmationStatus
+      # Accelerators: added string union for SalesOrderType.id reference
+      # Accelerators: made property optional
+      salesOrderType?:
+        items: string | SalesOrderType
+      customerAuthorizedDate?:
+        type: date-only | nil
+      totalCancelledBillingAmount?:
+        type: integer | nil
+      totalAdjustedDeliveryTaxAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for PaymentMethod.id reference
+      # Accelerators: made property optional
+      paymentMethod?:
+        items: string
+      totalAdjustmentAmount?:
+        type: integer | nil
+      # Accelerators: added string union for SalesOrderStatus.id reference
+      salesOrderStatus?:
+      # Accelerators: made property optional
+        items: string | SalesOrderStatus
+      renewalUpliftRate?:
+        type: integer | nil
+      totalProductAmount?:
+        type: integer | nil
+      # Accelerators: added string union for RenewalTerm.id reference
+      renewalTerm?:
+        items: string | RenewalTerm
+      # Accelerators: changed to string for SalesOrder.id reference
+      originalOrder?:
+        items: string
+      # Accelerators: changed to string for Account.id reference
+      # Accelerators: made property optional
+      billToAccount?:
+        items: string
+      totalAdjustmentTaxAmount?:
+        type: integer | nil
+      isGiftOrder?:
+        type: boolean | nil
+      promiseFulfillmentDate?:
+        type: date-only | nil
+      filedDate?:
+        type: date-only | nil
+      iSOCulture?:
+        type: string
+      # Accelerators: added string union for UserSession.id reference
+      userDeviceSession?:
+        items: string | GlobalTypes.UserSession
+      purchaseOrderNumber?:
+        type: string
+      totalDeliveryFeeAmount?:
+        type: integer | nil
+      totalDeliveryTaxAmount?:
+        type: integer | nil
+      totalTaxAmount?:
+        type: integer | nil
+      orderNumber:
+        type: string
+      # Accelerators: changed to string for Seller.id reference
+      seller?:
+        items: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      # Accelerators: made property optional
+      billToAddress?:
+        items: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      shipToAddress?:
+        items: string
+      fulfilledDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for AccountContact.id reference
+      # Accelerators: made property optional
+      billToContact?:
+        items: string
+      paidDate?:
+        type: date-only | nil
+      totalBookingAmount?:
+        type: integer | nil
+      adjustedProductTaxAmount?:
+        type: integer | nil
+      promiseDate?:
+        type: date-only | nil
+      packedDate?:
+        type: date-only | nil
+      isHistoricalOnly?:
+        type: boolean | nil
+      grandTotalAmount?:
+        type: integer | nil
+      isContracted?:
+        type: boolean | nil
+      canBillNow?:
+        type: boolean | nil
+      adjustedTotalProductAmount?:
+        type: integer | nil
+      orderDiscount?:
+        type: integer | nil
+      # Accelerators: changed to string for InternalBusinessUnit.id reference
+      internalBusinessUnit?:
+        items: string
+      # Accelerators: added string union for SalesChannel.id reference
+      # Accelerators: made property optional
+      salesChannel?:
+        items: string | SalesChannel
+      orderStartDate?:
+        type: date-only | nil
+      cancelDateType?:
+        type: string
+      isReductionOrder?:
+        type: boolean | nil
+      salesOrderSystemStatus?:
+        type: string
+      isSuspended?:
+        type: boolean | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      billToPhoneNumber?:
+        items: string
+      purchaseOrderDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for Customer.id reference
+      soldToCustomer?:
+        items: string
+      billingDayOfTheMonth?:
+        type: integer | nil
+      cancelDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for AccountContact.id reference
+      shipToContact?:
+        items: string
+      taxRate?:
+        type: integer | nil
+      # Accelerators: made property optional
+      developerStatusCode?:
+        type: string
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderChangeLog:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added string union for SalesOrder.id reference
+      # Accelerators: made property optional
+      changeSalesOrder?:
+        items: string | SalesOrder
+      # Accelerators: changed to string for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      relatedSalesOrderProduct?:
+        items: string | SalesOrderProduct
+      # Accelerators: added string union for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      changeSalesOrderProduct?:
+        items: string | SalesOrderProduct
+      # Accelerators: added string union for SalesOrder.id reference
+      # Accelerators: made property optional
+      relatedSalesOrder?:
+        items: string | SalesOrder
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderChangeType:
+    properties:
+      id:
+        type: string | nil
+      salesOrderChangeTypeName:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderConfirmationStatus:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderDeliveryGroup:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      totalPriceAmount:
+        type: integer | nil
+      totalDeliveryAdjustmentTaxAmount?:
+        type: integer | nil
+      promisedDate?:
+        type: date-only | nil
+      giftMessageText?:
+        type: string
+      deliveryInstructionsText?:
+        type: string
+      totalProductTaxAmount?:
+        type: integer | nil
+      totalDeliveryChargeAmount?:
+        type: integer | nil
+      description:
+        type: string
+      grandTotalDeliveryAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      # Accelerators: made property optional
+      contactPointAddress?:
+        items: string
+      # Accelerators: changed to string for SalesOrder.id reference
+      # Accelerators: made property optional
+      salesOrder?:
+        items: string
+      isGift?:
+        type: boolean | nil
+      # Accelerators: added string union for SalesOrderDeliveryStatus.id reference
+      # Accelerators: made property optional
+      salesOrderDeliveryStatus?:
+        items: string | SalesOrderDeliveryStatus
+      totalDeliveryAdjustmentAmount?:
+        type: integer | nil
+      totalDeliveryTaxAmount?:
+        type: integer | nil
+      totalTaxAmount?:
+        type: integer | nil
+      totalDeliveryChargeTaxAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for SalesOrderDeliveryGroup.id reference
+      originalDeliveryGroup?:
+        items: string
+      salesOrderDeliveryGroupNumber:
+        type: string
+      desiredDeliveryDate?:
+        type: date-only | nil
+      totalUnitPriceAmount:
+        type: integer | nil
+      # Accelerators: added string union for OrderDeliveryMethod.id reference
+      # Accelerators: made property optional
+      orderDeliveryMethod?:
+        items: string | OrderDeliveryMethod
+      # Accelerators: changed to string for AccountContact.id reference
+      # Accelerators: made property optional
+      accountContact?:
+        items: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderDeliveryStatus:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderPaymentSummary:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      authorizationReversalAmount?:
+        type: integer | nil
+      authorizationAmount?:
+        type: integer | nil
+      unappliedAmount?:
+        type: integer | nil
+      paymentAmount?:
+        type: integer | nil
+      # Accelerators: added string union for SalesOrder.id reference
+      # Accelerators: made property optional
+      salesOrder?:
+        items: string | SalesOrder
+      # Accelerators: changed to string for PaymentMethod.id reference
+      # Accelerators: made property optional
+      paymentMethod?:
+        items: string
+      appliedAmount?:
+        type: integer | nil
+      availableToApplyBalanceAmount?:
+        type: integer | nil
+      capturedAmount?:
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderPriceAdjustment:
+    type: PriceAdjustmentGroup
+    properties:
+      # Accelerators: added string union for SalesOrder.id reference
+      # Accelerators: made property optional
+      salesOrder?:
+        items: string | SalesOrder
+      totalAdjustmentTaxAmount?:
+        type: integer | nil
+  SalesOrderPriceAdjustmentType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProduct:
+    properties:
+      id:
+        type: string | nil
+      totalRecurringPriceAmount?:
+        type: integer | nil
+      totalLineAdjustmentAmount?:
+        type: integer | nil
+      totalPriceAmount:
+        type: integer | nil
+      provisioningDate?:
+        type: date-only | nil
+      fulfilledQuantity?:
+        type: integer | nil
+      totalLineAmount?:
+        type: integer | nil
+      promisedDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      shippingPhone?:
+        items: string
+      recurringPriceAmount?:
+        type: integer | nil
+      endDate?:
+        type: date-only | nil
+      giftOrderMessageText?:
+        type: string
+      quantityOrderedUOM:
+        type: string
+      totalProductTaxAmount?:
+        type: integer | nil
+      # Accelerators: added string union for SalesOrderProductReason.id reference
+      salesOrderProductReason?:
+        items: string | SalesOrderProductReason
+      lineAdjustmentSubTotalAmount?:
+        type: integer | nil
+      commentText?:
+        type: string
+      orderProductNumber:
+        type: string
+      # Accelerators: changed to string for Product.id reference
+      # Accelerators: made property optional
+      product?:
+        items: string
+      description:
+        type: string
+      orderedQuantity:
+        type: integer | nil
+      # Accelerators: added string union for SalesOrderProductStatus.id reference
+      # Accelerators: made property optional
+      salesOrderProductStatus?:
+        items: string | SalesOrderProductStatus
+      unitPriceAmount?:
+        type: integer | nil
+      requestedStartDate?:
+        type: date-only | nil
+      subscriptionRenewalMonthQuantity?:
+        type: integer | nil
+      orderManualAdjustmentSubTotalAmount?:
+        type: integer | nil
+      allocatedQuantity?:
+        type: integer | nil
+      allocationPartitionName?:
+        type: string
+      # Accelerators: added string union for SalesOrder.id reference
+      # Accelerators: made property optional
+      salesOrder?:
+        items: string | SalesOrder
+      isGift?:
+        type: boolean | nil
+      unitTaxAmount?:
+        type: integer | nil
+      deliveryTaxAmount?:
+        type: integer | nil
+      isBonusProduct?:
+        type: boolean | nil
+      salesOrderProductAdjustedTaxAmount?:
+        type: integer | nil
+      totalAdjustmentAmount?:
+        type: integer | nil
+      shippingTaxAmount?:
+        type: integer | nil
+      totalListPriceAmount?:
+        type: integer | nil
+      totalAdjustmentTaxAmount?:
+        type: integer | nil
+      orderAdjustmentSubTotalAmount?:
+        type: integer | nil
+      subscriptionTermQuantity?:
+        type: integer | nil
+      totalDistributedAdjustmentTaxAmount?:
+        type: integer | nil
+      totalDistributedTaxAmount?:
+        type: integer | nil
+      totalTaxAmount?:
+        type: integer | nil
+      adjustedDeliveryTaxAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      shippingAddress?:
+        items: string
+      listPriceAmount?:
+        type: integer | nil
+      # Accelerators: added string union for PriceBookEntry.id reference
+      # Accelerators: made property optional
+      priceBookEntry?:
+        items: string | PriceBookTypes.PriceBookEntry
+      segmentIndex?:
+        type: integer | nil
+      shippingCostAmount?:
+        type: integer | nil
+      isBundleRoot?:
+        type: boolean | nil
+      discountAmount?:
+        type: integer | nil
+      cancelledQuantity?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      shippingEmail?:
+        items: string
+      # Accelerators: added string union for UnitOfMeasure.id reference
+      subscriptionTermUnit?:
+        items: string | GlobalTypes.UnitOfMeasure
+      # Accelerators: added string union for UnitOfMeasure.id reference
+      listPriceTermUOM?:
+        items: string | GlobalTypes.UnitOfMeasure
+      # Accelerators: added string union for SalesOrderDeliveryGroup.id reference
+      salesOrderDeliveryGroup?:
+        items: string | SalesOrderDeliveryGroup
+      # Accelerators: made property optional
+      listPriceQuantityUOM?:
+        type: string
+      totalDistributedAdjustmentAmount?:
+        type: integer | nil
+      segmentIndexNumber?:
+        type: integer | nil
+      totalUnitPriceAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for SalesOrderProduct.id reference
+      originalOrderProduct?:
+        items: string
+      availableQuantity?:
+        type: integer | nil
+      requestedEndDate?:
+        type: date-only | nil
+      allocationGroupName?:
+        type: string
+      # Accelerators: changed to string for Account.id reference
+      sellerAccount?:
+        items: string
+      giftRecipientTelephoneNumber?:
+        type: string
+      isAutomaticallyRenewed?:
+        type: boolean | nil
+      discountPercent?:
+        type: integer | nil
+      totalManualAdjustmentAmount?:
+        type: integer | nil
+      handlingCostAmount?:
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductGroup:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      description:
+        type: string
+      # Accelerators: added string union for SalesOrderProductGroupType.id reference
+      # Accelerators: made property optional
+      salesOrderProductGroupType?:
+        items: string | SalesOrderProductGroupType
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductGroupType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductNote:
+    properties:
+      id:
+        type: string | nil
+      description?:
+        type: string
+      noteText:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductReason:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added string union for SalesOrderProductReasonCategory.id reference
+      # Accelerators: made property optional
+      salesOrderProductReasonCategory?:
+        items: string | SalesOrderProductReasonCategory
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductReasonCategory:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductStatus:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderProductTax:
+    type: SalesOrderTax
+    properties:
+      description:
+        type: string
+      # Accelerators: changed to string for SalesOrderProductTax.id reference
+      originalSalesOrderProductTax?:
+        items: string
+      taxEffectiveDate?:
+        type: date-only | nil
+      # Accelerators: added string union for SalesOrderProduct.id reference
+      # Accelerators: made property optional
+      salesOrderProduct?:
+        items: string | SalesOrderProduct
+      taxAmount:
+        type: integer | nil
+  SalesOrderStatus:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  SalesOrderTax:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      salesOrderTaxAmount?:
+        type: integer | nil
+      taxAddressCityName?:
+        type: string
+      taxErrorMessageText?:
+        type: string
+      taxAddressStreet1Text?:
+        type: string
+      taxRatePercent:
+        type: integer | nil
+      taxAddressStreet2Text?:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  # Not found in class diagram
+  SalesOrderType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

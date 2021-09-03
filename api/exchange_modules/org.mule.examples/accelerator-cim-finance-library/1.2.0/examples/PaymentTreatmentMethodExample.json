@@ -1,0 +1,13 @@
+{
+  "paymentTreatmentMethodCode": "Lorem in do ipsum",
+  "paymentTreatmentMethodName": "pariatur",
+  "id": null,
+  "paymentTreatmentMethodDescription": "dolor tempor eiusmod eu",
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "ut cillum in cupidatat",
+    "updatedBy": "sint",
+    "updatedDate": "2000-08-01T09:05:33.634Z",
+    "createdDate": null
+  }
+}

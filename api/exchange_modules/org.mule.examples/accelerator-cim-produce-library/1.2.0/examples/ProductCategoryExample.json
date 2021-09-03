@@ -1,0 +1,24 @@
+{
+  "name": "Lorem quis sit ex mollit",
+  "id": "Duis",
+  "activeFromDate": "1995-06-10",
+  "parentCategory": [
+    "culpa aliqua reprehenderit"
+  ],
+  "productCatalog": [
+    {
+      "id": "culpa labore",
+      "name": "esse adipisicing et",
+      "activeFromDate": "1955-02-19",
+      "activeToDate": "2010-04-08",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "ad id",
+        "updatedBy": "aute anim et",
+        "updatedDate": null,
+        "createdDate": "2007-09-25T04:59:58.592Z"
+      }
+    }
+  ],
+  "activeToDate": "1998-10-29"
+}

@@ -1,0 +1,25 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Shipment group
+
+uses:
+  FulfillTypes: ../exchange_modules/org.mule.examples/accelerator-cim-fulfill-library/1.2.0/accelerator-cim-fulfill-library.raml
+  MarketTypes: ../exchange_modules/org.mule.examples/accelerator-cim-market-library/1.2.0/accelerator-cim-market-library.raml
+  ProduceTypes: ../exchange_modules/org.mule.examples/accelerator-cim-produce-library/1.2.0/accelerator-cim-produce-library.raml
+  SellTypes: ../exchange_modules/org.mule.examples/accelerator-cim-sell-library/1.2.0/accelerator-cim-sell-library.raml
+
+types:
+  ShipmentExt:
+    type: FulfillTypes.Shipment
+    properties:
+      salesOrderExt?: SellTypes.SalesOrder[]
+      shipToAddressExt?: MarketTypes.ContactPointAddress[]
+      salesOrderDeliveryGroupExt?: SellTypes.SalesOrderDeliveryGroup[]
+  ShipmentProductExt:
+    type: FulfillTypes.ShipmentProduct
+    properties:
+      productExt?: ProduceTypes.Product[]
+      salesOrderProductExt?: SellTypes.SalesOrderProduct[]
+  ShippingMethodExt:
+    type: FulfillTypes.ShippingMethod
+    properties:
+      productExt?: ProduceTypes.Product[]

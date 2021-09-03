@@ -1,0 +1,118 @@
+{
+  "name": "labore",
+  "id": "veniam",
+  "auditInfo": {
+    "createdDate": null,
+    "isDeleted": null,
+    "createdBy": "labore Duis sed incididunt",
+    "updatedDate": "2021-02-04T23:08:20.624Z",
+    "updatedBy": "magna"
+  },
+  "productExt": [
+    {
+      "name": "esse",
+      "longDescription": "velit ut officia do quis",
+      "id": null,
+      "productStatus": "in et enim",
+      "description": "commodo",
+      "productSKU": "nulla",
+      "isQuantityEntryRequired": true,
+      "canUseQuantitySchedule": null,
+      "requiresInvididualUnitPricing": false,
+      "brand": [
+        {
+          "id": null,
+          "name": "laboris",
+          "brandGrade": "sunt",
+          "auditInfo": {
+            "createdDate": null,
+            "isDeleted": null,
+            "createdBy": "aliquip do labore Lorem magna",
+            "updatedDate": null,
+            "updatedBy": "veniam"
+          }
+        }
+      ],
+      "type": "ad occaecat",
+      "canUseRevenueSchedule": true,
+      "modelYear": null,
+      "disposalType": "aute ullamco",
+      "rewardProgramPointsCount": null,
+      "versionNumber": "exercitation velit nulla dolore",
+      "requiredDepositPercentage": null,
+      "isSellable": null,
+      "modelNumber": "sunt in ut anim proident",
+      "quantityInstallmentPeriod": null,
+      "isWorkerDiscountAllowed": null,
+      "isPreOrderable": null,
+      "allowPartialRefund": true,
+      "isSellableWithoutPrice": true,
+      "isDynamicBundle": true,
+      "lotIdentifier": "anim Excepteur incididunt aute Ut",
+      "isQualityVerificationRequired": false,
+      "isSellableIndependently": true,
+      "minimumAdvertisementAmount": -39276697,
+      "quantityScheduleType": "amet aliquip dolore magna",
+      "isManualPriceEntryRequired": null,
+      "externalSourceRecord": "tempor",
+      "maximumOrderQuantityCount": -1123996,
+      "isPartnerDiscountAllowed": true,
+      "primaryProductCategory": [
+        {
+          "id": "adipisicing sunt ullamco",
+          "name": "ipsum qui et",
+          "activeFromDate": "1955-07-26",
+          "parentCategory": [
+            "Excepteur laborum sed ad eiusmod"
+          ],
+          "activeToDate": "1997-12-17",
+          "auditInfo": {
+            "createdDate": "2001-10-20T10:22:48.496Z",
+            "isDeleted": null,
+            "createdBy": "cupidatat",
+            "updatedDate": "2012-12-06T13:51:11.512Z",
+            "updatedBy": "Excepteur Lorem consequat"
+          },
+          "productCatalog": [
+            {
+              "id": "pariatur",
+              "name": "consequat",
+              "activeFromDate": "1955-07-13",
+              "activeToDate": null,
+              "auditInfo": {
+                "createdDate": "2008-05-01T09:58:10.108Z",
+                "isDeleted": true,
+                "createdBy": "nostrud cupidatat",
+                "updatedDate": "1979-01-17T16:46:28.92Z",
+                "updatedBy": "ex esse incididunt sunt Excepteur"
+              }
+            }
+          ]
+        }
+      ],
+      "minimumAdvertisementAmountStartDate": null,
+      "revenueInstallmentPeriod": "incididunt voluptate eu",
+      "isRainCheckAllowed": true,
+      "isCouponRedemptionAllowed": true,
+      "auditInfo": {
+        "createdDate": null,
+        "isDeleted": null,
+        "createdBy": "nulla Duis aute Lorem velit",
+        "updatedDate": "1963-02-27T08:15:39.282Z",
+        "updatedBy": "Excepteur"
+      },
+      "validForPeriodUOM": [
+        "ea"
+      ],
+      "isMultipleCouponsAllowed": true,
+      "isCustomerDiscountAllowed": null,
+      "allowCustomerReturn": null,
+      "validForPeriodCount": null,
+      "isFoodstampPaymentAllowed": true
+    }
+  ],
+  "product": [
+    "sunt ullamco"
+  ],
+  "description": "eiusmod adipisicing aute magna"
+}

@@ -1,0 +1,30 @@
+#%RAML 1.0 Library
+usage: Types representing price book definitions and entries
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  PriceBookEntry:
+    properties:
+      id:
+        type: string | nil
+      minRequiredQuantity?:
+        type: integer | nil
+      unitListPrice?:
+        type: integer | nil
+      # Accelerators: changed to string for Product.id reference
+      product?:
+        items: string
+      minRequiredOrderValue?:
+        type: integer | nil
+      isActive?:
+        type: boolean | nil
+      maxRequiredOrderValue?:
+        type: integer | nil
+      useStandardPrice?:
+        type: boolean | nil
+      servicePeriodCount?:
+        type: integer | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

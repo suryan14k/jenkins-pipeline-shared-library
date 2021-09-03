@@ -1,0 +1,87 @@
+{
+  "name": "aliquip",
+  "longDescription": "Ut mollit",
+  "id": null,
+  "productStatus": "dolore voluptate exercitation",
+  "description": "amet proident dolore labore",
+  "productSKU": "eiusmod tempor Excepteur",
+  "validFromDate": null,
+  "displayUrl": "officia",
+  "modelNumber": "cillum nulla esse",
+  "maximumOrderQuantityCount": 24843181,
+  "manufacturerName": "eu",
+  "requiredDepositPercentage": null,
+  "isMultipleCouponsAllowed": false,
+  "versionNumber": "quis nostrud reprehenderit laboris",
+  "validForPeriodCount": 30655374,
+  "isPreOrderable": false,
+  "isBackOrdered": null,
+  "disposalType": "dolore dolor",
+  "isAutoProvisionable": null,
+  "allowPartialRefund": null,
+  "isSellable": true,
+  "primaryProductCategory": [
+    "do est"
+  ],
+  "brandGrade": "incididunt cillum",
+  "validForPeriodUOM": [
+    {
+      "pluralName": "adipisicing dolor laboris anim sint",
+      "name": "deserunt incididunt",
+      "id": null
+    }
+  ],
+  "quantityInstallmentPeriod": "ut dolore aliquip mollit ut",
+  "isFoodstampPaymentAllowed": null,
+  "externalSourceRecord": "proident elit dolore dolore",
+  "isWorkerDiscountAllowed": null,
+  "mSRPAmount": null,
+  "requiresInvididualUnitPricing": false,
+  "minimumOrderQuantityCount": 59913316,
+  "allowCustomerReturn": null,
+  "masterProduct": [
+    "quis"
+  ],
+  "canUseQuantitySchedule": true,
+  "externalIds": [
+    "dolor do eu"
+  ],
+  "modelYear": -1859203,
+  "isIntellectualPropertyProtected": false,
+  "isCustomerDiscountAllowed": null,
+  "isRainCheckAllowed": false,
+  "revenueInstallmentPeriod": "cillum laborum in pariatur",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "exercitation",
+    "updatedBy": "velit",
+    "updatedDate": "2019-10-15T19:02:19.869Z",
+    "createdDate": "1973-10-04T00:17:48.892Z"
+  },
+  "isSellableIndependently": null,
+  "isQuantityEntryRequired": true,
+  "revenueInstallmentCount": 33661539,
+  "quantityScheduleType": "occaecat dolor ut est consequat",
+  "isQualityVerificationRequired": null,
+  "revenueScheduleType": "eiusmod sit ut voluptate elit",
+  "isSellableWithoutPrice": null,
+  "brand": [
+    "commodo adipisicing"
+  ],
+  "isSerialized": true,
+  "isCouponRedemptionAllowed": false,
+  "minimumAdvertisementAmountStartDate": null,
+  "type": "eu ullamco",
+  "requiredDepositAmount": -93006245,
+  "isManualPriceEntryRequired": true,
+  "isPartnerDiscountAllowed": false,
+  "validToDate": null,
+  "isDynamicBundle": true,
+  "rewardProgramPointsCount": -14293221,
+  "glAccountCode": "in nulla fugiat",
+  "isWeightEntryRequired": null,
+  "quantityInstallmentCount": null,
+  "primarySalesChannel": [
+    "dolore eu ullamco"
+  ]
+}

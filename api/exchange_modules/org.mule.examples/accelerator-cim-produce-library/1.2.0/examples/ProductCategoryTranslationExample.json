@@ -1,0 +1,44 @@
+{
+  "id": "do est ullamco culpa ea",
+  "translatedName": "nisi qui nulla",
+  "productCategory": [
+    {
+      "id": "ut adipisicing anim",
+      "name": "aliquip cillum fugiat Duis",
+      "activeFromDate": "1960-02-22",
+      "parentCategory": [
+        "consequat eu exercitation ea"
+      ],
+      "activeToDate": "1962-05-25",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "consectetur tempor incididunt",
+        "updatedBy": "adipisicing in voluptate Ut consectetur",
+        "updatedDate": "2002-02-07T02:30:56.589Z",
+        "createdDate": null
+      },
+      "productCatalog": [
+        {
+          "id": "Lorem aute ex",
+          "name": "aliquip est anim enim Duis",
+          "activeFromDate": "1967-02-20",
+          "activeToDate": "1958-09-02",
+          "auditInfo": {
+            "isDeleted": false,
+            "createdBy": "exercitation velit nostrud",
+            "updatedBy": "magna aute",
+            "updatedDate": "1960-04-15T07:44:28.31Z",
+            "createdDate": "1973-03-04T20:41:30.976Z"
+          }
+        }
+      ]
+    }
+  ],
+  "auditInfo": {
+    "isDeleted": false,
+    "createdBy": "voluptate non dolore",
+    "updatedBy": "consequat id Ut adipisicing in",
+    "updatedDate": "2015-06-26T22:30:04.581Z",
+    "createdDate": null
+  }
+}

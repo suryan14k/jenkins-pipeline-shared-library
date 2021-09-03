@@ -1,0 +1,43 @@
+#%RAML 1.0 Library
+usage: Types representating purchase orders
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  # Accelerators new type introduced
+  PurchaseOrder:
+    properties:
+      id:
+        type: string | nil
+      nativeId?:
+        type: string
+      purchaseOrderNumber?:
+        type: string
+      purchaseOrderDate?:
+        type: date-only | nil
+      supplierId?:
+        type: string
+      purchasingOrganization?:
+        type: string
+      exported?:
+        type: boolean | nil
+      orderLineItems?:
+        items: string | PurchaseOrderItem
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      auditInfo?: GlobalTypes.AuditInfo
+  # Accelerators new type introduced
+  PurchaseOrderItem:
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      code?:
+        type: string
+      unitPrice?:
+        type: number | nil
+      quantity?:
+        type: integer | nil
+      auditInfo?: GlobalTypes.AuditInfo

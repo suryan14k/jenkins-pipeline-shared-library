@@ -1,0 +1,185 @@
+{
+  "name": "Ut sint aliquip",
+  "id": "dolor reprehenderit",
+  "capturedAmount": -17284240,
+  "availableToApplyBalanceAmount": -26929037,
+  "paymentAmount": null,
+  "appliedAmount": 35791209,
+  "unappliedAmount": 80604941,
+  "authorizationReversalAmount": null,
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "nostrud dolor aliquip",
+    "updatedBy": "dolor",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "salesOrder": [
+    {
+      "id": null,
+      "name": "ex dolor officia velit deserunt",
+      "description": "occaecat ex id mollit",
+      "requestedStartDate": null,
+      "orderNumber": "in cillum sunt",
+      "totalDeliveryAmount": -21372149,
+      "totalAdjustmentTaxAmount": null,
+      "soldToCustomer": [
+        "officia Duis ullamco proident"
+      ],
+      "canBillNow": null,
+      "billToContact": [
+        "consectetur aliquip proident est aute"
+      ],
+      "grandTotalAmount": 40877613,
+      "companyAuthorizedDate": null,
+      "salesOrderType": [
+        "et exercitation nulla veniam Excepteur"
+      ],
+      "developerStatusCode": "magna Duis",
+      "totalProductTaxAmount": null,
+      "adjustedTotalProductAmount": null,
+      "salesOrderSystemStatus": "do aliqua",
+      "totalAdjustedDeliveryTaxAmount": -64384545,
+      "billingDayOfTheMonth": null,
+      "billToAddress": [
+        "labore commodo sunt Ut Lorem"
+      ],
+      "isSuspended": true,
+      "seller": [
+        "dolor ipsum officia"
+      ],
+      "totalDeliveryTaxAmount": null,
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "commodo id laboris",
+        "updatedBy": "Ut",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "adjustedProductTaxAmount": -5918626,
+      "totalTaxAmount": -81620446,
+      "promiseDate": null,
+      "confirmationRecipientEmailText": "eiusmod consectetur",
+      "totalBookingAmount": 37476191,
+      "promiseFulfillmentDate": "2005-12-06",
+      "billToEmail": [
+        "do commodo ad sunt"
+      ],
+      "taxRate": 99754222,
+      "isReductionOrder": null,
+      "totalProductAmount": null,
+      "isContracted": true,
+      "orderStartDate": "1994-09-12",
+      "isGiftOrder": null,
+      "renewalUpliftRate": null,
+      "orderDiscount": null,
+      "activatedDate": null,
+      "purchaseOrderNumber": "in qui quis sed",
+      "isAlerted": false,
+      "iSOCulture": "dolore non tempor anim eu",
+      "orderEndDate": null,
+      "renewalTerm": [
+        {
+          "id": null,
+          "name": "eiusmod ut anim",
+          "auditInfo": {
+            "isDeleted": true,
+            "createdBy": "consequat",
+            "updatedBy": "esse cillum",
+            "updatedDate": "1965-09-05T21:29:44.382Z",
+            "createdDate": null
+          }
+        }
+      ],
+      "packedDate": null,
+      "purchaseOrderDate": "2006-08-04",
+      "isClosed": null,
+      "isAnonymous": false,
+      "shipToAddress": [
+        "Lorem enim"
+      ],
+      "paidDate": "1952-03-04",
+      "userDeviceSession": [
+        {
+          "name": "proident dolor",
+          "id": "ad ipsum laborum velit"
+        }
+      ],
+      "salesOrderStatus": [
+        "irure tempor labore sunt magna"
+      ],
+      "totalCancelledBillingAmount": null,
+      "salesChannel": [
+        {
+          "id": "cillum Excepteur do",
+          "name": "velit eiusmod ut ut",
+          "description": "nisi est ea officia veniam",
+          "salesChannelNumber": "qui Lorem aute sed",
+          "salesChannelType": [
+            "Excepteur officia"
+          ],
+          "externalRecord": "culpa",
+          "auditInfo": {
+            "isDeleted": null,
+            "createdBy": "est Duis in",
+            "updatedBy": "Ut",
+            "updatedDate": "1952-03-14T16:54:04.37Z",
+            "createdDate": "1955-10-13T20:07:51.897Z"
+          }
+        }
+      ],
+      "orderInsuranceAmount": -68801311,
+      "isHistoricalOnly": false,
+      "totalPendingBillingAmount": null,
+      "totalAdjustmentAmount": 13118175,
+      "checkoutDate": "1961-05-02",
+      "paymentMethod": [
+        "cillum ut do"
+      ],
+      "cancelDateType": "ea nostrud ut non in",
+      "internalBusinessUnit": [
+        "sit"
+      ],
+      "externalIds": [
+        {
+          "externalIdType": [
+            {
+              "id": "dolor dolor officia",
+              "name": "dolore deserunt amet"
+            }
+          ],
+          "externalId": "elit eu",
+          "id": "adipisicing quis",
+          "statusLastChangedDate": "2010-07-19T05:08:58.535Z",
+          "status": "VALID"
+        }
+      ],
+      "customerAuthorizedDate": "1963-05-29",
+      "fulfilledDate": "1943-04-30",
+      "billToPhoneNumber": [
+        "fugiat magna deserunt"
+      ],
+      "billToAccount": [
+        "in dolor"
+      ],
+      "priceCalculationStatusMessageText": "exercitation ad non Lorem",
+      "cancelDate": null,
+      "salesOrderConfirmationStatus": [
+        "in"
+      ],
+      "filedDate": null,
+      "originalOrder": [
+        "nostrud"
+      ],
+      "isTaxExempt": true,
+      "shipToEmail": [
+        "eu consectetur"
+      ],
+      "totalDeliveryFeeAmount": null,
+      "shipToContact": [
+        "dolor sint"
+      ]
+    }
+  ],
+  "authorizationAmount": null
+}

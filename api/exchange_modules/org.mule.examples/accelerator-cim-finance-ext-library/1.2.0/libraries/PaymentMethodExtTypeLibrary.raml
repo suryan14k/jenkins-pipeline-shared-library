@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Payment Method group
+
+uses:
+  FinanceTypes: ../exchange_modules/org.mule.examples/accelerator-cim-finance-library/1.2.0/accelerator-cim-finance-library.raml
+  MarketTypes: ../exchange_modules/org.mule.examples/accelerator-cim-market-library/1.2.0/accelerator-cim-market-library.raml
+
+types:
+  CouponExt:
+    type: FinanceTypes.Coupon
+    properties:
+      manufacturerExt?: MarketTypes.Party[]
+  CreditTenderExt:
+    type: FinanceTypes.CreditTender
+    properties:
+      accountExt?: MarketTypes.Account[]

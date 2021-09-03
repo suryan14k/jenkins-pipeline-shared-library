@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ProductAvailability",
+  "definitions": {
+    "ProductAvailability": {
+      "description": "Represents the availability of product for location",
+      "type": "object",
+      "example": {
+        "id": "laboris nostrud occaecat in",
+        "productId": "exercitation dolore ad dolore id",
+        "locationType": "WAREHOUSE",
+        "externalId": "quis dolore",
+        "quantityInStock": null,
+        "variantId": "dolore tempor eiusmod Ut officia",
+        "locationId": "in ut ullamco adipisicing reprehenderit",
+        "locationName": "nostrud velit voluptate",
+        "productName": "reprehenderit officia aute Lorem",
+        "auditInfo": {
+          "isDeleted": false,
+          "createdBy": "ut et voluptate nulla",
+          "updatedBy": "culpa irure id ipsum adipisicing",
+          "updatedDate": "1948-09-04T17:12:55.425Z",
+          "createdDate": "1989-10-05T14:54:53.061Z"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "productId"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "productId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "externalId": {
+          "type": "string"
+        },
+        "variantId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "locationName": {
+          "type": "string"
+        },
+        "locationType": {
+          "type": "string",
+          "enum": [
+            "STORE",
+            "WAREHOUSE",
+            "PARTNER"
+          ]
+        },
+        "quantityInStock": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "auditInfo": {
+          "description": "Defines standard system audit fields available for most types",
+          "type": "object",
+          "example": {
+            "isDeleted": true,
+            "createdBy": "commodo minim dolore est",
+            "updatedBy": "dolor quis nulla",
+            "updatedDate": "1950-01-23T19:52:29.659Z",
+            "createdDate": "1950-01-23T19:52:29.659Z"
+          },
+          "additionalProperties": true,
+          "required": [
+            "isDeleted",
+            "createdBy",
+            "updatedBy",
+            "updatedDate",
+            "createdDate"
+          ],
+          "properties": {
+            "createdDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was created"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Identifies the system or user which created the entity"
+            },
+            "updatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Timestamp of when the entity was last updated"
+            },
+            "updatedBy": {
+              "type": "string",
+              "description": "Identifies the system or user which last updated the entity"
+            },
+            "isDeleted": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Indicates whether or not the entity has been soft-deleted"
+            }
+          }
+        }
+      }
+    }
+  }
+}

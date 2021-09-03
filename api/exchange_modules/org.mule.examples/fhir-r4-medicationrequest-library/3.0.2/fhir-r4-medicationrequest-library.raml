@@ -1,0 +1,194 @@
+#%RAML 1.0 Library
+uses:
+  FHIR_commons: /exchange_modules/org.mule.examples/fhir-r4-commons-library/1.0.0/fhir-r4-commons-library.raml
+
+types:
+  medicationRequestreportedBoolean:
+    properties:
+      reportedBoolean:
+        description: Reported rather than primary record
+        type: boolean
+  medicationRequestreportedReference:
+    properties:
+      reportedReference:
+        description: Reported rather than primary record
+        type: FHIR_commons.Reference
+  medicationRequestmedicationCodeableConcept:
+    properties:
+      medicationCodeableConcept:
+        description: Medication to be taken
+        type: FHIR_commons.CodeableConcept
+  medicationRequestmedicationReference:
+    properties:
+      medicationReference:
+        description: Medication to be taken
+        type: FHIR_commons.Reference
+  medicationRequestallowedBoolean:
+    properties:
+      allowedBoolean:
+        description: Whether substitution is allowed or not
+        type: boolean
+  medicationRequestallowedCodeableConcept:
+    properties:
+      allowedCodeableConcept:
+        description: Whether substitution is allowed or not
+        type: FHIR_commons.CodeableConcept
+
+  MedicationRequest:
+    type: FHIR_commons.DomainResource
+    properties:
+      identifier?:
+        description: External ids for this request
+        type: FHIR_commons.Identifier[]
+      basedOn?:
+        description: What request fulfills
+        type: FHIR_commons.Reference[]
+      groupIdentifier?:
+        description: Composite request this is part of
+        type: FHIR_commons.Identifier
+      status:
+        description: Medical request status
+        type: FHIR_commons.code
+        enum: [active, on-hold, cancelled, completed, entered-in-error, stopped, draft, unknown]
+      statusReason?:
+        type: FHIR_commons.CodeableConcept
+        description: Reason for current status
+      intent:
+        description: Medical request intent
+        type: FHIR_commons.code
+        enum: [proposal, plan, order, instance-order]
+      category?:
+        description: Type of medication usage
+        type: FHIR_commons.CodeableConcept[]
+      priority?:
+        description: Request priority
+        type: FHIR_commons.code
+        enum: [routine, urgent, stat, asap]
+      doNotPerform?:
+        type: boolean
+        description: True if request is prohibiting action
+      reported?:
+        type: medicationRequestreportedBoolean | medicationRequestreportedReference
+        description: Reported rather than primary record
+      
+      medication?:
+        description: Medication to be taken
+        type: medicationRequestmedicationCodeableConcept | medicationRequestmedicationReference
+      
+      subject:
+        description: Who or group medication request is for
+        type: FHIR_commons.Reference
+      encounter?:
+        description: Created during encounter/admission/stay
+        type: FHIR_commons.Reference
+      supportingInformation?:
+        description: Information to support ordering of the medication
+        type: FHIR_commons.Reference[]
+      authoredOn?:
+        description: When request was initially authored
+        type: FHIR_commons.dateTime
+      requester?:
+        description: |
+          Who/What requested the Request
+          + onBehalfOf can only be specified if agent is practitioner or device
+        type: FHIR_commons.Reference
+      
+      performer?:
+        type: FHIR_commons.Reference
+        description: Intended performer of administration
+      performerType?:
+        type: FHIR_commons.CodeableConcept
+        description: Desired kind of performer of the medication administration
+      
+      recorder?:
+        description: Person who entered the request
+        type: FHIR_commons.Reference
+      reasonCode?:
+        description: Reason or indication for writing the prescription
+        type: FHIR_commons.CodeableConcept[]
+      reasonReference?:
+        description: Condition or Observation that supports why the prescription is being written
+        type: FHIR_commons.Reference[]
+      
+      instantiatesCanonical?: 
+        type: FHIR_commons.canonical[]
+        description: Instantiates FHIR protocol or definition
+      instantiatesUri?:
+        type: FHIR_commons.uri[]
+        description: Instantiates external protocol or definition
+      courseOfTherapyType?:
+        type: FHIR_commons.CodeableConcept
+        description: Overall pattern of medication administration
+
+
+      insurance?:
+        type: FHIR_commons.Reference[]
+        description: Associated insurance coverage
+      note?:
+        description: Information about the prescription
+        type: FHIR_commons.Annotation[]
+      dosageInstruction?:
+        description: How the medication should be taken
+        type: FHIR_commons.Dosage[]
+      dispenseRequest?:
+        description: Medication supply authorization
+        type: FHIR_commons.BackboneElement
+        properties:
+          initialFill?:
+            type: FHIR_commons.BackboneElement
+            description: First fill details
+            properties:
+              quantity?:
+                type: FHIR_commons.SimpleQuantity
+                description: First fill quantity
+              duration?: 
+                type: FHIR_commons.Duration
+                description: First fill duration
+          dispenseInterval?:
+            type: FHIR_commons.Duration
+            description: Minimum period of time between dispenses
+          validityPeriod?:
+            description: Time period supply is authorized for
+            type: FHIR_commons.Period
+          numberOfRepeatsAllowed?:
+            description: Number of refills authorized
+            type: FHIR_commons.positiveInt
+          quantity?:
+            description: Amount of medication to supply per dispense
+            type: FHIR_commons.SimpleQuantity
+          expectedSupplyDuration?:
+            description: Number of days supply per dispense
+            type: FHIR_commons.Duration
+          performer?:
+            description: Intended dispenser
+            type: FHIR_commons.Reference
+      substitution?:
+        description: Any restrictions on medication substitution
+        type: FHIR_commons.BackboneElement
+        properties:
+          allowed?:
+            description: Whether substitution is allowed or not
+            type: medicationRequestallowedBoolean | medicationRequestallowedCodeableConcept
+          
+          reason?:
+            description: Why should (not) substitution be made
+            type: FHIR_commons.CodeableConcept
+      priorPrescription?:
+        description: An order/prescription that is being replaced
+        type: FHIR_commons.Reference
+      detectedIssue?:
+        description: Clinical Issue with action
+        type: FHIR_commons.Reference[]
+      eventHistory?:
+        description: A list of events of interest in the lifecycle
+        type: FHIR_commons.Reference[]
+
+  MedicationRequestEntry:
+    type: FHIR_commons.Entry
+    properties:
+      resource: MedicationRequest
+
+  MedicationRequestBundle:
+    type: FHIR_commons.Bundle
+    properties:
+      entry?: MedicationRequestEntry[]

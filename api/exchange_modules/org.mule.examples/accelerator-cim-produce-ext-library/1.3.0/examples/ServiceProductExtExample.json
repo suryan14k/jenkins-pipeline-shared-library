@@ -1,0 +1,198 @@
+{
+  "name": "magna eu non ea",
+  "longDescription": "amet magna officia",
+  "id": "dolor",
+  "serviceType": "aliqua",
+  "productStatus": "qui occaecat",
+  "description": "exercitation quis dolore do ullamco",
+  "productSKU": "qui",
+  "minimumOrderQuantityCount": null,
+  "isManualPriceEntryRequired": false,
+  "maximumOrderQuantityCount": -91547264,
+  "masterProduct": [
+    "culpa incididunt"
+  ],
+  "auditInfo": {
+    "createdDate": "1968-11-12T09:40:48.902Z",
+    "isDeleted": false,
+    "createdBy": "elit exercitation id sed",
+    "updatedDate": null,
+    "updatedBy": "non consectetur"
+  },
+  "isCustomerDiscountAllowed": false,
+  "rentalCleanupFeeAmount": null,
+  "externalIds": [
+    "eu"
+  ],
+  "disposalType": "in dolor adipisicing",
+  "requiredDepositPercentage": 68369008,
+  "allowPartialRefund": null,
+  "externalSourceRecord": "culpa eu",
+  "serviceProviderAccountExt": [
+    {
+      "name": "laboris laborum esse velit cillum",
+      "id": null,
+      "number": "dolor consectetur aliqua exercitation est",
+      "autoPayEnabledFlag": null,
+      "shippingEmail": [
+        "veniam"
+      ],
+      "primarySalesContactPoint": [
+        {
+          "id": null,
+          "activeFromDate": "2005-10-02",
+          "contactPointType": [
+            {
+              "id": null,
+              "name": "id ut aute velit cupidatat",
+              "auditInfo": {
+                "createdDate": "1985-01-31T19:13:46.164Z",
+                "isDeleted": false,
+                "createdBy": "sed aute ipsum",
+                "updatedDate": null,
+                "updatedBy": "fugiat veniam culpa laboris esse"
+              }
+            }
+          ],
+          "bestTimeToContactStartTime": null,
+          "party": [
+            "Ut esse deserunt proident"
+          ],
+          "bestTimeToContactEndTime": "13:08:32.648Z",
+          "profileOccurrenceCount": -6831682,
+          "activeToDate": null,
+          "auditInfo": {
+            "createdDate": "1994-04-26T22:31:25.62Z",
+            "isDeleted": null,
+            "createdBy": "esse dolore laborum ut",
+            "updatedDate": null,
+            "updatedBy": "nulla est ut cupidatat"
+          },
+          "profileLastUpdatedDate": null,
+          "forPersonalUse": true,
+          "partyRole": [
+            "id"
+          ],
+          "primaryFlag": true,
+          "name": "in et",
+          "forBusinessUse": true,
+          "profileFirstCreatedDate": "19:59:29.271Z"
+        }
+      ],
+      "useAsShippingAccount": true,
+      "shippingAddress": [
+        {
+          "addressLine1": "consequat non deserunt",
+          "contactPointType": [
+            "occaecat anim esse ut"
+          ],
+          "id": "consectetur qui",
+          "activeFromDate": "1963-05-27",
+          "isUsedForBilling": false,
+          "geoAccuracy": null,
+          "stateProvinceName": "eiusmod",
+          "party": [
+            "ipsum elit id"
+          ],
+          "forPersonalUse": null,
+          "profileLastUpdatedDate": null,
+          "geoLongitude": -86548571,
+          "forBusinessUse": null,
+          "primaryFlag": null,
+          "addressLine3": "minim reprehenderit officia",
+          "bestTimeToContactStartTime": "22:07:47.341Z",
+          "postalCodeText": "ut magna",
+          "addressLine2": "exercitation",
+          "partyRole": [
+            "commodo ea enim est dolor"
+          ],
+          "profileFirstCreatedDate": null,
+          "bestTimeToContactEndTime": null,
+          "profileOccurrenceCount": null,
+          "auditInfo": {
+            "createdDate": "1957-12-19T16:06:19.809Z",
+            "isDeleted": null,
+            "createdBy": "irure pariatur do fugiat cupidatat",
+            "updatedDate": "1994-08-29T04:35:52.147Z",
+            "updatedBy": "in veniam Duis"
+          },
+          "contactPhone": [
+            "voluptate pariatur dolor"
+          ]
+        }
+      ],
+      "accountType": "aliquip cillum",
+      "defaultFreightTerms": "id nostrud aliqua",
+      "shippingContact": [
+        "dolor cupidatat"
+      ],
+      "thirtyDayBalanceAmount": 33141459,
+      "generalLedgerAccount": "pariatur non occaecat",
+      "useAsServiceAccount": null,
+      "description": "eu sed elit nisi veniam",
+      "useAsBillingAccount": true,
+      "useAsSalesAccount": true,
+      "autoPaymentMethod": [
+        "cupidatat"
+      ],
+      "autoPaymentAmount": 54027877,
+      "assignTerritoryFlag": null,
+      "balanceAmount": 89562753,
+      "sLAExpirationDate": null,
+      "party": [
+        {
+          "id": "magna laborum",
+          "partyType": "in Ut aute et",
+          "externalIds": [
+            {
+              "externalIdType": [
+                "Duis"
+              ],
+              "externalId": "nostrud minim qui officia in",
+              "id": null,
+              "status": "VALID",
+              "statusLastChangedOn": null
+            }
+          ],
+          "auditInfo": {
+            "createdDate": "1949-12-22T01:21:46.298Z",
+            "isDeleted": true,
+            "createdBy": "velit",
+            "updatedDate": null,
+            "updatedBy": "ex dolor"
+          },
+          "contactPoints": [
+            {
+              "id": null,
+              "activeFromDate": "2014-11-09",
+              "contactPointType": [
+                "nulla irure velit minim ipsum"
+              ],
+              "profileLastUpdatedDate": null,
+              "auditInfo": {
+                "createdDate": null,
+                "isDeleted": true,
+                "createdBy": "consequat dolore aute ex",
+                "updatedDate": "1991-10-11T21:32:36.762Z",
+                "updatedBy": "occaecat in"
+              },
+              "forPersonalUse": true
+            }
+          ],
+          "primaryAccount": [
+            "ipsum"
+          ],
+          "noMergeReason": "esse",
+          "globalParty": "voluptate ad ut"
+        }
+      ],
+      "ninetyDayBalanceAmount": null,
+      "paymentTerm": "non"
+    }
+  ],
+  "quantityInstallmentPeriod": null,
+  "isWorkerDiscountAllowed": null,
+  "mSRPAmount": 14256498,
+  "isWeightEntryRequired": true,
+  "isMultipleCouponsAllowed": false
+}

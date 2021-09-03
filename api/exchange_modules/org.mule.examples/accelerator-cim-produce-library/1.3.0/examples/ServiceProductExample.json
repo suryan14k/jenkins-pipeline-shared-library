@@ -1,0 +1,142 @@
+{
+  "name": "eu voluptate magna deserunt mollit",
+  "longDescription": "non in aliqua ea",
+  "id": "sit esse veniam eu aliqua",
+  "serviceType": "elit laborum id cillum ex",
+  "productStatus": "voluptate aliquip dolore",
+  "description": "culpa nostrud in qui",
+  "productSKU": "aute minim sunt fugiat",
+  "isMultipleCouponsAllowed": true,
+  "isQuantityEntryRequired": null,
+  "isPreOrderable": false,
+  "validFromDate": "1951-03-27",
+  "primaryProductCategory": [
+    {
+      "id": "reprehenderit cillum fugiat Lorem quis",
+      "name": "nulla ullamco veniam aliquip",
+      "activeFromDate": "2005-09-06",
+      "parentCategory": [
+        "amet"
+      ],
+      "activeToDate": "1999-05-31",
+      "productCatalog": [
+        {
+          "id": "dolore non commodo nostrud",
+          "name": "quis occaecat id",
+          "activeFromDate": "1992-01-02",
+          "activeToDate": "1970-11-03",
+          "auditInfo": {
+            "isDeleted": null,
+            "createdBy": "sunt aliqua dolor occaecat Lorem",
+            "updatedBy": "adipisicing Lorem",
+            "updatedDate": "1995-01-15T04:03:18.822Z",
+            "createdDate": null
+          }
+        }
+      ],
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "anim cillum consequat nulla esse",
+        "updatedBy": "sint qui sit",
+        "updatedDate": "2007-08-08T05:08:24.723Z",
+        "createdDate": "1957-08-28T16:39:57.51Z"
+      }
+    }
+  ],
+  "displayUrl": "eu do eiusmod",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "ad cillum Duis dolore",
+    "updatedBy": "dolore ullamco anim culpa",
+    "updatedDate": null,
+    "createdDate": "1969-12-30T11:04:21.399Z"
+  },
+  "priceChargeType": "culpa",
+  "isDynamicBundle": null,
+  "modelYear": null,
+  "stockLedgerValuationAmount": null,
+  "requiredDepositAmount": null,
+  "maximumOrderQuantityCount": null,
+  "revenueInstallmentPeriod": "Lorem aliquip quis",
+  "evergreenContractEstimatedChargeAmount": null,
+  "modelNumber": "mollit commodo ut",
+  "requiresInvididualUnitPricing": null,
+  "validToDate": "2020-11-26",
+  "servicePeriodUOM": "in occaecat dolore velit ut",
+  "disposalType": "ut nisi",
+  "isWeightEntryRequired": false,
+  "isCustomerDiscountAllowed": null,
+  "evergreenContractEstimatedMonthCount": -73517710,
+  "isFoodstampPaymentAllowed": null,
+  "servicePeriodCount": -44515619,
+  "quantityInstallmentPeriod": null,
+  "isSellableWithoutPrice": null,
+  "masterProduct": [
+    "adipisicing aliquip elit et"
+  ],
+  "isInstallable": null,
+  "requiredDepositPercentage": -66525945,
+  "canUseQuantitySchedule": null,
+  "versionNumber": "dolore laboris",
+  "rentalTermViolationPenaltyAmount": -11332322,
+  "isPartnerDiscountAllowed": null,
+  "isCouponRedemptionAllowed": null,
+  "isManualPriceEntryRequired": false,
+  "allowCustomerReturn": null,
+  "externalIds": [
+    "mollit consequat officia"
+  ],
+  "lotIdentifier": "id sunt ad occaecat eu",
+  "quantityInstallmentCount": null,
+  "externalSourceRecord": "est",
+  "isIntellectualPropertyProtected": null,
+  "manufacturerName": "mollit",
+  "mSRPAmount": null,
+  "isAutoProvisionable": true,
+  "primarySalesChannel": [
+    "minim in cupidatat"
+  ],
+  "isWorkerDiscountAllowed": false,
+  "type": "dolore id in",
+  "serviceProviderAccount": [
+    "non"
+  ],
+  "isSellable": null,
+  "brandGrade": "Excepteur ipsum ullamco",
+  "rewardProgramPointsCount": null,
+  "isSellableIndependently": null,
+  "quantityScheduleType": "tempor Ut",
+  "rentalCleanupFeeAmount": -16848316,
+  "isQualityVerificationRequired": null,
+  "glAccountCode": "in",
+  "canUseRevenueSchedule": false,
+  "minimumAdvertisementAmountStartDate": -87078633,
+  "revenueScheduleType": "consectetur fugiat Duis eu",
+  "isRainCheckAllowed": true,
+  "allowPartialRefund": null,
+  "isBackOrdered": null,
+  "minimumOrderQuantityCount": null,
+  "isSerialized": true,
+  "isReturnable": false,
+  "minimumAdvertisementAmount": null,
+  "validForPeriodUOM": [
+    "anim cillum amet proident"
+  ],
+  "revenueInstallmentCount": null,
+  "brand": [
+    {
+      "id": "est ullamco magna Excepteur nisi",
+      "name": "laborum culpa",
+      "brandGrade": "dolore consectetur",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "cupidatat ea non ut in",
+        "updatedBy": "sunt commodo id",
+        "updatedDate": "1994-11-10T08:16:35.9Z",
+        "createdDate": "2007-05-01T21:58:29.021Z"
+      }
+    }
+  ],
+  "standardWarrantyLengthMonth": 55632279,
+  "validForPeriodCount": -5375101
+}

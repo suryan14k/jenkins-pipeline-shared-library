@@ -1,0 +1,66 @@
+{
+  "id": "amet",
+  "productExt": [
+    {
+      "name": "quis",
+      "longDescription": "culpa",
+      "id": null,
+      "productStatus": "exercitation cupidatat dolore in",
+      "description": "consequat Duis non adipisicing",
+      "productSKU": "esse ad deserunt laborum",
+      "isWeightEntryRequired": true,
+      "minimumAdvertisementAmountStartDate": null,
+      "stockLedgerValuationAmount": null,
+      "glAccountCode": "culpa occaecat commodo",
+      "isSellableWithoutPrice": true,
+      "isSellable": null,
+      "brandGrade": "aliquip dolore sit ea",
+      "quantityInstallmentCount": null,
+      "manufacturerName": "dolore ut voluptate",
+      "canUseRevenueSchedule": null,
+      "revenueInstallmentPeriod": "occaecat nulla",
+      "externalIds": [
+        "aute dolore labore"
+      ],
+      "isDynamicBundle": false,
+      "allowCustomerReturn": true,
+      "canUseQuantitySchedule": false,
+      "primaryProductCategory": [
+        {
+          "id": null,
+          "name": "enim",
+          "activeFromDate": "1996-01-07",
+          "activeToDate": "1946-11-19",
+          "parentCategory": [
+            "do consectetur"
+          ],
+          "productCatalog": [
+            "sit est et"
+          ],
+          "auditInfo": {
+            "createdDate": null,
+            "isDeleted": null,
+            "createdBy": "do et ullamco ipsum qui",
+            "updatedDate": null,
+            "updatedBy": "anim"
+          }
+        }
+      ],
+      "isCouponRedemptionAllowed": null,
+      "isQualityVerificationRequired": false,
+      "isAutoProvisionable": false,
+      "isBackOrdered": null,
+      "isQuantityEntryRequired": null,
+      "versionNumber": "amet quis esse culpa",
+      "mSRPAmount": 42859717,
+      "quantityScheduleType": "proident adipisicing enim",
+      "validToDate": null,
+      "validForPeriodCount": -29903846,
+      "isMultipleCouponsAllowed": false,
+      "lotIdentifier": "consectetur incididunt ad cupidatat exercitation",
+      "standardWarrantyLengthMonth": null,
+      "modelYear": null,
+      "revenueScheduleType": "nisi aliqua"
+    }
+  ]
+}

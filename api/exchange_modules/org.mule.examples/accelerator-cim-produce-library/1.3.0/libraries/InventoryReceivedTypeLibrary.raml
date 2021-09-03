@@ -1,0 +1,54 @@
+#%RAML 1.0 Library
+usage: Types representing inventory received types and good receipt
+
+uses:
+  GlobalTypes: ../exchange_modules/org.mule.examples/accelerator-cim-global-library/1.1.2/accelerator-cim-global-library.raml
+
+types:
+  # Accelerators: new type introduced
+  GoodsReceipt:
+    properties:
+      id:
+        type: string | nil
+      nativeId?:
+        type: string
+      number?:
+        type: string
+      goodsReceiptDate?: 
+        type: datetime | nil
+      postingDate?: 
+        type: datetime | nil
+      exported?: 
+        type: boolean | nil
+      inventoryReceivedItems?:
+        items: string | GoodsReceiptItem
+      # Accelerators: added support for external identifiers
+      externalIds?: 
+        items: string | GlobalTypes.ExternalId
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo
+  # Accelerators: new type introduced
+  GoodsReceiptItem:
+    properties:
+      id:
+        type: string | nil
+      description?: 
+        type: string
+      purchaseOrderId:
+        type: string
+      purchaseOrderItemId: 
+        type: string
+      plant?:
+        type: string 
+      storageLocation?:
+        type: string 
+      quantity:
+        type: integer | nil
+      unit?:
+        type: string 
+      commodity?:
+        type: string
+      completelyDelivered?:
+        type: boolean | nil
+      # Accelerators: added audit info block
+      auditInfo?: GlobalTypes.AuditInfo

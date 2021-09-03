@@ -1,0 +1,111 @@
+{
+  "allocatedAmount": 80602040,
+  "id": null,
+  "appliedDate": "1948-04-10",
+  "effectiveDate": "1950-11-07",
+  "refundAllocationType": "laborum",
+  "refundAllocationName": "ex",
+  "refundPayment": [
+    {
+      "id": "et culpa sint",
+      "paymentStatus": "magna elit",
+      "authorizationProcessingMode": "velit pariatur amet ipsum eiusmod",
+      "paymentNumber": "in est",
+      "paymentAmount": 45533410,
+      "paymentType": "laboris nisi",
+      "paymentEffectiveDate": "1996-10-29",
+      "externalCreatedDate": null,
+      "latestGatewayReferenceNumber": "et sint in commodo",
+      "iPAddress": "adipisicing proident tempor",
+      "latestGatewayInternalReferenceNumber": "fugiat aliquip",
+      "internalBusinessUnit": [
+        "tempor enim ad consequat"
+      ],
+      "totalUnappliedAmount": null,
+      "paymentGroup": [
+        {
+          "id": null,
+          "totalReversalAmount": -92394124,
+          "totalAuthorizationAmount": -84390724,
+          "totalPaymentAmount": 44955102,
+          "paymentGroupNumber": "magna",
+          "auditInfo": {
+            "isDeleted": false,
+            "createdBy": "occaecat incididunt ipsum",
+            "updatedBy": "in anim mollit quis",
+            "updatedDate": "1958-12-10T01:44:24.075Z",
+            "createdDate": null
+          }
+        }
+      ],
+      "externalIds": [
+        "aliqua"
+      ],
+      "paymentMethod": [
+        "Ut labore"
+      ],
+      "customerEmailAddress": "officia mollit",
+      "account": [
+        "dolore aute in"
+      ],
+      "paymentCancellationDate": "1985-06-11",
+      "totalAppliedAmount": null,
+      "salesOrderPaymentSummary": [
+        "nostrud"
+      ],
+      "latestPaymentGatewayMessageText": "magna",
+      "paymentGateway": [
+        "laboris aliqua consequat"
+      ],
+      "netAppliedAmount": null,
+      "commentText": "laborum",
+      "macAddress": "aute sunt enim veniam anim",
+      "latestGatewayResultCode": [
+        {
+          "id": null,
+          "name": "et occaecat",
+          "description": "nulla consequat laboris",
+          "auditInfo": {
+            "isDeleted": null,
+            "createdBy": "ea aliqua nostrud",
+            "updatedBy": "Duis est eu",
+            "updatedDate": null,
+            "createdDate": null
+          }
+        }
+      ],
+      "balanceAmount": -68605457,
+      "latestGatewayDate": null,
+      "customerPhoneNumber": "Duis mollit qui sunt",
+      "latestGatewayInternalResult": "deserunt non est ut",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "in",
+        "updatedBy": "officia exercitation proident adipisicing nisi",
+        "updatedDate": null,
+        "createdDate": null
+      },
+      "paymentTreatment": [
+        {
+          "id": null,
+          "paymentTreatmentStatus": "aute eiusmod sint culpa quis"
+        }
+      ],
+      "name": "consectetur in deserunt est id"
+    }
+  ],
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "qui",
+    "updatedBy": "voluptate nulla sunt consectetur ut",
+    "updatedDate": null,
+    "createdDate": null
+  },
+  "relatedRefundAllocation": [
+    "anim"
+  ],
+  "externalCreatedDate": "1942-06-23",
+  "hasBeenUnapplied": true,
+  "unappliedDate": null,
+  "refundBalanceAmount": null
+}

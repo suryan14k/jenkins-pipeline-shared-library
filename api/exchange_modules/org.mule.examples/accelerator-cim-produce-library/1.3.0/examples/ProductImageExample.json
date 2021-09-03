@@ -1,0 +1,65 @@
+{
+  "id": "aliquip ex pariatur sunt",
+  "product": [
+    {
+      "id": "aliquip sint",
+      "name": "pariatur",
+      "longDescription": "dolore officia",
+      "description": "sint do irure",
+      "productStatus": "proident cupidatat eu nulla incididunt",
+      "productSKU": "enim do consectetur cupidatat",
+      "allowCustomerReturn": null,
+      "isBackOrdered": true,
+      "isRainCheckAllowed": true,
+      "mSRPAmount": 49032338,
+      "isAutoProvisionable": true,
+      "allowPartialRefund": null,
+      "isIntellectualPropertyProtected": true,
+      "brandGrade": "tempor dolor esse labore",
+      "externalIds": [
+        "ex qui veniam"
+      ],
+      "isFoodstampPaymentAllowed": null,
+      "isSerialized": false,
+      "requiresInvididualUnitPricing": null,
+      "validFromDate": "1991-01-16",
+      "minimumAdvertisementAmount": null,
+      "isSellableWithoutPrice": false,
+      "quantityInstallmentCount": 77659840,
+      "isPartnerDiscountAllowed": false,
+      "isReturnable": null,
+      "masterProduct": [
+        "minim occaecat consequat consectetur dolor"
+      ],
+      "requiredDepositPercentage": null,
+      "rewardProgramPointsCount": null,
+      "revenueInstallmentPeriod": "do aliqua incididunt laborum deserunt",
+      "manufacturerName": "ut id",
+      "isCustomerDiscountAllowed": null,
+      "revenueScheduleType": "Ut",
+      "priceChargeType": "ut",
+      "modelNumber": "incididunt eiusmod ex nulla",
+      "externalSourceRecord": "mollit cupidatat qui veniam eu",
+      "modelYear": null,
+      "standardWarrantyLengthMonth": null,
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "sunt",
+        "updatedBy": "dolor magna velit",
+        "updatedDate": null,
+        "createdDate": "1988-08-23T07:53:37.462Z"
+      },
+      "validToDate": "1960-06-27",
+      "isSellableIndependently": null
+    }
+  ],
+  "isDefaultImage": false,
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "occaecat",
+    "updatedBy": "amet aliqua quis deserunt",
+    "updatedDate": "1975-03-16T22:09:48.556Z",
+    "createdDate": "2009-11-24T03:59:11.332Z"
+  },
+  "imageViewType": "fugiat ullamco tempor esse"
+}

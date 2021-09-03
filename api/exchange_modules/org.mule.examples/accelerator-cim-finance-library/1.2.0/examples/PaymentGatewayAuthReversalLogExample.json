@@ -1,0 +1,199 @@
+{
+  "internalReferenceNumber": "proident voluptate laborum",
+  "paymentGatewayDate": "2018-03-17",
+  "paymentGatewayInteractionType": [
+    {
+      "id": "tempor amet",
+      "name": "culpa reprehenderit elit",
+      "description": "sint",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "enim",
+        "updatedBy": "ipsum sunt adipisicing anim",
+        "updatedDate": null,
+        "createdDate": null
+      }
+    }
+  ],
+  "id": "dolore veniam",
+  "paymentGatewayResult": [
+    {
+      "id": "non pariatur labore proident",
+      "name": "ut ex",
+      "description": "laboris commodo nulla nostrud",
+      "auditInfo": {
+        "isDeleted": true,
+        "createdBy": "et fugiat ut",
+        "updatedBy": "fugiat",
+        "updatedDate": null,
+        "createdDate": "1966-02-16T20:53:28.632Z"
+      }
+    }
+  ],
+  "paymentGatewayInteractionLogName": "ea tempor laborum et ipsum",
+  "paymentGatewayInteractionStatus": "ex aute",
+  "paymentGatewayMessageText": "eiusmod cillum",
+  "internalResultCode": "mollit anim Duis",
+  "paymentGatewayAVSCode": "elit sit",
+  "auditInfo": {
+    "isDeleted": null,
+    "createdBy": "proident",
+    "updatedBy": "officia sit Ut",
+    "updatedDate": null,
+    "createdDate": "2015-01-23T21:39:13.877Z"
+  },
+  "paymentAuthorizationReversal": [
+    {
+      "id": "exercitation ex aliqua enim",
+      "paymentGatewayReferenceNumber": "amet dolor cupidatat consectetur",
+      "authorizationReversalAmount": -83599342,
+      "paymentAuthorizationReversalStatus": "dolore",
+      "paymentAuthorizationProcessingMode": "nisi veniam aliquip cupidatat",
+      "paymentGatewayResult": [
+        {
+          "id": "Ut et exercitation",
+          "name": "eu dolor",
+          "description": "occaecat",
+          "auditInfo": {
+            "isDeleted": null,
+            "createdBy": "dolore quis ut",
+            "updatedBy": "Lorem id labore",
+            "updatedDate": "2015-05-01T01:28:09.734Z",
+            "createdDate": null
+          }
+        }
+      ],
+      "requestDate": "00:00:01",
+      "paymentGatewayDate": "00:00:01",
+      "paymentAuthorizationReversalName": "sunt quis sit et",
+      "paymentGatewayInternalReferenceNumber": "laborum eiusmod laboris",
+      "customerAuthorizationReversalEmail": "occaecat culpa aute tempor in",
+      "paymentAuthorizationReversalCommentText": "occaecat anim commodo",
+      "paymentAuthorization": [
+        "occaecat"
+      ],
+      "externalCreatedDate": null,
+      "macAddress": "tempor adipisicing",
+      "iPAddress": "pariatur ad commodo",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "quis amet Excepteur",
+        "updatedBy": "incididunt dolore in ad",
+        "updatedDate": "1946-03-14T03:30:57.24Z",
+        "createdDate": "1966-01-26T20:09:39.679Z"
+      },
+      "customerAuthorizationReversalPhone": "dolor",
+      "capturePayment": [
+        {
+          "id": null,
+          "paymentStatus": "amet",
+          "authorizationProcessingMode": "pariatur",
+          "paymentNumber": "ut proident reprehenderit",
+          "paymentAmount": -42964520,
+          "paymentType": "ad eu sed nulla Duis",
+          "paymentEffectiveDate": "1961-02-13",
+          "salesOrderPaymentSummary": [
+            "voluptate quis mollit occaecat"
+          ],
+          "internalBusinessUnit": [
+            "pariatur cupidatat"
+          ],
+          "paymentGateway": [
+            "in laborum"
+          ],
+          "totalUnappliedAmount": -72040116,
+          "customerPhoneNumber": "veniam mollit sed laborum",
+          "account": [
+            "qui"
+          ],
+          "paymentMethod": [
+            {
+              "id": null,
+              "paymentMethodStatus": "eu",
+              "paymentMethodType": [
+                {
+                  "id": "ut minim",
+                  "typeDescription": "aliqua eu ipsum in pariatur",
+                  "maxTransactionAmount": -51981257,
+                  "mediaType": "in voluptate",
+                  "maxPerPeriodTransactionCount": 50125112,
+                  "useMinimumAgeYear": null,
+                  "maxPerPeriodAmount": null,
+                  "auditInfo": {
+                    "isDeleted": null,
+                    "createdBy": "ad sint quis enim",
+                    "updatedBy": "aliquip cupidatat magna",
+                    "updatedDate": "1977-10-20T02:23:16.897Z",
+                    "createdDate": "2020-05-30T18:28:08.272Z"
+                  },
+                  "name": "sit"
+                }
+              ],
+              "auditInfo": {
+                "isDeleted": null,
+                "createdBy": "sed",
+                "updatedBy": "occaecat",
+                "updatedDate": null,
+                "createdDate": null
+              }
+            }
+          ],
+          "auditInfo": {
+            "isDeleted": false,
+            "createdBy": "quis in",
+            "updatedBy": "nostrud adipisicing",
+            "updatedDate": "1954-04-08T14:55:45.045Z",
+            "createdDate": "1946-04-03T19:45:52.724Z"
+          },
+          "netAppliedAmount": null,
+          "latestGatewayDate": "2019-10-21",
+          "externalIds": [
+            {
+              "externalIdType": [
+                {
+                  "id": "anim",
+                  "name": "irure officia"
+                }
+              ],
+              "externalId": "ipsum laboris",
+              "id": null,
+              "status": "INVALID",
+              "statusLastChangedDate": "2020-01-04T21:37:05.443Z"
+            }
+          ],
+          "paymentGroup": [
+            {
+              "id": null,
+              "totalReversalAmount": -12246867,
+              "totalAuthorizationAmount": 59084376,
+              "totalPaymentAmount": 55205357,
+              "paymentGroupNumber": "exercitation amet"
+            }
+          ],
+          "latestGatewayReferenceNumber": "culpa in",
+          "commentText": "dolore",
+          "latestGatewayInternalReferenceNumber": "ipsum voluptate est in tempor",
+          "iPAddress": "enim commodo",
+          "totalAppliedAmount": null,
+          "externalCreatedDate": "1946-03-15",
+          "paymentCancellationDate": "1970-02-21",
+          "latestPaymentGatewayMessageText": "eiusmod dolore velit ullamco cupidatat",
+          "latestGatewayResultCode": [
+            "nulla irure est sint ex"
+          ],
+          "macAddress": "sed ut pariatur",
+          "paymentTreatment": [
+            "nulla aliqua incididunt ea"
+          ],
+          "balanceAmount": null,
+          "name": "commodo ullamco mollit do occaecat",
+          "latestGatewayInternalResult": "do commodo velit cillum",
+          "customerEmailAddress": "deserunt est incididunt dolor esse"
+        }
+      ]
+    }
+  ],
+  "paymentGatewayReferenceNumber": "dolor magna ex laboris",
+  "paymentGatewayAuthorizationCode": "ad enim esse sint occaecat",
+  "name": "irure"
+}

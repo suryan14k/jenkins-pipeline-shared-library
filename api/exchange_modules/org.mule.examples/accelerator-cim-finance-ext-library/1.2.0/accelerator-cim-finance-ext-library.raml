@@ -1,0 +1,26 @@
+#%RAML 1.0 Library
+usage: Extensions to the CIM Finance subject area types
+
+uses:
+  InvoiceExtTypes: libraries/InvoiceExtTypeLibrary.raml
+  PaymentExtTypes: libraries/PaymentExtTypeLibrary.raml
+  PaymentMethodExtTypes: libraries/PaymentMethodExtTypeLibrary.raml
+
+types:
+  # Extended Invoice Types
+
+  # Extended Payment types
+  PaymentExt:
+    type: PaymentExtTypes.PaymentExt
+    example: !include ./examples/PaymentExtExample.json
+  PaymentAuthorizationExt:
+    type: PaymentExtTypes.PaymentAuthorizationExt
+    example: !include ./examples/PaymentAuthorizationExtExample.json
+  
+  # Extended PaymentMethod types
+  CouponExt:
+    type: PaymentMethodExtTypes.CouponExt
+    example: !include ./examples/CouponExtExample.json
+  CreditTenderExt:
+    type: PaymentMethodExtTypes.CreditTenderExt
+    example: !include ./examples/CreditTenderExtExample.json

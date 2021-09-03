@@ -1,0 +1,22 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Product group
+
+uses:
+  MarketTypes: ../exchange_modules/org.mule.examples/accelerator-cim-market-library/1.2.0/accelerator-cim-market-library.raml
+  ProduceTypes: ../exchange_modules/org.mule.examples/accelerator-cim-produce-library/1.3.0/accelerator-cim-produce-library.raml
+  SellTypes: ../exchange_modules/org.mule.examples/accelerator-cim-sell-library/1.2.0/accelerator-cim-sell-library.raml
+
+types:
+  ProductExt:
+    type: ProduceTypes.Product
+    properties:
+      primarySalesChannelExt?: SellTypes.SalesChannel[]
+  ProductRelatedProductExt:
+    type: ProduceTypes.ProductRelatedProduct
+    properties:
+      salesOrderProduct1Ext?: SellTypes.SalesOrderProduct[]
+      salesOrderProduct2Ext?: SellTypes.SalesOrderProduct[]
+  ServiceProductExt:
+    type: ProduceTypes.ServiceProduct
+    properties:
+      serviceProviderAccountExt?: MarketTypes.Account[]

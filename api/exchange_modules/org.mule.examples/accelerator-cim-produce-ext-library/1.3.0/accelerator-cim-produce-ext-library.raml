@@ -1,0 +1,26 @@
+#%RAML 1.0 Library
+usage: Extensions to the CIM Produce subject area types
+
+uses:
+  InventoryProductExtTypes: libraries/InventoryProductExtTypeLibrary.raml
+  ProductExtTypes: libraries/ProductExtTypeLibrary.raml
+  InventoryReceivedExtTypes: libraries/InventoryReceivedExtTypeLibrary.raml
+  PurchaseOrderExtTypes: libraries/PurchaseOrderExtTypeLibrary.raml
+
+types:
+  # Extended InventoryProduct types
+
+  # Extended InventoryReceivedTypes
+
+  # Extended Product types
+  ProductExt:
+    type: ProductExtTypes.ProductExt
+    example: !include ./examples/ProductExtExample.json
+  ProductRelatedProductExt:
+    type: ProductExtTypes.ProductRelatedProductExt
+    example: !include ./examples/ProductRelatedProductExtExample.json
+  ServiceProductExt:
+    type: ProductExtTypes.ServiceProductExt
+    example: !include ./examples/ServiceProductExtExample.json
+
+  # Exported PurchaseOrderTypes

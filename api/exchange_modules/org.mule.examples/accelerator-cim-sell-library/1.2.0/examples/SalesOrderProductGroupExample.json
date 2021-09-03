@@ -1,0 +1,25 @@
+{
+  "name": "reprehenderit pariatur ad",
+  "id": "occaecat nostrud proident",
+  "description": "qui anim officia nostrud mollit",
+  "salesOrderProductGroupType": [
+    {
+      "id": null,
+      "name": "nulla sint quis id et",
+      "auditInfo": {
+        "isDeleted": null,
+        "createdBy": "dolor laborum",
+        "updatedBy": "eu",
+        "updatedDate": "1943-11-09T19:57:55.968Z",
+        "createdDate": null
+      }
+    }
+  ],
+  "auditInfo": {
+    "isDeleted": true,
+    "createdBy": "ipsum voluptate id Ut cillum",
+    "updatedBy": "voluptate qui dolor aute non",
+    "updatedDate": "2013-08-24T16:32:38.03Z",
+    "createdDate": null
+  }
+}
