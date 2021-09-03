@@ -215,21 +215,19 @@ class ApiDesignCenterClient {
         }
     }
 
-    def uploadArtifacts(token, projectId, branch, apiDirPath){
+    def uploadExchangeDependencyArtifacts(token, projectId, branch, apiDirPath){
         File apiBaseDir = new File(apiDirPath)
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
                 print fileEntry.getName()
-                step.println("adding exchange dependencies")
+                step.println("adding exchange dependencies to project")
                 acquireLockOnProject(token, projectId, branch)
                 def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
                 createList.each {it -> addExchangeDependency(token, projectId, branch, it)}
                 releaseLockOnProject(token, projectId, branch)
             }
         }
-        addProjectFiles(token, projectId, branch, apiDirPath)
-
-    }
+      }
 
     def addExchangeDependency(token, projectId, branch, filePath)
     {
@@ -254,9 +252,9 @@ class ApiDesignCenterClient {
         }
     }
 
-    def addProjectFiles(token, projectId, branch, apiDirPath)
+    def uploadArtifacts(token, projectId, branch, apiDirPath)
     {
-        step.println("save project files")
+        step.println("loading project artifacts")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/save/v2"
         def headers= ["x-organization-id": props.organizationId, "x-owner-id": props.ownerId, "Authorization": "Bearer " + token]
         def apiMultiPartDataClient = new ApiMultiPartDataClient()
