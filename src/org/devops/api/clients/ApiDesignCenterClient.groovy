@@ -235,14 +235,14 @@ class ApiDesignCenterClient {
     {
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/exchange/dependencies"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
-        def requestTemplate = '{"groupId" : null,"assetId" : null, "version" : null }'
+        def requestTemplate = '[{"groupId" : null,"assetId" : null, "version" : null }]'
         def request = new JsonSlurper().parseText(requestTemplate)
         def fileParts = filePath.replace(File.separator,"/").split("/")
         request.groupId = fileParts[1]
         request.assetId = fileParts[2]
         request.version = fileParts[3]
         def body = JsonOutput.toJson(request)
-        step.println("adding dependnecy: ${body}")
+        step.println("adding dependency: ${body}")
         def connection = ApiClient.put(urlString, body, headers)
         if (connection.responseCode == 200) {
             def status = new JsonSlurper().parseText(connection.getInputStream().getText())
