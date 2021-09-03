@@ -220,19 +220,17 @@ class ApiDesignCenterClient {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
                 step.println("adding exchange dependencies to project")
                 try {
-                    acquireLockOnProject(token, projectId, branch)
                     def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
+                    acquireLockOnProject(token, projectId, branch)
                     createList.each { it -> addExchangeDependency(token, projectId, branch, it) }
                     releaseLockOnProject(token, projectId, branch)
                 }catch(Exception e)
                 {
                     releaseLockOnProject(token, projectId, branch)
-                    apiBaseDir=null
                     throw new Exception("adding exchange dependencies stage failed.")
                 }
             }
         }
-        apiBaseDir=null
       }
 
     def addExchangeDependency(token, projectId, branch, filePath)
