@@ -221,8 +221,10 @@ class ApiDesignCenterClient {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
                 print fileEntry.getName()
                 step.println("adding exchange dependencies")
+                acquireLockOnProject(token, projectId, branch)
                 def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
                 createList.each {it -> addExchangeDependency(token, projectId, branch, it)}
+                releaseLockOnProject(token, projectId, branch)
             }
         }
         addProjectFiles(token, projectId, branch, apiDirPath)
@@ -240,6 +242,7 @@ class ApiDesignCenterClient {
         request.assetId = fileParts[2]
         request.version = fileParts[3]
         def body = JsonOutput.toJson(request)
+        step.println("adding dependnecy: ${body}")
         def connection = ApiClient.put(urlString, body, headers)
         if (connection.responseCode == 200) {
             def status = new JsonSlurper().parseText(connection.getInputStream().getText())
