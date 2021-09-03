@@ -10,30 +10,19 @@ class ApiClient {
 
     static def post(urlString, body, headers) {
         def connection = getUrlConnectionWithHeaders(urlString, headers, "POST")
-        connection.doOutput = true
-        if(body != null) {
-            def writer = new OutputStreamWriter(connection.getOutputStream())
-            writer.write(body)
-            writer.flush()
-            writer.close()
-        }
+        writeData(connection, body)
         connection.connect()
         return connection
     }
     static def put(urlString, body, headers) {
         def connection = getUrlConnectionWithHeaders(urlString, headers, "PUT" )
-        connection.doOutput = true
-        if(body != null) {
-            def writer = new OutputStreamWriter(connection.getOutputStream())
-            writer.write(body)
-            writer.flush()
-            writer.close()
-        }
+        writeData(connection, body)
         connection.connect()
         return connection
     }
-    static def delete(urlString, headers) {
+    static def delete(urlString, body, headers) {
         def connection = getUrlConnectionWithHeaders(urlString, headers, "DELETE")
+        writeData(connection, body)
         connection.connect()
         return connection
     }
@@ -43,5 +32,15 @@ class ApiClient {
         headers.each {it -> connection.setRequestProperty(it.key, it.value) }
         connection.setRequestMethod(method)
         return connection
+    }
+
+    private static def writeData(connection, body){
+        connection.doOutput = true
+        if(body != null) {
+            def writer = new OutputStreamWriter(connection.getOutputStream())
+            writer.write(body)
+            writer.flush()
+            writer.close()
+        }
     }
 }

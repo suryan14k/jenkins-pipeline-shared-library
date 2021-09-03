@@ -154,15 +154,19 @@ class ApiDesignCenterClient {
             def projectArtifactList = new JsonSlurper().parseText(connection.getInputStream().getText())
             step.println("success: List of files ${projectArtifactList}")
             def fileList = projectArtifactList.findAll { it -> (!it.path.contains("/")  && !it.path.contains("gitignore")  && !it.path.contains("exchange.json")  && it.type.equals("FILE")) }
-            def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER")) }
-            step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} ")
+            def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER") && !it.path.contains("exchange_modules")) }
+            def exchangeDependenciesList = projectArtifactList.findAll { it.path.contains("exchange_modules/") && it.type.equals("FOLDER") && (it.path.count("/") == 3)}
+            step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
             acquireLockOnProject(token, projectId, branch)
             try{
-            fileList.each {
-                it -> deleteArtifact(token, projectId, branch, it.path)
+                fileList.each {
+                    it -> deleteArtifact(token, projectId, branch, it.path)
             }
-            folderList.each {
-                it -> deleteArtifact(token, projectId, branch, it.path)
+                folderList.each {
+                    it -> deleteArtifact(token, projectId, branch, it.path)
+            }
+                exchangeDependenciesList.each {
+                    it -> deleteExchangeDependency(token, projectId, branch, it.path)
             }
             }catch(Exception e)
             {
@@ -182,12 +186,32 @@ class ApiDesignCenterClient {
     {
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/files/" + filePath
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
-        def connection = ApiClient.delete(urlString, headers)
+        def connection = ApiClient.delete(urlString, null, headers)
         if (connection.responseCode == 200) {
             //nothing.
         } else {
             step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("delete artifact stage failed.")
+        }
+    }
+
+    def deleteExchangeDependency(token, projectId, branch, filePath)
+    {
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/exchange/dependencies"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def requestTemplate = '{"groupId" : null,"assetId" : null, "version" : null }'
+        def request = new JsonSlurper().parseText(requestTemplate)
+        def fileParts = filePath.split("/")
+        request.groupId = fileParts[1]
+        request.assetId = fileParts[2]
+        request.version = fileParts[3]
+        def body = JsonOutput.toJson(request)
+        def connection = ApiClient.delete(urlString, body, headers)
+        if (connection.responseCode == 200) {
+            //nothing.
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("delete dependency stage failed.")
         }
     }
 
