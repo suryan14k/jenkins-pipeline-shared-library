@@ -214,18 +214,25 @@ class ApiDesignCenterClient {
         }
     }
 
-    def uploadExchangeDependencyArtifacts(token, projectId, branch, apiBaseDir){
-        //File apiBaseDir = new File(apiDirPath)
+    def uploadExchangeDependencyArtifacts(token, projectId, branch, apiDirPath){
+        def apiBaseDir = new File(apiDirPath)
         for (File fileEntry : apiBaseDir.listFiles()) {
             if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
-                print fileEntry.getName()
                 step.println("adding exchange dependencies to project")
-                acquireLockOnProject(token, projectId, branch)
-                def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
-                createList.each {it -> addExchangeDependency(token, projectId, branch, it)}
-                releaseLockOnProject(token, projectId, branch)
+                try {
+                    acquireLockOnProject(token, projectId, branch)
+                    def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
+                    createList.each { it -> addExchangeDependency(token, projectId, branch, it) }
+                    releaseLockOnProject(token, projectId, branch)
+                }catch(Exception e)
+                {
+                    releaseLockOnProject(token, projectId, branch)
+                    apiBaseDir=null
+                    throw new Exception("adding exchange dependencies stage failed.")
+                }
             }
         }
+        apiBaseDir=null
       }
 
     def addExchangeDependency(token, projectId, branch, filePath)
@@ -251,14 +258,14 @@ class ApiDesignCenterClient {
         }
     }
 
-    def uploadArtifacts(token, projectId, branch, apiBaseDir)
+    def uploadArtifacts(token, projectId, branch, apiDirPath)
     {
         step.println("loading project artifacts")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/save/v2"
         def headers= ["x-organization-id": props.organizationId, "x-owner-id": props.ownerId, "Authorization": "Bearer " + token]
         def apiMultiPartDataClient = new ApiMultiPartDataClient()
         def connection = apiMultiPartDataClient.getConnection(urlString, headers)
-        //File apiBaseDir = new File(apiDirPath)
+        def apiBaseDir = new File(apiDirPath)
         addFilesIntoMultiPartClient(apiBaseDir, apiBaseDir, apiMultiPartDataClient)
         apiMultiPartDataClient.finish()
 
