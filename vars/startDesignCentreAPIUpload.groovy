@@ -10,6 +10,5 @@ def call(step, props, projectName, branch, apiDirPath){
     apiDesignCenterClient.branchCleanUp(token, projectId, branch)
     apiDesignCenterClient.uploadExchangeDependencyArtifacts(token,projectId, branch, apiDirPath)
     apiDesignCenterClient.uploadArtifacts(token,projectId, branch, apiDirPath)
-
     step.println("Design Centre API Upload completed")
 }
