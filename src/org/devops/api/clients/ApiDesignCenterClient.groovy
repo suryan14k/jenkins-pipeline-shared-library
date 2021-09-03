@@ -158,40 +158,46 @@ class ApiDesignCenterClient {
             def exchangeDependenciesList = projectArtifactList.findAll { it.path.contains("exchange_modules/") && it.type.equals("FOLDER") && (it.path.count("/") == 3)}
             //step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
             acquireLockOnProject(token, projectId, branch)
-            def service = Executors.newFixedThreadPool(10)
-            def taskList = new ArrayList();
-            try{
+            if(fileList.size() > 0 || folderList.size() > 0 || exchangeDependenciesList.size() > 0 ){
+            try {
+                def service = Executors.newFixedThreadPool(10)
+                def taskList = new ArrayList();
                 fileList.each { it ->
-                                    L:{
-                                        def path = it.path
-                                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
-                                        taskList.add(task)
-                                    }
+                    L:
+                    {
+                        def path = it.path
+                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
+                        taskList.add(task)
                     }
+                }
                 folderList.each { it ->
-                                    L:{
-                                            def path = it.path
-                                            def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
-                                            taskList.add(task)
-                                        }
+                    L:
+                    {
+                        def path = it.path
+                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
+                        taskList.add(task)
+                    }
                 }
                 exchangeDependenciesList.each { it ->
-                                                   L:{
-                                                        def path = it.path
-                                                        def task = service.submit({ deleteExchangeDependencyArtifact(token, projectId, branch, path) })
-                                                        taskList.add(task)
-                                                    }
+                    L:
+                    {
+                        def path = it.path
+                        def task = service.submit({ deleteExchangeDependencyArtifact(token, projectId, branch, path) })
+                        taskList.add(task)
+                    }
                 }
                 //wait for all tasks to complete.
-                for(def task : taskList) {
+                for (def task : taskList) {
                     task.get()
                 }
                 releaseLockOnProject(token, projectId, branch)
+
             }catch(Exception e)
             {
                 step.println("delete artifact stage failed."  + e.printStackTrace())
                 releaseLockOnProject(token, projectId, branch)
                 throw new Exception("delete artifact stage failed.")
+            }
             }
             step.println("branch cleanup completed.")
 
