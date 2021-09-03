@@ -8,6 +8,6 @@ def call(step, props, projectName, branch, apiDirPath){
     def branchId = apiDesignCenterClient.getBranchCommitId(token, projectId, branch)
     apiDesignCenterClient.branchBackUp(token, projectId, branch, branchId)
     apiDesignCenterClient.branchCleanUp(token, projectId, branch)
-    //apiDesignCenterClient.saveProjectFiles(token,projectId, branch, apiDirPath)
+    apiDesignCenterClient.uploadArtifacts(token,projectId, branch, apiDirPath)
     step.println("Design Centre API Upload completed")
 }

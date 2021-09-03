@@ -166,7 +166,7 @@ class ApiDesignCenterClient {
                     it -> deleteArtifact(token, projectId, branch, it.path)
             }
                 exchangeDependenciesList.each {
-                    it -> deleteExchangeDependency(token, projectId, branch, it.path)
+                    it -> deleteExchangeDependencyArtifact(token, projectId, branch, it.path)
             }
             }catch(Exception e)
             {
@@ -195,7 +195,7 @@ class ApiDesignCenterClient {
         }
     }
 
-    def deleteExchangeDependency(token, projectId, branch, filePath)
+    def deleteExchangeDependencyArtifact(token, projectId, branch, filePath)
     {
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/exchange/dependencies"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
@@ -215,11 +215,44 @@ class ApiDesignCenterClient {
         }
     }
 
+    def uploadArtifacts(token, projectId, branch, apiDirPath){
 
-    def saveProjectFiles(token, projectId, branch, apiDirPath)
+        for (File fileEntry : apiDirPath.listFiles()) {
+            if (fileEntry.isDirectory() && fileEntry.getName().equals("exchange_modules")) {
+                print fileEntry.getName()
+                step.println("adding exchange dependencies")
+                def createList = getExchangeDependencyFileListFilteredPath(apiDirPath)
+                createList.each {it -> addExchangeDependency(token, projectId, branch, it)}
+            }
+        }
+        addProjectFiles(token, projectId, branch, apiDirPath)
+
+    }
+
+    def addExchangeDependency(token, projectId, branch, filePath)
+    {
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/exchange/dependencies"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def requestTemplate = '{"groupId" : null,"assetId" : null, "version" : null }'
+        def request = new JsonSlurper().parseText(requestTemplate)
+        def fileParts = filePath.replace(File.separator,"/").split("/")
+        request.groupId = fileParts[1]
+        request.assetId = fileParts[2]
+        request.version = fileParts[3]
+        def body = JsonOutput.toJson(request)
+        def connection = ApiClient.put(urlString, body, headers)
+        if (connection.responseCode == 200) {
+            def status = new JsonSlurper().parseText(connection.getInputStream().getText())
+            return status
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("add dependency stage failed.")
+        }
+    }
+
+    def addProjectFiles(token, projectId, branch, apiDirPath)
     {
         step.println("save project files")
-        def boundary = "*****"
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/save/v2"
         def headers= ["x-organization-id": props.organizationId, "x-owner-id": props.ownerId, "Authorization": "Bearer " + token]
         def apiMultiPartDataClient = new ApiMultiPartDataClient()
@@ -247,9 +280,10 @@ class ApiDesignCenterClient {
         }
     }
 
-    private static addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
+
+    private def addFilesIntoMultiPartClient(File apiBaseDir, File apiBaseDirCopy, apiClient) {
         for (File fileEntry : apiBaseDir.listFiles()) {
-            if (fileEntry.isDirectory()) {
+            if (fileEntry.isDirectory() && !fileEntry.getName().equals("exchange_modules")) {
                 addFilesIntoMultiPartClient(fileEntry, apiBaseDirCopy, apiClient)
             } else {
                 def fileName = getModifiedFileName(apiBaseDirCopy, fileEntry)
@@ -258,7 +292,7 @@ class ApiDesignCenterClient {
         }
     }
 
-    private static def getModifiedFileName(baseDir, filePath)
+    private def getModifiedFileName(baseDir, filePath)
     {
         def rootLength = baseDir.getAbsolutePath().length()
         def absFileName = filePath.getAbsolutePath()
@@ -266,12 +300,38 @@ class ApiDesignCenterClient {
         return relFileName.replace(File.separator,"/")
     }
 
-    private static def getDateTime()
+    private def getDateTime()
     {
         def formatter = new SimpleDateFormat("dd-MMM-yyyy")
         def date = new Date();
         String datePart = formatter.format(date)
         String timePart = date.getTime()
         return datePart + "_" + timePart
+    }
+
+   private def getExchangeDependencyFileListFilteredPath(apiBaseDir)
+    {
+        def filteredList = []
+        getExchangeDependencyFileList(apiBaseDir,[])
+                .each {
+                    it -> {
+                        def result = it.split("exchange_modules")
+                        if(result.size() > 1)
+                        {
+                            filteredList.add(result[1])
+                        }
+                    }
+                }
+        return filteredList.findAll {it -> (it.count(File.separator) == 3)}
+    }
+
+    private def getExchangeDependencyFileList( apiBaseDir, filteredList) {
+        for (File fileEntry : apiBaseDir.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                filteredList.add(fileEntry.getPath())
+                getExchangeDependencyFileList(fileEntry, filteredList)
+            }
+        }
+        return filteredList
     }
 }
