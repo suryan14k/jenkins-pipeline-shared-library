@@ -3,6 +3,7 @@ package org.devops.api.clients
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 import java.text.SimpleDateFormat
+import java.util.concurrent.Executors
 
 class ApiDesignCenterClient {
 
@@ -157,16 +158,23 @@ class ApiDesignCenterClient {
             def exchangeDependenciesList = projectArtifactList.findAll { it.path.contains("exchange_modules/") && it.type.equals("FOLDER") && (it.path.count("/") == 3)}
             //step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
             acquireLockOnProject(token, projectId, branch)
+            def service = Executors.newFixedThreadPool(10)
+            def taskList = new ArrayList();
             try{
                 fileList.each {
-                    it -> deleteArtifact(token, projectId, branch, it.path)
-            }
+                    taskList.add(service.submit(deleteArtifact(token, projectId, branch, it.path)))
+                }
                 folderList.each {
-                    it -> deleteArtifact(token, projectId, branch, it.path)
-            }
+                    taskList.add(service.submit(deleteArtifact(token, projectId, branch, it.path)))
+                }
                 exchangeDependenciesList.each {
-                    it -> deleteExchangeDependencyArtifact(token, projectId, branch, it.path)
-            }
+                    taskList.add(service.submit(deleteExchangeDependencyArtifact(token, projectId, branch, it.path)))
+                }
+                //wait for all tasks to complete.
+                for(def task : taskList) {
+                    task.get()
+                }
+                releaseLockOnProject(token, projectId, branch)
             }catch(Exception e)
             {
                 step.println("delete artifact stage failed.")
@@ -310,7 +318,7 @@ class ApiDesignCenterClient {
     private def getDateTime()
     {
         def formatter = new SimpleDateFormat("dd-MMM-yyyy")
-        def date = new Date();
+        def date = new Date()
         String datePart = formatter.format(date)
         String timePart = date.getTime()
         return datePart + "_" + timePart
