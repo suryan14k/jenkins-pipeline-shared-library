@@ -162,9 +162,9 @@ class ApiDesignCenterClient {
             try {
                 def service = Executors.newFixedThreadPool(10)
                 def taskList = new ArrayList();
-                fileList.each { it -> { deleteArtifact(token, projectId, branch, path) }}
-                folderList.each { it -> { deleteArtifact(token, projectId, branch, path) }}
-                exchangeDependenciesList.each { it ->{ deleteExchangeDependencyArtifact(token, projectId, branch, path) }}
+                fileList.each { it -> deleteArtifact(token, projectId, branch, it.path) }
+                folderList.each { it -> deleteArtifact(token, projectId, branch, it.path) }
+                exchangeDependenciesList.each { it -> deleteExchangeDependencyArtifact(token, projectId, branch, it.path) }
                 releaseLockOnProject(token, projectId, branch)
             }catch(Exception e)
             {
