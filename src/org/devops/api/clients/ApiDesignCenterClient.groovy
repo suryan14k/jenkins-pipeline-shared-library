@@ -40,20 +40,47 @@ class ApiDesignCenterClient {
 
     }
 
-    def getProjectID(token, projectName)
+    def getProjects(token, projectName)
     {
-        step.println("get project id")
+        step.println("get projects")
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "Authorization": "Bearer " + token]
         def connection = ApiClient.get(urlString, headers)
         if (connection.responseCode == 200) {
             def projectDetails = new JsonSlurper().parseText(connection.getInputStream().getText())
-            def filteredProject = projectDetails.find { it -> (it.name == projectName) }
-            step.println("success: retrieved project id: ${filteredProject.id}")
-            return filteredProject.id
+            def project = projectDetails.find { it -> (it.name == projectName && it.type == "raml") }
+            if(project != null) {
+                step.println("success: retrieved project id: ${project}")
+                return project
+            }
+            else{
+                return "not_found"
+            }
         } else {
             step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("Failed to retrieve project details!")
+        }
+    }
+
+    def createProject(token, projectName){
+        step.println("create project")
+        def requestTemplate = '{"name" : null,"description" : null, "classifier" : null, "type" : null }'
+        def request = new JsonSlurper().parseText(requestTemplate)
+        request.name = projectName
+        request.description = projectName
+        request.classifier = "raml"
+        request.type = "raml"
+        def body = JsonOutput.toJson(request)
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "Authorization": "Bearer " + token]
+        def connection = ApiClient.post(urlString, body, headers)
+        if (connection.responseCode == 201) {
+            def project = new JsonSlurper().parseText(connection.getInputStream().getText())
+            step.println("success: project created: ${project}")
+            return project
+        } else {
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("failed to create project!")
         }
     }
 
