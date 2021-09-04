@@ -162,36 +162,10 @@ class ApiDesignCenterClient {
             try {
                 def service = Executors.newFixedThreadPool(10)
                 def taskList = new ArrayList();
-                fileList.each { it ->
-                    L:
-                    {
-                        def path = it.path
-                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
-                        taskList.add(task)
-                    }
-                }
-                folderList.each { it ->
-                    L:
-                    {
-                        def path = it.path
-                        def task = service.submit({ deleteArtifact(token, projectId, branch, path) })
-                        taskList.add(task)
-                    }
-                }
-                exchangeDependenciesList.each { it ->
-                    L:
-                    {
-                        def path = it.path
-                        def task = service.submit({ deleteExchangeDependencyArtifact(token, projectId, branch, path) })
-                        taskList.add(task)
-                    }
-                }
-                //wait for all tasks to complete.
-                for (def task : taskList) {
-                    task.get()
-                }
+                fileList.each { it -> { deleteArtifact(token, projectId, branch, path) }}
+                folderList.each { it -> { deleteArtifact(token, projectId, branch, path) }}
+                exchangeDependenciesList.each { it ->{ deleteExchangeDependencyArtifact(token, projectId, branch, path) }}
                 releaseLockOnProject(token, projectId, branch)
-
             }catch(Exception e)
             {
                 step.println("delete artifact stage failed."  + e.printStackTrace())
@@ -248,20 +222,9 @@ class ApiDesignCenterClient {
                 try {
                     def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
                     acquireLockOnProject(token, projectId, branch)
-                    def service = Executors.newFixedThreadPool(5)
-                    def taskList = new ArrayList();
                     if(createList.size() > 0 ){
-                    createList.each { it ->
-                                          L:{
-                                            def path = it
-                                            def task = service.submit({ addExchangeDependency(token, projectId, branch, path)})
-                                            taskList.add(task)
-                                          }
-                                    }
-                    for(def task : taskList) {
-                        task.get()
-                    }
-                    }
+                        createList.each { it -> addExchangeDependency(token, projectId, branch, it)}
+                     }
                     releaseLockOnProject(token, projectId, branch)
                 }catch(Exception e)
                 {
