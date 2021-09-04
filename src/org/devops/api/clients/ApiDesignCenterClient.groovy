@@ -72,7 +72,7 @@ class ApiDesignCenterClient {
         request.type = "raml"
         def body = JsonOutput.toJson(request)
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects"
-        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "Authorization": "Bearer " + token]
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId,  "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
         def connection = ApiClient.post(urlString, body, headers)
         if (connection.responseCode == 201) {
             def project = new JsonSlurper().parseText(connection.getInputStream().getText())

@@ -8,6 +8,7 @@ def call(step, props, projectName, apiDirPath) {
     def token = apiDesignCenterClient.getAnypointToken()
     def project = apiDesignCenterClient.getProjects(token, projectName)
     if (project == "not_found") {
+        step.println("project not found, create new project.")
         def projectDetails = apiDesignCenterClient.createProject(token, projectName)
         def projectId = projectDetails.id
         def branchId = projectDetails.initialWorkingDirectory.id
@@ -20,6 +21,7 @@ def call(step, props, projectName, apiDirPath) {
             throw new Exception("Design Centre API Upload failed")
         }
     } else {
+        step.println("project found.")
         def projectId = project.id
         def branchId = apiDesignCenterClient.getBranchCommitId(token, projectId, branch)
         apiDesignCenterClient.branchBackUp(token, projectId, branch, branchId)
