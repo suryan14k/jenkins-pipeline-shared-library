@@ -30,7 +30,7 @@ pipeline {
                                      'ownerId': ownerId
                                     ]
                         
-                        startDesignCentreAPIUpload(this, props,projectName, branch, apiDirPath)
+                        startDesignCentreAPIUpload(this, props,projectName, apiDirPath)
                      }
              }
         }
