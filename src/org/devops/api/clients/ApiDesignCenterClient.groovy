@@ -157,19 +157,14 @@ class ApiDesignCenterClient {
             def folderList = projectArtifactList.findAll { it -> (!it.path.contains("/") && it.type.equals("FOLDER") && !it.path.contains("exchange_modules")) }
             def exchangeDependenciesList = projectArtifactList.findAll { it.path.contains("exchange_modules/") && it.type.equals("FOLDER") && (it.path.count("/") == 3)}
             //step.println("list of files to be deleted ${fileList} , list of folders to be deleted ${folderList} , list of exchange dependecies to be deleted ${exchangeDependenciesList}")
-            acquireLockOnProject(token, projectId, branch)
             if(fileList.size() > 0 || folderList.size() > 0 || exchangeDependenciesList.size() > 0 ){
             try {
-                def service = Executors.newFixedThreadPool(10)
-                def taskList = new ArrayList();
                 fileList.each { it -> deleteArtifact(token, projectId, branch, it.path) }
                 folderList.each { it -> deleteArtifact(token, projectId, branch, it.path) }
                 exchangeDependenciesList.each { it -> deleteExchangeDependencyArtifact(token, projectId, branch, it.path) }
-                releaseLockOnProject(token, projectId, branch)
             }catch(Exception e)
             {
                 step.println("delete artifact stage failed."  + e.printStackTrace())
-                releaseLockOnProject(token, projectId, branch)
                 throw new Exception("delete artifact stage failed.")
             }
             }
@@ -207,7 +202,7 @@ class ApiDesignCenterClient {
         def body = JsonOutput.toJson(request)
         def connection = ApiClient.delete(urlString, body, headers)
         if (connection.responseCode == 200) {
-            //nothing.
+            //ignore//
         } else {
             step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("delete dependency stage failed.")
@@ -221,15 +216,12 @@ class ApiDesignCenterClient {
                 step.println("adding exchange dependencies to project")
                 try {
                     def createList = getExchangeDependencyFileListFilteredPath(apiBaseDir)
-                    acquireLockOnProject(token, projectId, branch)
                     if(createList.size() > 0 ){
                         createList.each { it -> addExchangeDependency(token, projectId, branch, it)}
                      }
-                    releaseLockOnProject(token, projectId, branch)
-                }catch(Exception e)
+                 }catch(Exception e)
                 {
                     step.println("adding exchange dependency stage failed."  + e.printStackTrace())
-                    releaseLockOnProject(token, projectId, branch)
                     throw new Exception("adding exchange dependencies stage failed.")
                 }
             }
@@ -276,15 +268,12 @@ class ApiDesignCenterClient {
             apiMultiPartDataClient.addFilePart(fileName, it)
         }*/
 
-        acquireLockOnProject(token, projectId, branch)
         if (connection.responseCode == 200) {
             def savedFilesStatus = new JsonSlurper().parseText(connection.getInputStream().getText())
             step.println("success: saved project files are ${savedFilesStatus}")
-            releaseLockOnProject(token, projectId, branch)
             return savedFilesStatus
         } else {
             step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
-            releaseLockOnProject(token, projectId, branch)
             throw new Exception("unable to save project files.")
         }
     }

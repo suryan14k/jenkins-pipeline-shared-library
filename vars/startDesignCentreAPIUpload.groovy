@@ -7,8 +7,13 @@ def call(step, props, projectName, branch, apiDirPath){
     def projectId = apiDesignCenterClient.getProjectID(token, projectName)
     def branchId = apiDesignCenterClient.getBranchCommitId(token, projectId, branch)
     apiDesignCenterClient.branchBackUp(token, projectId, branch, branchId)
-    apiDesignCenterClient.branchCleanUp(token, projectId, branch)
-    apiDesignCenterClient.uploadExchangeDependencyArtifacts(token,projectId, branch, apiDirPath)
-    apiDesignCenterClient.uploadArtifacts(token,projectId, branch, apiDirPath)
+    apiDesignCenterClient.acquireLockOnProject(token, projectId, branch)
+    try {
+        apiDesignCenterClient.branchCleanUp(token, projectId, branch)
+        apiDesignCenterClient.uploadExchangeDependencyArtifacts(token, projectId, branch, apiDirPath)
+        apiDesignCenterClient.uploadArtifacts(token, projectId, branch, apiDirPath)
+    }finally{
+        apiDesignCenterClient.releaseLockOnProject(token, projectId, branch)
+    }
     step.println("Design Centre API Upload completed")
 }
