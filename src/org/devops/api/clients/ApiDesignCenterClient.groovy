@@ -16,29 +16,7 @@ class ApiDesignCenterClient {
         this.props = props
     }
 
-    def getAnypointToken()
-    {
-        step.println("get anypoint token")
-        def requestTemplate = '{"username" : null,"password" : null }'
-        def request = new JsonSlurper().parseText(requestTemplate)
-        request.username = props.username
-        request.password = props.password
-        def body = JsonOutput.toJson(request)
-        def urlString = "https://anypoint.mulesoft.com/accounts/login"
-        def headers=["Content-Type": "application/json","Accept": "application/json","Cookie": "..."]
-        def connection = ApiClient.post(urlString, body, headers)
-        if (connection.responseCode == 200)
-        {
-            def token = new JsonSlurper().parseText(connection.getInputStream().getText()).access_token
-            step.println("login success")
-            return token
-        }else
-        {
-            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
-            throw new Exception("Failed to get the login token!")
-        }
 
-    }
 
     def getProjects(token, projectName)
     {
@@ -275,6 +253,30 @@ class ApiDesignCenterClient {
         } else {
             step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
             throw new Exception("add dependency stage failed.")
+        }
+    }
+
+    def publishToExchange(token, projectId,branch, projectName, apiVersion,version,groupId )
+    {
+        def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/publish/exchange"
+        def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
+        def requestTemplate = '{"main" : null,"apiVersion" : null, "version" : null, "assetId" : null, "groupId" : null, "classifier" : null  }'
+        def request = new JsonSlurper().parseText(requestTemplate)
+        request.main = projectName.toLowerCase().replace(" ","-").concat(".raml")
+        request.apiVersion = apiVersion
+        request.version = version
+        request.assetId = projectName.toLowerCase().replace(" ","-")
+        request.groupId = groupId
+        request.classifier = "raml"
+        def body = JsonOutput.toJson(request)
+        step.println("publishing asset to exchange: ${body}")
+        def connection = ApiClient.post(urlString, body, headers)
+        if (connection.responseCode == 200) {
+            def status = new JsonSlurper().parseText(connection.getInputStream().getText())
+            return status
+        } else {
+            step.println("status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("failed to publish asset into exchange.")
         }
     }
 

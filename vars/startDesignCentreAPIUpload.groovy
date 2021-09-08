@@ -1,11 +1,12 @@
-import org.devops.api.clients.ApiDesignCenterClient
+import org.devops.api.clients.*
 
 def call(step, props, projectName, apiDirPath) {
     step.println("Design Centre API Upload Started")
     step.println("working branch is master")
     def branch = "master"
     def apiDesignCenterClient = new ApiDesignCenterClient(this, props)
-    def token = apiDesignCenterClient.getAnypointToken()
+    def common = new Common(this, props)
+    def token = common.getAnypointToken()
     def project = apiDesignCenterClient.getProjects(token, projectName)
     if (project == "not_found") {
         step.println("project not found, create new project.")
