@@ -62,6 +62,7 @@ class ApiManagerClient {
         def urlString = "https://anypoint.mulesoft.com/apimanager/api/v1/organizations/${props.organizationId}/environments/${props.environmentId}/apis"
         def headers=["Content-Type": "application/json","Accept": "application/json","Authorization": "Bearer " + token]
         def connection = ApiClient.post(urlString, body, headers)
+        step.println("api create request ${body}, url : ${urlString}")
         if (connection.responseCode == 201) {
             def api = new JsonSlurper().parseText(connection.getInputStream().getText())
             step.println("success: api created: ${api}")
