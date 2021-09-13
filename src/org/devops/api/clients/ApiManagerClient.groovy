@@ -32,7 +32,7 @@ class ApiManagerClient {
         }
     }
     def createApi(token, assetName, assetVersion){
-        assetName = assetName = assetName.toLowerCase().replace(" ", "-")
+        assetName = assetName.toLowerCase().replace(" ", "-")
         step.println("create api")
         def requestTemplate = "{\n" +
                 "   \"endpoint\": {\n" +
