@@ -19,7 +19,7 @@ pipeline {
                         def password = ""
                         def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
                         def ownerId = "2cc24e16-4c9c-4ce5-ab0a-346f1d3ed80c"
-                        def projectName = "Demo"
+                        def projectName = "Api"
                         def branch = "master"
                         def apiDirPath = "C:\\ci\\api"
                         
@@ -42,7 +42,7 @@ pipeline {
                                 def password = ""
                                 def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
                                 def ownerId = "2cc24e16-4c9c-4ce5-ab0a-346f1d3ed80c"
-                                def projectName = "Demo"
+                                def projectName = "Api"
                                 def branch = "master"
                                 def props = [
                                              'username': username,
@@ -50,8 +50,14 @@ pipeline {
                                              'organizationId': organizationId,
                                              'ownerId': ownerId
                                             ]
-                                def apiVersion = input(id: 'apiVersion', message: 'API Version, eg: v1, v2')
-                                def assetVersion = input(id: 'assetVersion', message: 'Asset Version, eg: 1.0.0, 1.1.1')
+                                def apiVersion = input message: 'Please enter the api version. eg: v1, v2',
+                                                       parameters: [string(defaultValue: '',
+                                                       description: '',
+                                                       name: 'apiVersion')]
+                                def assetVersion = input message: 'Please enter the asset version. eg: 1.0.0, 1.1.1',
+                                                       parameters: [string(defaultValue: '',
+                                                       description: '',
+                                                       name: 'apiVersion')]
                                 publishAssetToExchange(this, props,projectName, apiVersion, assetVersion)
                              }
                      }
