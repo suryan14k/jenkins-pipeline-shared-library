@@ -3,7 +3,6 @@ package org.devops.api.clients
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 import java.text.SimpleDateFormat
-import java.util.concurrent.Executors
 
 class ApiDesignCenterClient {
 
@@ -15,8 +14,6 @@ class ApiDesignCenterClient {
         this.step = step
         this.props = props
     }
-
-
 
     def getProjects(token, projectName)
     {
@@ -256,7 +253,7 @@ class ApiDesignCenterClient {
         }
     }
 
-    def publishToExchange(token, projectId,branch, projectName, apiVersion,version,groupId )
+    def publishToExchange(token, projectId, branch, projectName, apiVersion,version )
     {
         def urlString = "https://anypoint.mulesoft.com/designcenter/api-designer/projects/" + projectId + "/branches/" + branch + "/publish/exchange"
         def headers=["Content-Type": "application/json","Accept": "application/json","x-organization-id":props.organizationId, "x-owner-id":props.ownerId, "Authorization": "Bearer " + token]
@@ -266,7 +263,7 @@ class ApiDesignCenterClient {
         request.apiVersion = apiVersion
         request.version = version
         request.assetId = projectName.toLowerCase().replace(" ","-")
-        request.groupId = groupId
+        request.groupId = props.organizationId
         request.classifier = "raml"
         def body = JsonOutput.toJson(request)
         step.println("publishing asset to exchange: ${body}")

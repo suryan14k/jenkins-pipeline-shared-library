@@ -5,7 +5,7 @@ import groovy.json.JsonSlurper
 
 class Main {
 
-    static void main(String[] args) {
+    /*static void main(String[] args) {
         def username = ""
         def password = ""
         def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
@@ -34,5 +34,16 @@ class Main {
         apiDesignCenterClient.uploadExchangeDependencyArtifacts(token,projectId, branch, apiDirPath)
         apiDesignCenterClient.uploadArtifacts(token,projectId, branch, apiDirPath)
         step.println("Design Centre API Upload completed")
+    }*/
+
+    static void main(String[] args) {
+        def username = "suryan14k"
+        def password = "Letmein_01"
+        def organizationId = "c8a97a61-f4c4-4e40-a2b6-ba13718b421c"
+        def props = ["username": username, "password": password, "organizationId": organizationId ]
+        def apiDesignCenterClient = new ApiDesignCenterClient(this, props)
+        def token = apiDesignCenterClient.getAnypointToken()
+        def client = new ApiExchangeClient(this, props)
+        println client.assetsSearch(token, "employee-system-api")
     }
 }
