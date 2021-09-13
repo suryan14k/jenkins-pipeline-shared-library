@@ -20,6 +20,12 @@ class ApiClient {
         connection.connect()
         return connection
     }
+    static def patch(urlString, body, headers) {
+        def connection = getUrlConnectionWithHeaders(urlString, headers, "PATCH" )
+        writeData(connection, body)
+        connection.connect()
+        return connection
+    }
     static def delete(urlString, body, headers) {
         def connection = getUrlConnectionWithHeaders(urlString, headers, "DELETE")
         writeData(connection, body)

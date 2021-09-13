@@ -72,4 +72,23 @@ class ApiManagerClient {
             throw new Exception("failed to create api!")
         }
     }
+    def updateApiAssetVersion(token, environmentApiId, assetVersion){
+        step.println("update api asset version")
+        def requestTemplate = "{\"assetVersion\": null}"
+        def request = new JsonSlurper().parseText(requestTemplate)
+        request.assetVersion = assetVersion
+        def body = JsonOutput.toJson(request)
+        def urlString = "https://anypoint.mulesoft.com/apimanager/api/v1/organizations/${props.organizationId}/environments/${props.environmentId}/apis/${environmentApiId}"
+        def headers=["Content-Type": "application/json","Accept": "application/json","Authorization": "Bearer " + token]
+        def connection = ApiClient.patch(urlString, body, headers)
+        step.println("api update request ${body}, url : ${urlString}")
+        if (connection.responseCode == 200) {
+            def response = new JsonSlurper().parseText(connection.getInputStream().getText())
+            step.println("success: api updated: ${response}")
+            return response
+        } else {
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("failed to update api asset version!")
+        }
+    }
 }
