@@ -14,7 +14,13 @@ def call(step, props, projectName, apiVersion, assetVersion){
     } else {
         step.println("project found.")
         def projectId = project.id
-        apiDesignCenterClient.publishToExchange(token, projectId, branch, projectName, apiVersion,assetVersion)
+        apiDesignCenterClient.acquireLockOnProject(token, projectId, branch)
+        try {
+            apiDesignCenterClient.publishToExchange(token, projectId, branch, projectName, apiVersion, assetVersion)
+        } catch (Exception e) {
+            apiDesignCenterClient.releaseLockOnProject(token, projectId, branch)
+            throw new Exception("asset publish failed")
+        }
     }
     step.println("Published asset to exchange successfully.")
 }
