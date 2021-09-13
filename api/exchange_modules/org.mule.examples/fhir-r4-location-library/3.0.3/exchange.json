@@ -1,1 +1,0 @@
-{"main":"fhir-r4-location-library.raml","name":"FHIR R4 Location Library","organizationId":"68ef9520-24e9-4cf2-b2f5-620025690913","groupId":"org.mule.examples","assetId":"fhir-r4-location-library","version":"3.0.3","classifier":"raml-fragment","dependencies":[{"assetId":"fhir-r4-commons-library","groupId":"org.mule.examples","version":"1.0.0"}],"tags":[]}
