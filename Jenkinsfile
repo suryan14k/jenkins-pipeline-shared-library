@@ -44,16 +44,15 @@ pipeline {
                                 def ownerId = "2cc24e16-4c9c-4ce5-ab0a-346f1d3ed80c"
                                 def projectName = "Demo"
                                 def branch = "master"
-                                def apiDirPath = "C:\\ci\\api"
-
                                 def props = [
                                              'username': username,
                                              'password': password ,
                                              'organizationId': organizationId,
                                              'ownerId': ownerId
                                             ]
-
-                                startDesignCentreAPIUpload(this, props,projectName, apiDirPath)
+                                def apiVersion = input(id: 'apiVersion', message: 'API Version, eg: v1, v2')
+                                def assetVersion = input(id: 'assetVersion', message: 'Asset Version, eg: 1.0.0, 1.1.1')
+                                publishAssetToExchange(this, props,projectName, apiVersion, assetVersion)
                              }
                      }
         }
