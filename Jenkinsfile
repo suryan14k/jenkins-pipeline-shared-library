@@ -107,6 +107,10 @@ pipeline {
                                                                  'environmentId': environmentId,
                                                                  'ownerId': ownerId
                                                                 ]
+                                                    def environmentApiId = input message: 'Please enter the environmentApiId.',
+                                                                   parameters: [string(defaultValue: '',
+                                                                   description: '',
+                                                                   name: 'environmentApiId')]
                                                     applyPolicies(this, props, apiType, environmentApiId)
                                       }
                     }
