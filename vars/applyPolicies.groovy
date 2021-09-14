@@ -9,7 +9,7 @@ def call(step, props, apiType, environmentApiId){
         //client-id-enforcement//
         def request = "{\n" +
                 "   \"configurationData\":{\n" +
-                "   \"credentialsOrigin\":\"customExpression\",\n" +
+                "   \"credentialsOriginHasHttpBasicAuthenticationHeader\":\"customExpression\",\n" +
                 "   \"clientIdExpression\":\"#[attributes.headers['clientId']]\",\n" +
                 "   \"clientSecretExpression\":\"#[attributes.headers['clientSecret']]\"\n" +
                 "   },\n" +
