@@ -91,4 +91,20 @@ class ApiManagerClient {
             throw new Exception("failed to update api asset version!")
         }
     }
+
+    def applyPolicy(token, environmentApiId, request){
+        step.println("applying policy: ${request}")
+        def body = JsonOutput.toJson(request)
+        def urlString = "https://anypoint.mulesoft.com/apimanager/api/v1/organizations/${props.organizationId}/environments/${props.environmentId}/apis/${environmentApiId}/policie"
+        def headers=["Content-Type": "application/json","Accept": "application/json","Authorization": "Bearer " + token]
+        def connection = ApiClient.post(urlString, body, headers)
+        if (connection.responseCode == 201) {
+            def response = new JsonSlurper().parseText(connection.getInputStream().getText())
+            step.println("success: policy applied: ${response}")
+            return response
+        } else {
+            step.println("failed - status code: ${connection.responseCode}, message: ${connection.responseMessage}")
+            throw new Exception("failed to apply policy!")
+        }
+    }
 }
